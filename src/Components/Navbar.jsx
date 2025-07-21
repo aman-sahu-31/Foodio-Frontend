@@ -4,6 +4,7 @@ import { FaUser, FaBars, FaTimes } from 'react-icons/fa'
 import { TiLocation } from 'react-icons/ti'
 import { FaShoppingBasket, FaCheckCircle, FaArrowDown } from 'react-icons/fa'
 import Card from './Card'
+import Partner from './Partner'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -20,7 +21,7 @@ function Navbar() {
             <span className="text-yellow-500">🌟</span>
             <p>
               Get 5% Off your first order,
-              <span className="text-[#fbaa4c] underline ml-1 cursor-pointer"> 
+              <span className="text-[#fbaa4c] underline ml-1 cursor-pointer">
                 Promo: ORDER5
               </span>
             </p>
@@ -50,50 +51,48 @@ function Navbar() {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
-    <div className=" bg-white  mt-4">
-      <div className="flex justify-between items-center">
-        
-        {/* 🔸 Logo */}
-        <div className="flex items-center">
-          <img src={logo} alt="Logo" className="h-8" />
-        </div>
-        <div className="hidden md:flex space-x-6 font-semibold text-sm">
-          <p className="px-4 py-2 hover:bg-orange-200  rounded-full cursor-pointer">Home</p>
-          <p className="px-4 py-2 hover:bg-orange-200 rounded-full cursor-pointer">Browse Menu</p>
-          <p className="px-4 py-2 hover:bg-orange-200 rounded-full cursor-pointer">Special Offers</p>
-          <p className="px-4 py-2 hover:bg-orange-200 rounded-full cursor-pointer">Restaurants</p>
-          <p className="px-4 py-2 hover:bg-orange-200 rounded-full cursor-pointer">Track Order</p>
-        <div className="hidden md:flex items-center bg-[#060b27] text-white rounded-full px-5 py-2 text-sm">
-          <FaUser className="mr-2 text-orange-400" />
-          <button className="mr-1">Login</button>/<button className="ml-1">Signup</button>
-        </div>
-        </div>
-        <div className="md:hidden flex items-center">
-          <button onClick={toggleMenu}>
-            {isOpen ? <FaTimes size={22} /> : <FaBars size={22} />}
-          </button>
-        </div>
-      </div>
-      {isOpen && (
-        <div className="md:hidden mt-4  font-semibold text-sm">
-          <p className="block hover:bg-orange-200  px-4 py-2 rounded-full">Home</p>
-          <p className="block hover:bg-orange-200 px-4 py-2 rounded-full">Browse Menu</p>
-          <p className="block hover:bg-orange-200 px-4 py-2 rounded-full">Special Offers</p>
-          <p className="block hover:bg-orange-200 px-4 py-2 rounded-full">Restaurants</p>
-          <p className="block hover:bg-orange-200 px-4 py-2 rounded-full">Track Order</p>
-          <div className="flex items-center bg-[#060b27] text-white rounded-full px-5 py-2 text-sm w-fit">
-            <FaUser className="mr-2 text-orange-400" />
-            <button className="mr-1">Login</button>/<button className="ml-1">Signup</button>
+      <div className=" bg-white  mt-4">
+        <div className="flex justify-between items-center">
+          <div className="flex items-center">
+            <img src={logo} alt="Logo" className="h-8" />
+          </div>
+          <div className="hidden md:flex space-x-6 font-semibold text-sm">
+            <p className="px-4 py-2 hover:bg-orange-200  rounded-full cursor-pointer">Home</p>
+            <p className="px-4 py-2 hover:bg-orange-200 rounded-full cursor-pointer">Browse Menu</p>
+            <p className="px-4 py-2 hover:bg-orange-200 rounded-full cursor-pointer">Special Offers</p>
+            <p className="px-4 py-2 hover:bg-orange-200 rounded-full cursor-pointer">Restaurants</p>
+            <p className="px-4 py-2 hover:bg-orange-200 rounded-full cursor-pointer">Track Order</p>
+            <div className="hidden md:flex items-center bg-[#060b27] text-white rounded-full px-5 py-2 text-sm">
+              <FaUser className="mr-2 text-orange-400" />
+              <button className="mr-1">Login</button>/<button className="ml-1">Signup</button>
+            </div>
+          </div>
+          <div className="md:hidden flex items-center">
+            <button onClick={toggleMenu}>
+              {isOpen ? <FaTimes size={22} /> : <FaBars size={22} />}
+            </button>
           </div>
         </div>
-      )}
-    </div>
-    <Card/>
-          </>
+        {isOpen && (
+          <div className="md:hidden mt-4  font-semibold text-sm">
+            <p className="block hover:bg-orange-200  px-4 py-2 rounded-full">Home</p>
+            <p className="block hover:bg-orange-200 px-4 py-2 rounded-full">Browse Menu</p>
+            <p className="block hover:bg-orange-200 px-4 py-2 rounded-full">Special Offers</p>
+            <p className="block hover:bg-orange-200 px-4 py-2 rounded-full">Restaurants</p>
+            <p className="block hover:bg-orange-200 px-4 py-2 rounded-full">Track Order</p>
+            <div className="flex items-center bg-[#060b27] text-white rounded-full px-5 py-2 text-sm w-fit">
+              <FaUser className="mr-2 text-orange-400" />
+              <button className="mr-1">Login</button>/<button className="ml-1">Signup</button>
+            </div>
+          </div>
+        )}
+      </div>
+      <Card />
+      <Partner />
+    </>
   )
 }
 
