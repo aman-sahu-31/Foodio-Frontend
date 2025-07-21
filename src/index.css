@@ -3,3 +3,7 @@
 @utility base{
   @apply mx-10 
 }
+@font-face {
+  font-family: "Cinzel";
+  src: url("./Font/Cinzel/Cinzel-Regular.ttf") format("truetype");
+}
