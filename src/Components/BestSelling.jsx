@@ -6,7 +6,7 @@ import BestCard from './BestCard';
 function BestSelling() {
   return (
     <>
-    <div className="mt-2 mb-5">
+    <div className="mt-10 mb-5">
       <div className="flex justify-between items-center mb-2 ">
         <h2 className="text-2xl font-bold">BEST SELLING</h2>
         <div className="flex items-center gap-2">

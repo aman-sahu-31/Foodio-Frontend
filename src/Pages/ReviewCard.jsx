@@ -6,7 +6,10 @@ import Subscribe from './Subscribe';
 function ReviewCard() {
   return (
     <>
-      <div className="w-full p-6 bg-white rounded-md flex flex-col md:flex-row items-start justify-center shadow-md mt-4">
+    <div className='mt-15 mb-2'>
+      <h1 className='text-3xl font-Arbic'>Review Card</h1>
+    <div className='w-full  mt-10 mb-15 h-full bg-yellow-400 rounded-sm transform rotate-1'>
+      <div className="w-full p-6 bg-white rounded-md flex flex-col md:flex-row transform -rotate-1 items-start justify-center shadow-md mt-4 ">
         <div className="md:w-1/3 w-full border-r md:pr-6 pr-0 relative">
           <div className="text-center mb-4">
             <h1 className="text-5xl font-bold text-pink-500">4.9</h1>
@@ -73,9 +76,9 @@ function ReviewCard() {
           </div>
         </div>
       </div>
-      <NavLink to={"/Subscribe"}>
+    </div>
+    </div>
         <Subscribe />
-      </NavLink>
     </>
   );
 }

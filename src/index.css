@@ -9,20 +9,22 @@
   font-weight: 400;
   font-style: normal;
 }
-   @theme {
-    --font-PermanentMarker: "PermanentMarker";
-  }
-
-  /* @font-face {
+  @font-face {
+    src: url('/src/assets/Font/Abril_Fatface/AbrilFatface-Regular.ttf') format('truetype');
     font-family: 'Arbic';
-    src: url('/src/assets/Font/Merienda/static/Merienda-Bold.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
   }
+   @theme {
+    --font-PermanentMarker: "PermanentMarker";
+     --font-Arbic: "Arbic";
+     --color-green-600: #22c55e;
+     --color-gray-800: #1f2937;
+      --color-primary: #dadada;     /* Indigo */
+  --color-secondary: #F59E0B;   /* Amber */
+  --color-accent: #10B991;      /* Emerald */
+  }
 
-  @theme{
-    --font-PermanentMarker: "Arbic";
-  } */
 
 
 

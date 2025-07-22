@@ -4,7 +4,7 @@ import Footer from "./Footer";
 export default function Subscribe() {
   return (
     <>
-      <div className="w-full flex items-center justify-center min-h-[24rem] mt-2 mb-2 bg-gray-50 px-4">
+      <div className="w-full mb-15 flex items-center justify-center min-h-[20rem] bg-gray-50 rounded-[10px] shadow-xl mt-5  px-4">
         <div className="text-center max-w-xl">
           <h4 className="text-gray-500 mb-2 text-sm">Our Newsletter</h4>
           <h2 className="text-3xl md:text-4xl font-bold leading-snug">

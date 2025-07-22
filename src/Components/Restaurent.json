@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "name": "Coriander Leaf Restaurant",
+    "image": "https://i.pinimg.com/736x/95/f5/83/95f583a23394961887be920f8e583e97.jpg",
+    "rating": "4.0",
+    "cuisine": "Gujarati • North Indian",
+    "location": "Alankar Chambers, Old Palasia, Indore",
+    "price": "₹800 for two",
+    "distance": "5.9 km",
+    "facility": "Table booking",
+    "offer": "Flat 20% off on pre-booking",
+    "bankOffer": "Up to 10% off with bank offers"
+  },
+  {
+    "id": 2,
+    "name": "The Spice Kitchen",
+    "image": "https://i.pinimg.com/736x/81/d9/8d/81d98de03ffe01b5aaa7cb96cd215ed7.jpg",
+    "rating": "4.5",
+    "cuisine": "South Indian • Biryani",
+    "location": "Vijay Nagar, Indore",
+    "price": "₹600 for two",
+    "distance": "4.2 km",
+    "facility": "Live Music",
+    "offer": "Buy 1 Get 1 Free",
+    "bankOffer": "5% cashback on HDFC cards"
+  },
+  {
+    "id": 3,
+    "name": "Barbeque Nation",
+    "image": "https://i.pinimg.com/1200x/83/9c/1f/839c1f988f8be7ceed947a50a7f6bd9b.jpg",
+    "rating": "4.3",
+    "cuisine": "BBQ • Grill • Buffet",
+    "location": "C21 Mall, Indore",
+    "price": "₹1200 for two",
+    "distance": "6.1 km",
+    "facility": "Buffet & Table booking",
+    "offer": "15% off on weekend booking",
+    "bankOffer": "10% off with ICICI credit card"
+  }
+]

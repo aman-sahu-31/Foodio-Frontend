@@ -52,10 +52,10 @@ function Navbar() {
           </div>
         </div>
       </div>
-      <div className=" bg-white  mt-4">
+      <div className=" bg-white  mt-5 mb-5">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <img src={logo} alt="Logo" className="h-8" />
+            <img src={logo} alt="Logo" className="h-8 ml-5" />
           </div>
           <div className="hidden md:flex space-x-6 font-semibold text-sm">
             <p className="px-4 py-2 hover:bg-orange-200  rounded-full cursor-pointer">Home</p>
@@ -88,8 +88,6 @@ function Navbar() {
           </div>
         )}
       </div>
-  
-      {/* <Partner/>    */}
    <Outlet/>
     </>
   )

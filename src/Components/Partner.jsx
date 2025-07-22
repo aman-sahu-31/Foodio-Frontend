@@ -1,47 +1,53 @@
-import React from 'react'
-import logo1 from '../assets/Photos/image1.png'
-import bg1 from '../assets/Photos/image2.png'
-import { NavLink, Outlet } from 'react-router-dom'
-import ReviewCard from '../Pages/ReviewCard'
+import React from 'react';
+import logo1 from '../assets/Photos/image1.png';
+import bg1 from '../assets/Photos/image2.png';
+import ReviewCard from '../Pages/ReviewCard';
+import Restaurent from '../Pages/Restaurent';
 
 function Partner() {
   return (
     <>
-      <div className="grid mt-1 grid-cols-1 md:grid-cols-2 gap-4 ">
-        <div className="relative rounded-xl overflow-hidden shadow-md">
-          <img src={logo1} alt="Partner" className="w-full h-72 object-cover" />
-          <div className="absolute left-4 md:left-10 top-0 font-bold rounded-b-[8px] bg-white px-4 py-0.5 text-sm sm:text-base">
-            Earn more with lower fees
+      <div className="bg-gray-100 shadow-xl p-4 sm:p-8 mt-5 sm:mt-10 rounded-2xl">
+        <h1 className="font-Arbic text-3xl sm:text-4xl mb-6  font-bold text-gray-800">
+          Grow with Us
+        </h1>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Partner Card */}
+          <div className="relative rounded-2xl overflow-hidden shadow-lg">
+            <img src={logo1} alt="Partner with us" className="w-full h-72 object-cover" />
+            <div className="absolute top-0 left-4 md:left-6 bg-white text-black font-semibold rounded-b-md px-4 py-1 text-sm sm:text-base">
+              Earn more with lower fees
+            </div>
+            <div className="absolute bottom-5 left-4 md:left-6 text-white">
+              <p className="text-sm sm:text-base text-orange-400">Signup as a business</p>
+              <h2 className="text-2xl sm:text-3xl font-bold">Partner with us</h2>
+              <button className="mt-3 bg-orange-400 hover:bg-orange-600 transition w-36 sm:w-40 h-10 text-white rounded-full text-sm sm:text-base font-medium">
+                Get Started
+              </button>
+            </div>
           </div>
-          <div className="absolute bottom-5 left-4 md:left-10 text-white">
-            <p className="text-sm md:text-md text-orange-400">Signup as a business</p>
-            <h2 className="text-2xl md:text-4xl font-extrabold">Partner with us</h2>
-            <button className="w-36 md:w-40 bg-orange-400 mt-3 h-10 text-white rounded-full hover:bg-orange-600 transition text-[16px] md:text-[18px]">
-              Get Started
-            </button>
-          </div>
-        </div>
-        <div className="relative rounded-xl overflow-hidden shadow-md">
-          <img src={bg1} alt="Rider" className="w-full h-72 object-cover" />
-          <div className="absolute left-4 md:left-10 top-0 font-bold rounded-b-[8px] bg-white px-4 py-0.5 text-sm sm:text-base">
-            Avail exclusive perks
-          </div>
-          <div className="absolute bottom-5 left-4 md:left-10 text-white">
-            <p className="text-sm md:text-md text-orange-400">Signup as a rider</p>
-            <h2 className="text-2xl md:text-4xl font-bold">Ride with us</h2>
-            <button className="w-36 md:w-40 bg-orange-400 mt-3 h-10 text-white rounded-full hover:bg-orange-600 transition text-[16px] md:text-[18px]">
-              Get Started
-            </button>
+
+          {/* Rider Card */}
+          <div className="relative rounded-2xl overflow-hidden shadow-lg">
+            <img src={bg1} alt="Ride with us" className="w-full h-72 object-cover" />
+            <div className="absolute top-0 left-4 md:left-6 bg-white text-black font-semibold rounded-b-md px-4 py-1 text-sm sm:text-base">
+              Avail exclusive perks
+            </div>
+            <div className="absolute bottom-5 left-4 md:left-6 text-white">
+              <p className="text-sm sm:text-base text-orange-400">Signup as a rider</p>
+              <h2 className="text-2xl sm:text-3xl font-bold">Ride with us</h2>
+              <button className="mt-3 bg-orange-400 hover:bg-orange-600 transition w-36 sm:w-40 h-10 text-white rounded-full text-sm sm:text-base font-medium">
+                Get Started
+              </button>
+            </div>
           </div>
         </div>
       </div>
-
-      <NavLink to="/ReviewCard">
-       <ReviewCard />
-      </NavLink>
-      <Outlet />
+<Restaurent />
+      <ReviewCard />
     </>
-  )
+  );
 }
 
-export default Partner
+export default Partner;

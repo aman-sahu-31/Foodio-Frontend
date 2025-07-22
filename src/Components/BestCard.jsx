@@ -3,9 +3,9 @@ import Card from './Card.json'
 function BestCard() {
   return (
     <>
-   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+   <div className="grid grid-cols-1 p-2 mt-7 object-contain sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
    {Card.map((item) => (
-        <div key={item.id} className="relative rounded-2xl shadow-md p-2 bg-white">
+        <div key={item.id} className="relative object-contain   rounded-2xl mx-3 my-1 shadow-md p-2 bg-white">
           <img
             src={item.image}
             alt={item.title}
