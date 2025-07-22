@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
-import logo from '../assets/Foodi.png'
+import logo from '../assets/Photos/Foodi.png'
 import { FaUser, FaBars, FaTimes } from 'react-icons/fa'
 import { TiLocation } from 'react-icons/ti'
 import { FaShoppingBasket, FaCheckCircle, FaArrowDown } from 'react-icons/fa'
-import Card from './Card'
-import Partner from './Partner'
-import BestSelling from './BestSelling'
+import { NavLink, Outlet } from 'react-router-dom'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -13,7 +11,6 @@ function Navbar() {
   const toggleMenu = () => {
     setIsOpen(!isOpen)
   }
-
   return (
     <>
       <div className=" bg-white shadow pl-4  text-sm font-medium hidden md:block rounded-[5px] rounded-t-0px ">
@@ -91,9 +88,9 @@ function Navbar() {
           </div>
         )}
       </div>
-      <Card />
-      <BestSelling />
-      <Partner />
+  
+      {/* <Partner/>    */}
+   <Outlet/>
     </>
   )
 }

@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Green Broccoli",
+    "image": "https://i.pinimg.com/736x/b3/bb/2e/b3bb2e6f313513126c36c69dad4486ff.jpg",
+    "price": 8.00,
+    "oldPrice": 9.00,
+    "discount": "-11%",
+    "rating": 0,
+    "isFavorite": false
+  },
+  {
+    "id": 2,
+    "title": "Cheese Pizza",
+    "image": "https://i.pinimg.com/1200x/29/15/4d/29154d010462e3d719a6b58a48edb442.jpg",
+    "price": 12.00,
+    "oldPrice": 14.00,
+    "discount": "-14%",
+    "rating": 4,
+    "isFavorite": true
+  },
+  {
+    "id": 3,
+    "title": "Veggie Delight",
+    "image": "https://i.pinimg.com/736x/a6/29/b8/a629b86868872827d1d5c34a247598b7.jpg",
+    "price": 10.00,
+    "oldPrice": 11.50,
+    "discount": "-13%",
+    "rating": 3,
+    "isFavorite": false
+  },
+  {
+    "id": 4,
+    "title": "Mushroom Pizza",
+    "image": "https://i.pinimg.com/736x/fd/29/9f/fd299f461ae988923aa178e4c4d943cf.jpg",
+    "price": 11.00,
+    "oldPrice": 13.00,
+    "discount": "-15%",
+    "rating": 5,
+    "isFavorite": true
+  },
+  {
+    "id": 5,
+    "title": "Chicken Supreme",
+    "image": "https://i.pinimg.com/736x/bc/f2/79/bcf279d388f4f6c62740996fc6cf7d69.jpg",
+    "price": 13.00,
+    "oldPrice": 15.00,
+    "discount": "-13%",
+    "rating": 4,
+    "isFavorite": false
+  },
+  {
+    "id": 6,
+    "title": "Spicy Paneer",
+    "image": " https://i.pinimg.com/1200x/e4/e6/7b/e4e67b4da284d98559bbfbfc2392d99c.jpg",
+    "price": 9.50,
+    "oldPrice": 11.00,
+    "discount": "-14%",
+    "rating": 3,
+    "isFavorite": false
+  },
+  {
+    "id": 7,
+    "title": "Pepperoni Pizza",
+    "image": "https://i.pinimg.com/736x/d1/cd/01/d1cd0192d3f4fcc20f454a4143f157d7.jpg",
+    "price": 14.00,
+    "oldPrice": 16.50,
+    "discount": "-15%",
+    "rating": 5,
+    "isFavorite": true
+  },
+  {
+    "id": 8,
+    "title": "Classic Margherita",
+    "image": "https://i.pinimg.com/736x/3e/f2/9e/3ef29e05443681462a2f697eb9e19e1f.jpg",
+    "price": 10.00,
+    "oldPrice": 12.00,
+    "discount": "-17%",
+    "rating": 4,
+    "isFavorite": false
+  }
+]

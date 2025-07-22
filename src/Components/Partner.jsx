@@ -1,13 +1,15 @@
 import React from 'react'
-import logo from '../assets/image1.png'
-import bg1 from '../assets/image2.png'
+import logo1 from '../assets/Photos/image1.png'
+import bg1 from '../assets/Photos/image2.png'
+import { NavLink, Outlet } from 'react-router-dom'
+import ReviewCard from '../Pages/ReviewCard'
 
 function Partner() {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+      <div className="grid mt-1 grid-cols-1 md:grid-cols-2 gap-4 ">
         <div className="relative rounded-xl overflow-hidden shadow-md">
-          <img src={logo} alt="Partner" className="w-full h-72 object-cover" />
+          <img src={logo1} alt="Partner" className="w-full h-72 object-cover" />
           <div className="absolute left-4 md:left-10 top-0 font-bold rounded-b-[8px] bg-white px-4 py-0.5 text-sm sm:text-base">
             Earn more with lower fees
           </div>
@@ -32,8 +34,12 @@ function Partner() {
             </button>
           </div>
         </div>
-
       </div>
+
+      <NavLink to="/ReviewCard">
+       <ReviewCard />
+      </NavLink>
+      <Outlet />
     </>
   )
 }
