@@ -5,6 +5,7 @@ import { TiLocation } from 'react-icons/ti'
 import { FaShoppingBasket, FaCheckCircle, FaArrowDown } from 'react-icons/fa'
 import Card from './Card'
 import Partner from './Partner'
+import BestSelling from './BestSelling'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -91,6 +92,7 @@ function Navbar() {
         )}
       </div>
       <Card />
+      <BestSelling />
       <Partner />
     </>
   )

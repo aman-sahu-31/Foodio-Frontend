@@ -5,8 +5,8 @@ function Card() {
   return (
     <>
       <div className='  bg-[rgb(251,251,251)] rounded-2xl mt-2 h-100 md:flex relative'>
-        <img src={m} className='w-150   h-80 absolute bottom-0 left-65 z-10' />
-        <div className='w-1/2 h-full  flex flex-col justify-center pl-7 '>
+        <img src={m} className='w-80  h-80 absolute bottom-0 left-89 z-10' />
+        <div className='w-full  md:w-1/2 h-full   flex flex-col justify-center pl-7 '>
           <p className='text-[15px]  '>Order Restaurant Food, takeaway and groceries.</p>
           <p className='text-5xl  font-bold '>Feast Your Senses, <br /> <span className='text-[#fc8a06]'>Fast and Fresh</span></p>
           <form className='mt-5'>
@@ -17,7 +17,7 @@ function Card() {
             </div>
           </form>
         </div>
-        <div className=' w-1/2  relative'>
+        <div className=' w-1/2  relative hidden lg:block'>
           <div className='w-140   ml-15 rounded-l-full h-90 mt-10 bg-orange-400 '>
             <img src={bg} className='w-60 rounded-[5px] shadow-2xs h-65 absolute top-35 left-5  ' />
 
