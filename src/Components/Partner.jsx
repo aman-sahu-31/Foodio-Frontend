@@ -8,7 +8,7 @@ function Partner() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
         <div className="relative rounded-xl overflow-hidden shadow-md">
           <img src={logo} alt="Partner" className="w-full h-72 object-cover" />
-          <div className="absolute left-4 md:left-10 top-0 font-bold rounded-b-[8px] bg-white px-4 py-2 text-sm sm:text-base">
+          <div className="absolute left-4 md:left-10 top-0 font-bold rounded-b-[8px] bg-white px-4 py-0.5 text-sm sm:text-base">
             Earn more with lower fees
           </div>
           <div className="absolute bottom-5 left-4 md:left-10 text-white">
@@ -21,7 +21,7 @@ function Partner() {
         </div>
         <div className="relative rounded-xl overflow-hidden shadow-md">
           <img src={bg1} alt="Rider" className="w-full h-72 object-cover" />
-          <div className="absolute left-4 md:left-10 top-0 font-bold rounded-b-[8px] bg-white px-4 py-2 text-sm sm:text-base">
+          <div className="absolute left-4 md:left-10 top-0 font-bold rounded-b-[8px] bg-white px-4 py-0.5 text-sm sm:text-base">
             Avail exclusive perks
           </div>
           <div className="absolute bottom-5 left-4 md:left-10 text-white">
