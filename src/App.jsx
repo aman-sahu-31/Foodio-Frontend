@@ -5,6 +5,8 @@ import Card from './Components/Card';
 import Menubar from './Components/Menubar';
 import SpecialOffers from './Components/SpecialOffers';
 import MenuRestaurent from './Pages/MenuRestaurent';
+import Login from './Pages/Login';
+import Signup from './Pages/Signup';
 
 
 function App() {
@@ -16,6 +18,9 @@ function App() {
           <Route path="Menu" element={<Menubar/>} />
           <Route path="Offers" element={<SpecialOffers/>} />
           <Route path="restaurent" element={<MenuRestaurent/>} />
+          <Route path="Login" element={<Login/>} />
+          <Route path="Signup" element={<Signup/>} />
+          <Route path="*" element={<h1>404 Not Found</h1>} />
 
         </Route>
       </Routes>

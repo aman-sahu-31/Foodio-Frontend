@@ -73,7 +73,8 @@ function Navbar() {
             <p className="px-4 py-2 hover:bg-orange-200 rounded-full cursor-pointer">Track Order</p>
             <div className="hidden md:flex items-center bg-[#060b27] text-white rounded-full px-5 py-2 text-sm">
               <FaUser className="mr-2 text-orange-400" />
-              <button className="mr-1">Login</button>/<button className="ml-1">Signup</button>
+              <NavLink to="/Login">
+              <button className="mr-1">Login</button></NavLink>/<NavLink to="/Signup"><button className="ml-1">Signup</button> </NavLink>
             </div>
           </div>
           <div className="md:hidden flex items-center">
