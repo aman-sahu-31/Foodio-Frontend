@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from './Card.json'
+import Card from '../Pages/Json-File/BestCard.json'
 function BestCard() {
   return (
     <>

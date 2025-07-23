@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaCreditCard, FaTruck, FaCalendarAlt, FaUserPlus, FaUsers } from 'react-icons/fa';
-import offers from '../Pages/Json-File/Offers.json'
+import offers from '../Pages/Json-File/SpecialOffers'
 
 const iconMap = {
   'credit-card': <FaCreditCard size={30} />,

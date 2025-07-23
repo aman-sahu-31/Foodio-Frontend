@@ -1,5 +1,5 @@
 import React from 'react';
-import Restaurent from '../Components/Restaurent.json';
+import Restaurent from '../Pages/Json-File/RestaurentCard.json';
 
 function RestoarentCard() {
   return (
