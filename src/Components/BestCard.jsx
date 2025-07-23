@@ -9,7 +9,7 @@ function BestCard() {
           <img
             src={item.image}
             alt={item.title}
-            className="w-full h-44 object-center rounded-xl"
+            className="w-full h-44 object-cover rounded-xl"
           />
           <span className="absolute top-2 left-2 bg-green-100 text-green-600 text-xs px-2 py-1 rounded">
             🔥 {item.discount}

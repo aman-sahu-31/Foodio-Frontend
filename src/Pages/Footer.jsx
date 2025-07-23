@@ -10,7 +10,6 @@ export default function Footer() {
   return (
     <footer className="bg-green-900 text-white pt-12 pb-8 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
-        {/* Logo & Description */}
         <div>
           <h4 className="text-2xl font-bold mb-4">Grocery.</h4>
           <p className="text-sm text-gray-300 mb-4">

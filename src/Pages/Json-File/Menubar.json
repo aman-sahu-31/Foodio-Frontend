@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Pizza",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Supreme_pizza.jpg"
+  },
+  {
+    "name": "Burger",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0b/RedDot_Burger.jpg"
+  },
+  {
+    "name": "Biryani",
+    "image": "https://i.pinimg.com/1200x/1a/59/f0/1a59f0e988c227075ce7a6e261f9f362.jpg"
+  },
+  {
+    "name": "Veg Meal",
+    "image": "https://i.pinimg.com/1200x/bf/08/2f/bf082ffd965d180fc23d0f65585b2329.jpg"
+  },
+  {
+    "name": "Chicken",
+    "image": "https://i.pinimg.com/736x/be/9c/50/be9c5060a8bf1bfbaf2afb514808bf4f.jpg"
+  },
+  {
+    "name": "Thali",
+    "image": "https://i.pinimg.com/736x/4f/d8/51/4fd8513a20ebab568ae0afb64bc46804.jpg"
+  },
+  {
+    "name": "Dosa",
+    "image": "https://i.pinimg.com/1200x/ed/39/5a/ed395a2799679158edc7f2cc3520bb69.jpg"
+  },
+  {
+    "name": "Pasta",
+    "image": "https://i.pinimg.com/1200x/66/76/f3/6676f3eec03f90369773e4cd06456671.jpg"
+  },
+  {
+    "name": "Fries",
+    "image": "https://i.pinimg.com/736x/51/30/2e/51302ec5fbd95944281940debf39e79b.jpg"
+  },
+  {
+    "name": "Idli Sambar",
+    "image": "https://i.pinimg.com/1200x/fe/2e/1d/fe2e1d0b794eab22ac4c5a2356fcd4da.jpg"
+  },
+  {
+    "name": "Paneer Tikka",
+    "image": "https://i.pinimg.com/736x/d4/10/12/d410121e2183e081e4edbef085e76271.jpg"
+  },
+  {
+    "name": "Noodles",
+    "image": "https://i.pinimg.com/1200x/a9/95/a3/a995a39c4028de122f6064a80fde4645.jpg"
+  },
+  {
+    "name": "Rolls",
+    "image": "https://i.pinimg.com/736x/7f/6e/80/7f6e8085b03ceff9d9d09be6c3a4340a.jpg"
+  },
+  {
+    "name": "Chole Bhature",
+    "image": "https://i.pinimg.com/736x/76/fa/4e/76fa4e26e8cbf1fdfb61e12f9885a06e.jpg"
+  },
+  {
+    "name": "Samosa",
+    "image": "https://i.pinimg.com/736x/76/fa/4e/76fa4e26e8cbf1fdfb61e12f9885a06e.jpg"
+  },
+  { "name": "Pav Bhaji", "image": "https://i.pinimg.com/1200x/9f/61/b5/9f61b5dff080cc8f1795ecb8c326a363.jpg" },
+  { "name": "Poha", "image": "https://i.pinimg.com/1200x/e5/06/88/e5068840ee813886af0aeda9b08985f6.jpg" },
+  { "name": "Vada Pav", "image": "https://i.pinimg.com/1200x/12/b0/1d/12b01df52a7104d75d2a7a1be866bb3f.jpg" },
+  { "name": "Rajma Chawal", "image": "https://i.pinimg.com/736x/f6/7d/13/f67d13f82d372cbf8fe3a4f48f80975e.jpg" },
+  { "name": "Upma", "image": "https://i.pinimg.com/1200x/85/8b/b0/858bb01a07c4a9750d6035acf43dfb84.jpg" },
+  { "name": "Dhokla", "image": "https://i.pinimg.com/736x/3f/d4/a3/3fd4a3b508703474aadfe08678c1ef81.jpg" },
+  { "name": "Aloo Paratha", "image": "https://i.pinimg.com/736x/88/8d/77/888d7737fb026b39cc5a95521cba3a63.jpg" },
+  { "name": "Kachori", "image": "https://i.pinimg.com/736x/5b/cd/3e/5bcd3e0979f3c1204e35dedef296a829.jpg" },
+  { "name": "Chaat", "image": "https://i.pinimg.com/1200x/85/bd/c5/85bdc501a8cf51e7e0939934d898ead5.jpg" },
+  { "name": "Halwa", "image": "https://i.pinimg.com/736x/44/eb/07/44eb071b08415e587e77ac7f51184ed9.jpg" },
+  { "name": "Pani Puri", "image": "https://i.pinimg.com/736x/32/3d/ee/323dee28eb6a34671b2dbda556dc4455.jpg" },
+  { "name": "Sabudana Khichdi", "image": "https://i.pinimg.com/1200x/e6/63/cb/e663cb555131098212328e685554e938.jpg" },
+  { "name": "Kadhi Chawal", "image": "https://i.pinimg.com/1200x/63/44/7b/63447b6f0d6a0f5d01904611eb5400e0.jpg" },
+  { "name": "Rasgulla", "image": "https://i.pinimg.com/736x/b7/a0/29/b7a029789e949b9ea26b3489d040b3b6.jpg" },
+  { "name": "Jalebi", "image": "https://i.pinimg.com/736x/58/d0/ee/58d0ee20230696987b7fce4a3e56f479.jpg" }
+
+
+]

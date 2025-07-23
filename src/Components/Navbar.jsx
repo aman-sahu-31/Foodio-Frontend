@@ -58,10 +58,18 @@ function Navbar() {
             <img src={logo} alt="Logo" className="h-8 ml-5" />
           </div>
           <div className="hidden md:flex space-x-6 font-semibold text-sm">
+            <NavLink to="/">
             <p className="px-4 py-2 hover:bg-orange-200  rounded-full cursor-pointer">Home</p>
+             </NavLink>
+            <NavLink to="/menu">
             <p className="px-4 py-2 hover:bg-orange-200 rounded-full cursor-pointer">Browse Menu</p>
+            </NavLink>
+            <NavLink to="/Offers">
             <p className="px-4 py-2 hover:bg-orange-200 rounded-full cursor-pointer">Special Offers</p>
+            </NavLink>
+            <NavLink to="/restaurent">
             <p className="px-4 py-2 hover:bg-orange-200 rounded-full cursor-pointer">Restaurants</p>
+            </NavLink>
             <p className="px-4 py-2 hover:bg-orange-200 rounded-full cursor-pointer">Track Order</p>
             <div className="hidden md:flex items-center bg-[#060b27] text-white rounded-full px-5 py-2 text-sm">
               <FaUser className="mr-2 text-orange-400" />

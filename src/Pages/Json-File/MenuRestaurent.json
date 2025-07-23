@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "56 Dukan",
+    "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/95/79/1f/caption.jpg?w=1400&h=800&s=1",
+    "rating": "⭐⭐⭐⭐⭐",
+    "location": "Plasia, Indore, India"
+  },
+  {
+    "id": 2,
+    "name": "Sardar Ji Dhaba",
+    "image": "https://b.zmtcdn.com/data/pictures/6/19692086/100fa1d83dc58385dc56a1b1ac7560d3.jpg",
+    "rating": "⭐⭐⭐⭐",
+    "location": "Bhawarkuan, Indore, India"
+  },
+  {
+    "id": 3,
+    "name": "Nafees Restaurant",
+    "image": "https://b.zmtcdn.com/data/pictures/6/1400056/3bf28b37cc619d6d6da2aba0e2ae89c0.jpg",
+    "rating": "⭐⭐⭐⭐",
+    "location": "Palasia, Indore, India"
+  },
+  {
+    "id": 4,
+    "name": "Little Italy",
+    "image": "https://image.wedmegood.com/resized/720X/uploads/member/999639/1579698685_e2.png",
+    "rating": "⭐⭐⭐⭐⭐",
+    "location": "Vijay Nagar, Indore, India"
+  },
+  {
+    "id": 5,
+    "name": "Mediterra",
+    "image": "https://b.zmtcdn.com/data/pictures/2/1400172/9f966fe9d38a84b90a1afdb81d386881.jpg",
+    "rating": "⭐⭐⭐⭐",
+    "location": "South Tukoganj, Indore, India"
+  },
+  {
+    "id": 6,
+    "name": "O2 Café De La Ville",
+    "image": "https://pbs.twimg.com/media/ChHRNamUkAAnaS5.jpg",
+    "rating": "⭐⭐⭐⭐✨",
+    "location": "RNT Marg, Indore, India"
+  },
+  {
+    "id": 7,
+    "name": "Chappan Bhog",
+    "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/da/53/92/view-from-the-road-in.jpg?w=900&h=-1&s=1",
+    "rating": "⭐⭐⭐⭐⭐",
+    "location": "56 Dukan, Indore, India"
+  },
+  {
+    "id": 8,
+    "name": "Apna Sweets",
+    "image": "https://indorerocks.com/uploadimages/restaurant/croppedimage/sapnaapna_20140219030521.jpg",
+    "rating": "⭐⭐⭐",
+    "location": "Rajwada, Indore, India"
+  },
+  {
+    "id": 9,
+    "name": "Mama Loca",
+    "image": "https://indorerocks.com/uploadimages/restaurant/croppedimage/sapnaapna_20140219030521.jpg",
+    "rating": "⭐⭐⭐⭐✨",
+    "location": "New Palasia, Indore, India"
+  },
+  {
+    "id": 10,
+    "name": "The Monroe Café",
+    "image": "https://b.zmtcdn.com/data/pictures/8/18715348/ecb8dd1473a04bb219d782019115528b.jpg?fit=around|960:500&crop=960:500;*,*",
+    "rating": "⭐⭐⭐⭐⭐",
+    "location": "Geeta Bhawan, Indore, India"
+  }
+]

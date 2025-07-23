@@ -12,7 +12,7 @@ function ReviewCard() {
       <div className="w-full p-6 bg-white rounded-md flex flex-col md:flex-row transform -rotate-1 items-start justify-center shadow-md mt-4 ">
         <div className="md:w-1/3 w-full border-r md:pr-6 pr-0 relative">
           <div className="text-center mb-4">
-            <h1 className="text-5xl font-bold text-pink-500">4.9</h1>
+            <h1 className="text-5xl font-bold ">4.9</h1>
             <p className="text-gray-500 text-sm">Based on 5000+ reviews</p>
           </div>
 
@@ -22,7 +22,7 @@ function ReviewCard() {
                 <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
               </div>
               <div className="w-full h-1 bg-gray-200 rounded mx-2">
-                <div className="h-1 bg-pink-500 w-[95%] rounded"></div>
+                <div className="h-1 bg-yellow-500 w-[95%] rounded"></div>
               </div>
               <span className="text-right w-10">95%</span>
             </div>
@@ -31,7 +31,7 @@ function ReviewCard() {
                 <FaStar /><FaStar /><FaStar /><FaStar />
               </div>
               <div className="w-full h-1 bg-gray-200 rounded mx-2">
-                <div className="h-1 bg-pink-500 w-[5%] rounded"></div>
+                <div className="h-1 bg-yellow-500 w-[5%] rounded"></div>
               </div>
               <span className="text-right w-10">5%</span>
             </div>
@@ -60,7 +60,7 @@ function ReviewCard() {
         </div>
 
         <div className="md:pl-8 pt-6 md:pt-0 w-full">
-          <div className="text-pink-500 text-sm mb-2 flex">
+          <div className="text-yellow-500 text-sm mb-2 flex">
             <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
           </div>
           <p className="text-gray-700 mb-4 text-sm">
@@ -71,8 +71,8 @@ function ReviewCard() {
           </p>
           <div className="flex items-center gap-2 mt-4">
             <span className="w-3 h-3 bg-green-500 rounded-full border-2 border-white"></span>
-            <span className="w-2 h-2 bg-pink-400 rounded-full"></span>
-            <span className="w-2 h-2 bg-pink-400 rounded-full"></span>
+            <span className="w-2 h-2 bg-red-400 rounded-full"></span>
+            <span className="w-2 h-2 bg-yellow-400 rounded-full"></span>
           </div>
         </div>
       </div>
