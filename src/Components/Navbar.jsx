@@ -85,14 +85,21 @@ function Navbar() {
         </div>
         {isOpen && (
           <div className="md:hidden mt-4  font-semibold text-sm">
+              <NavLink to="/">
             <p className="block hover:bg-orange-200  px-4 py-2 rounded-full">Home</p>
-            <p className="block hover:bg-orange-200 px-4 py-2 rounded-full">Browse Menu</p>
-            <p className="block hover:bg-orange-200 px-4 py-2 rounded-full">Special Offers</p>
-            <p className="block hover:bg-orange-200 px-4 py-2 rounded-full">Restaurants</p>
+            </NavLink>
+             <NavLink to="/menu">       
+             <p className="block hover:bg-orange-200 px-4 py-2 rounded-full">Browse Menu</p>
+             </NavLink>
+  <NavLink to="/Offers">
+            <p className="block hover:bg-orange-200 px-4 py-2 rounded-full">Special Offers</p></NavLink>
+               <NavLink to="/restaurent">           <p className="block hover:bg-orange-200 px-4 py-2 rounded-full">Restaurants</p></NavLink>
+ 
             <p className="block hover:bg-orange-200 px-4 py-2 rounded-full">Track Order</p>
             <div className="flex items-center bg-[#060b27] text-white rounded-full px-5 py-2 text-sm w-fit">
               <FaUser className="mr-2 text-orange-400" />
-              <button className="mr-1">Login</button>/<button className="ml-1">Signup</button>
+                <NavLink to="/Login">
+              <button className="mr-1">Login</button></NavLink>/<NavLink to="/Signup"><button className="ml-1">Signup</button></NavLink>
             </div>
           </div>
         )}
