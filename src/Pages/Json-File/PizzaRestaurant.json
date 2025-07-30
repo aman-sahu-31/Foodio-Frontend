@@ -1,0 +1,144 @@
+{
+  "pizzaRestaurants": [
+    {
+      "id": "15",
+      "restaurantName": "Pizza Pizz",
+      "image": "https://example.com/images/pizza-pizz.jpg",
+      "cuisine": ["Pizza", "Italian", "Fast Food"],
+      "location": "Indore",
+      "deliveryTime": "30 mins",
+      "startingPizza": {
+        "name": "Margherita Pizza",
+        "description": "Classic delight with 100% real mozzarella cheese",
+        "price": 129,
+        "rating": 4.3
+      }
+    },
+    {
+      "id": "16",
+      "restaurantName": "Domino's Pizza",
+      "image": "https://example.com/images/dominos.jpg",
+      "cuisine": ["Pizza", "Italian"],
+      "location": "Indore",
+      "deliveryTime": "25 mins",
+      "startingPizza": {
+        "name": "Peppy Paneer",
+        "description": "Paneer, capsicum, and red paprika toppings",
+        "price": 199,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": "17",
+      "restaurantName": "Pizza Hut",
+      "image": "https://example.com/images/pizzahut.jpg",
+      "cuisine": ["Pizza", "Cheese Crust"],
+      "location": "Indore",
+      "deliveryTime": "35 mins",
+      "startingPizza": {
+        "name": "Veggie Lover's",
+        "description": "Mushrooms, onions, peppers, and olives",
+        "price": 229,
+        "rating": 4.2
+      }
+    },
+    {
+      "id": "18",
+      "restaurantName": "La Pino'z Pizza",
+      "image": "https://example.com/images/lapinoz.jpg",
+      "cuisine": ["Pizza", "Thin Crust"],
+      "location": "Indore",
+      "deliveryTime": "28 mins",
+      "startingPizza": {
+        "name": "Farm House",
+        "description": "Delightful combo of onion, capsicum, tomato & mushroom",
+        "price": 179,
+        "rating": 4.1
+      }
+    },
+    {
+      "id": "19",
+      "restaurantName": "Oven Story Pizza",
+      "image": "https://example.com/images/ovenstory.jpg",
+      "cuisine": ["Pizza", "Baked", "Fast Delivery"],
+      "location": "Indore",
+      "deliveryTime": "20 mins",
+      "startingPizza": {
+        "name": "Cheese Burst Pizza",
+        "description": "Loaded with extra cheese and creamy base",
+        "price": 249,
+        "rating": 4.6
+      }
+    },
+    {
+      "id": "20",
+      "restaurantName": "Chicago Pizza",
+      "image": "https://example.com/images/chicago.jpg",
+      "cuisine": ["Pizza", "Thick Crust"],
+      "location": "Indore",
+      "deliveryTime": "32 mins",
+      "startingPizza": {
+        "name": "Classic Cheese",
+        "description": "Cheesy delight with thick crust",
+        "price": 159,
+        "rating": 4.0
+      }
+    },
+    {
+      "id": "21",
+      "restaurantName": "The Pizza King",
+      "image": "https://example.com/images/pizzaking.jpg",
+      "cuisine": ["Pizza", "Spicy"],
+      "location": "Indore",
+      "deliveryTime": "27 mins",
+      "startingPizza": {
+        "name": "Hot & Spicy",
+        "description": "Fiery spicy pizza with jalapenos and chili flakes",
+        "price": 199,
+        "rating": 4.4
+      }
+    },
+    {
+      "id": "22",
+      "restaurantName": "Pizza Singh",
+      "image": "https://example.com/images/pizzasingh.jpg",
+      "cuisine": ["Pizza", "Punjabi Style"],
+      "location": "Indore",
+      "deliveryTime": "30 mins",
+      "startingPizza": {
+        "name": "Paneer Tikka Pizza",
+        "description": "Tandoori paneer with Indian masala twist",
+        "price": 189,
+        "rating": 4.3
+      }
+    },
+    {
+      "id": "23",
+      "restaurantName": "Crust & Co.",
+      "image": "https://example.com/images/crustnco.jpg",
+      "cuisine": ["Pizza", "Handmade"],
+      "location": "Indore",
+      "deliveryTime": "40 mins",
+      "startingPizza": {
+        "name": "Garlic Cheese Pizza",
+        "description": "Fresh dough with garlic butter and mozzarella",
+        "price": 169,
+        "rating": 4.1
+      }
+    },
+    {
+      "id": "24",
+      "restaurantName": "New York Slice",
+      "image": "https://example.com/images/nyslice.jpg",
+      "cuisine": ["Pizza", "NY Style"],
+      "location": "Indore",
+      "deliveryTime": "22 mins",
+      "startingPizza": {
+        "name": "Pepperoni Pizza",
+        "description": "Loaded with pepperoni and cheese",
+        "price": 259,
+        "rating": 4.7
+      }
+    }
+  ]
+}

@@ -51,9 +51,7 @@ function Card() {
           </div>
         </div>
       </div>
-        <NavLink to={"/BestSelling"}  >
        <BestSelling/>
-      </NavLink>
       <Outlet />
     </>
   )

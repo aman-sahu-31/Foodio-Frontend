@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "Coriander Leaf - Pure Veg Restaurant",
+    "image": "https://i.pinimg.com/736x/da/39/d3/da39d3a6f729cb43f43ed04d7522d107.jpg",
+    "type": "Order Online, Dineout",
+    "rating": "4.2",
+    "reviews": 242,
+    "price": "₹500 for two",
+    "cuisine": ["Chinese", "Tandoor"],
+    "location": "Old Palasia",
+    "deliveryTime": "35-40 mins",
+    "offers": [
+      { "title": "20% Off Entire Bill", "code": "CL20", "perGuest": "150" },
+      { "title": "₹75 Cashback", "code": "CB75", "perGuest": "75" }
+    ],
+    "menu": {
+      "recommended": [
+        { "name": "Paneer Tikka", "price": 320, "rating": 4.4, "reviews": 22, "img": "https://i.pinimg.com/736x/f4/96/7e/f4967e3f20c2783cd944f7f2929f366b.jpg" },
+        { "name": "Veg Manchurian", "price": 250, "rating": 4.3, "reviews": 15, "img": "https://i.pinimg.com/736x/f5/2c/49/f52c49aa97fc431af9ae5f0155d4db1c.jpg" },
+        { "name": "Dal Makhani", "price": 280, "rating": 4.5, "reviews": 19, "img": "https://i.pinimg.com/736x/fc/f9/1e/fcf91e5f2e7c7b5b7343d3ab7b19f9cd.jpg" },
+        { "name": "Stuffed Naan", "price": 120, "rating": 4.2, "reviews": 11, "img": "https://i.pinimg.com/736x/58/bf/89/58bf8967b28d5a14e5b8cfdfbda7f13e.jpg" },
+        { "name": "Chilli Paneer", "price": 270, "rating": 4.3, "reviews": 16, "img": "https://i.pinimg.com/736x/08/7d/50/087d5026aeffcb4605f309ecbba89443.jpg" },
+        { "name": "Butter Roti", "price": 30, "rating": 4.0, "reviews": 20, "img": "https://i.pinimg.com/736x/b0/38/51/b0385122e161f12700294c1577a41692.jpg" },
+        { "name": "Mix Veg", "price": 230, "rating": 4.1, "reviews": 14, "img": "https://i.pinimg.com/736x/13/35/69/133569eae1fcd3f72df9d0dfc6b48e92.jpg" },
+        { "name": "Malai Kofta", "price": 260, "rating": 4.5, "reviews": 18, "img": "https://i.pinimg.com/736x/3b/01/3a/3b013a87cbbe43210754bd9a408e99a1.jpg" },
+        { "name": "Gulab Jamun", "price": 80, "rating": 4.6, "reviews": 27, "img": "https://i.pinimg.com/736x/df/86/09/df86097b4690a3e2cd31e64934d99471.jpg" },
+        { "name": "Jeera Rice", "price": 140, "rating": 4.2, "reviews": 12, "img": "https://i.pinimg.com/736x/6b/ba/2a/6bba2a26847dc88c5e84ddab88f537db.jpg" }
+      ],
+      "maggiItems": [
+        { "name": "Cheese Maggi", "price": 120, "rating": 4.2, "reviews": 8, "img": "https://i.pinimg.com/736x/a0/f0/39/a0f039fead06efb6dc182d0ebcb16b6c.jpg" },
+        { "name": "Masala Maggi", "price": 100, "rating": 4.0, "reviews": 10, "img": "https://i.pinimg.com/736x/f6/12/93/f61293e31b418ec8dc20337f6c02e4df.jpg" },
+        { "name": "Butter Maggi", "price": 130, "rating": 4.3, "reviews": 7, "img": "https://i.pinimg.com/736x/2e/50/cc/2e50cce3737a769cd2ac99d56c5f2ed5.jpg" },
+        { "name": "Corn Maggi", "price": 110, "rating": 4.1, "reviews": 6, "img": "https://i.pinimg.com/736x/29/2f/8d/292f8d68c388499524453c1441d59514.jpg" },
+        { "name": "Paneer Maggi", "price": 150, "rating": 4.4, "reviews": 9, "img": "https://i.pinimg.com/736x/78/f7/aa/78f7aa8f8b4c7bc75ac28de5a8502f30.jpg" }
+      ],
+      "categories": {
+        "Main Course": ["Paneer Dishes", "Veg Curries", "Dal Varieties"],
+        "Breads": ["Tandoori Roti", "Butter Naan", "Missi Roti"],
+        "Starters": ["Veg Cutlet", "Manchurian", "Spring Rolls"],
+        "Salads": ["Green Salad", "Russian Salad", "Fruit Salad"],
+        "Soups": ["Tomato", "Hot & Sour", "Manchow"],
+        "Rice": ["Jeera Rice", "Fried Rice", "Veg Pulao"],
+        "Desserts": ["Gulab Jamun", "Rasgulla", "Ice Cream"],
+        "Beverages": ["Lassi", "Masala Soda", "Buttermilk"],
+        "Snacks": ["Samosa", "Kachori", "Pattice"],
+        "Combos": ["Dal Roti Combo", "Rice Curry Combo", "Mini Thali"]
+      }
+    }
+  },
+{
+  "id": 2,
+  "name": "The Urban Garden Café",
+  "image": "https://i.pinimg.com/736x/97/79/cf/9779cf30f1054795685c0b9c8ae00013.jpg",
+  "type": "Dine-in, Delivery",
+  "rating": "4.5",
+  "reviews": 198,
+  "price": "₹700 for two",
+  "cuisine": ["Italian", "Continental", "Indian"],
+  "location": "Vijay Nagar",
+  "deliveryTime": "30-35 mins",
+  "offers": [
+    { "title": "15% Off on all orders", "code": "URBAN15", "perGuest": "200" },
+    { "title": "₹100 Cashback", "code": "CASH100", "perGuest": "100" },
+    { "title": "Buy 1 Get 1 Free", "code": "BOGO", "perGuest": "50" }
+  ],
+  "menu": {
+    "recommended": [
+      { "name": "Farmhouse Pizza", "price": 450, "rating": 4.5, "reviews": 20, "img": "https://i.pinimg.com/736x/a5/49/7c/a5497cdd2c5a32538fbd5d8c98ec88a6.jpg" },
+      { "name": "Veg Lasagna", "price": 380, "rating": 4.4, "reviews": 15, "img": "https://i.pinimg.com/736x/20/d2/1f/20d21f554c4ccfd0d1bb55939ddd835b.jpg" },
+      { "name": "Grilled Paneer Sandwich", "price": 240, "rating": 4.2, "reviews": 12, "img": "https://i.pinimg.com/736x/21/55/57/215557ef92b1400ce72dc83bfa423b61.jpg" },
+      { "name": "Crispy Nachos", "price": 180, "rating": 4.1, "reviews": 10, "img": "https://i.pinimg.com/736x/38/4b/89/384b89432d59f3a5a9d0c1ac73ecbd8c.jpg" },
+      { "name": "Tandoori Pasta", "price": 320, "rating": 4.3, "reviews": 14, "img": "https://i.pinimg.com/736x/5d/67/25/5d6725e9052c8bc0ff0a4760a086ca3f.jpg" },
+      { "name": "Veg Sizzler", "price": 550, "rating": 4.4, "reviews": 18, "img": "https://i.pinimg.com/736x/f8/e3/f3/f8e3f38ae1d7b4cb3cf3b1a49ed8f6b0.jpg" },
+      { "name": "Classic Mojito", "price": 160, "rating": 4.0, "reviews": 8, "img": "https://i.pinimg.com/736x/2b/85/f0/2b85f09ddc5ebbb84be0e44d70a2dc3d.jpg" },
+      { "name": "Cheese Garlic Bread", "price": 200, "rating": 4.2, "reviews": 11, "img": "https://i.pinimg.com/736x/6f/70/66/6f706619a8ccdd54dc6eabb1f44ee52e.jpg" },
+      { "name": "Peri Peri Fries", "price": 140, "rating": 4.1, "reviews": 9, "img": "https://i.pinimg.com/736x/d5/f5/07/d5f507d1b95d802746e7e31fc0c44a9e.jpg" },
+      { "name": "Stuffed Mushroom", "price": 260, "rating": 4.3, "reviews": 13, "img": "https://i.pinimg.com/736x/6f/21/d7/6f21d7c85be79e2e53f00522bb2bc2c4.jpg" }
+    ],
+    "maggiItems": [
+      { "name": "Creamy Cheese Maggi", "price": 180, "rating": 4.5, "reviews": 10, "img": "https://i.pinimg.com/736x/df/5b/53/df5b53c4dca1a0e0ff4c5c9985e8b6b8.jpg" },
+      { "name": "Spicy Veg Maggi", "price": 150, "rating": 4.2, "reviews": 8, "img": "https://i.pinimg.com/736x/8d/f4/eb/8df4eb8d1b8f2c13f80e1f1097b9ab52.jpg" },
+      { "name": "Masala Corn Maggi", "price": 170, "rating": 4.4, "reviews": 7, "img": "https://i.pinimg.com/736x/c7/6e/1c/c76e1c5f3ee645f8e56fbd62b21b1ab4.jpg" },
+      { "name": "Paneer Maggi", "price": 200, "rating": 4.3, "reviews": 6, "img": "https://i.pinimg.com/736x/21/df/36/21df36e9ce7680ea7c4e8d05e4c7abfc.jpg" },
+      { "name": "Butter Maggi", "price": 160, "rating": 4.1, "reviews": 5, "img": "https://i.pinimg.com/736x/72/27/7a/72277a0663a3c172c68b23464990a18e.jpg" }
+    ],
+    "categories": {
+      "Main Course": ["Continental Dishes", "Indian Curries"],
+      "Breads": ["Garlic Bread", "Stuffed Breads"],
+      "Starters": ["Italian Starters", "Fusion Starters"],
+      "Salads": ["Healthy Salads"],
+      "Pasta": ["Red Sauce", "White Sauce", "Mix Sauce"],
+      "Pizza": ["Cheese Burst", "Thin Crust", "Whole Wheat"],
+      "Desserts": ["Brownies", "Waffles", "Ice Cream"],
+      "Beverages": ["Coolers", "Mocktails", "Coffee", "Smoothies"],
+      "Combos": ["Meal for 1", "Meal for 2"],
+      "Soups": ["Creamy Tomato", "Veg Manchow", "Sweet Corn"]
+    }
+  }
+},
+
+  {
+  "id": 3,
+  "name": "Spice Symphony",
+  "image": "https://i.pinimg.com/736x/3b/76/99/3b7699f4c1b5f68483e5f1e52cf1d3e6.jpg",
+  "type": "Delivery, Takeaway",
+  "rating": "4.3",
+  "reviews": 175,
+  "price": "₹600 for two",
+  "cuisine": ["North Indian", "Chinese", "Street Food"],
+  "location": "Bhawarkua",
+  "deliveryTime": "30-40 mins",
+  "offers": [
+    { "title": "Flat ₹100 Off", "code": "SPICE100", "perGuest": "200" },
+    { "title": "Free Dessert", "code": "FREEBIE", "perGuest": "150" }
+  ],
+  "menu": {
+    "recommended": [
+      { "name": "Butter Chicken", "price": 320, "rating": 4.6, "reviews": 35, "img": "https://i.pinimg.com/736x/7f/2b/97/7f2b97a0e12e32be0ccf71a78b0c1dd9.jpg" },
+      { "name": "Paneer Lababdar", "price": 280, "rating": 4.5, "reviews": 25, "img": "https://i.pinimg.com/736x/e0/69/7c/e0697cce40cc65180ee629e3e0a30bc4.jpg" },
+      { "name": "Chicken Lollipop", "price": 260, "rating": 4.4, "reviews": 20, "img": "https://i.pinimg.com/736x/27/e4/e1/27e4e1eabf29cc60f1954416f2a0df2d.jpg" },
+      { "name": "Hakka Noodles", "price": 190, "rating": 4.2, "reviews": 18, "img": "https://i.pinimg.com/736x/2d/33/26/2d3326d1a1eb7ec6f1c5d9eab7b4d548.jpg" },
+      { "name": "Tandoori Roti", "price": 25, "rating": 4.3, "reviews": 10, "img": "https://i.pinimg.com/736x/39/39/c9/3939c98c1a979eecb8c96fa114f2ae7f.jpg" },
+      { "name": "Chilli Garlic Momos", "price": 210, "rating": 4.1, "reviews": 13, "img": "https://i.pinimg.com/736x/b4/93/0e/b4930ebd934d6b8d80d8c5b2bfcad370.jpg" },
+      { "name": "Jeera Rice", "price": 150, "rating": 4.2, "reviews": 9, "img": "https://i.pinimg.com/736x/4c/49/6f/4c496f013b9169d69c994ea49f515f40.jpg" },
+      { "name": "Veg Soup", "price": 130, "rating": 4.0, "reviews": 8, "img": "https://i.pinimg.com/736x/41/f3/e1/41f3e1c05e1b740b185c67ed8fbc65ea.jpg" },
+      { "name": "Aloo Tikki Chaat", "price": 110, "rating": 4.1, "reviews": 12, "img": "https://i.pinimg.com/736x/ba/f6/0e/baf60e81276f41b07c1d90f1fa69c5a4.jpg" },
+      { "name": "Malai Kofta", "price": 270, "rating": 4.3, "reviews": 16, "img": "https://i.pinimg.com/736x/3f/b1/68/3fb168e6768ddf5c30744d1f2f2891bb.jpg" }
+    ],
+    "maggiItems": [
+      { "name": "Masala Maggi", "price": 100, "rating": 4.0, "reviews": 7, "img": "https://i.pinimg.com/736x/84/2e/af/842eaf998e5b9f91c44de1ab1fdbfd80.jpg" },
+      { "name": "Cheese Burst Maggi", "price": 130, "rating": 4.3, "reviews": 10, "img": "https://i.pinimg.com/736x/4f/7b/39/4f7b39971991a06b1b7b3f3a774d7fa4.jpg" },
+      { "name": "Spicy Peri Peri Maggi", "price": 120, "rating": 4.2, "reviews": 6, "img": "https://i.pinimg.com/736x/55/15/31/5515319ebf47a289b4191905ae5155b2.jpg" },
+      { "name": "Schezwan Maggi", "price": 110, "rating": 4.1, "reviews": 9, "img": "https://i.pinimg.com/736x/f0/8f/2f/f08f2f7e89ec9a8ea57a7ac22547c9a4.jpg" },
+      { "name": "Butter Masala Maggi", "price": 115, "rating": 4.0, "reviews": 5, "img": "https://i.pinimg.com/736x/c7/46/76/c7467685cf7b89b8e3771c7f8e7f5ae6.jpg" }
+    ],
+    "categories": {
+      "Main Course": ["Paneer Butter Masala", "Kadhai Chicken", "Mix Veg Curry"],
+      "Rice & Biryani": ["Veg Biryani", "Chicken Biryani", "Jeera Rice"],
+      "Chinese": ["Hakka Noodles", "Fried Rice", "Manchurian Gravy"],
+      "Snacks": ["Samosa", "Spring Roll", "Veg Cutlet"],
+      "Breads": ["Butter Naan", "Tandoori Roti", "Stuffed Kulcha"],
+      "Drinks": ["Lassi", "Cold Coffee", "Masala Soda"],
+      "Desserts": ["Gulab Jamun", "Ice Cream", "Rasmalai"],
+      "South Indian": ["Masala Dosa", "Idli", "Uttapam"],
+      "Salads": ["Green Salad", "Russian Salad", "Fruit Salad"],
+      "Chaats": ["Pani Puri", "Bhel Puri", "Papdi Chaat"]
+    }
+  }
+}
+
+]

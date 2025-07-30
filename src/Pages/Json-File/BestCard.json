@@ -1,82 +1,152 @@
 [
   {
-    "id": 1,
-    "title": "Green Broccoli",
-    "image": "https://i.pinimg.com/736x/b3/bb/2e/b3bb2e6f313513126c36c69dad4486ff.jpg",
-    "price": 8.00,
-    "oldPrice": 9.00,
-    "discount": "-11%",
-    "rating": 0,
-    "isFavorite": false
-  },
-  {
     "id": 2,
     "title": "Cheese Pizza",
     "image": "https://i.pinimg.com/1200x/29/15/4d/29154d010462e3d719a6b58a48edb442.jpg",
-    "price": 12.00,
-    "oldPrice": 14.00,
-    "discount": "-14%",
+    "price": 160,
+    "oldPrice": 180,
+    "discount": "-11%",
+    "rating": 5,
+    "isFavorite": true,
+    "restaurant": "Pizza Planet",
+    "address": "Vijay Nagar, Indore",
+    "city": "Indore",
+    "category": "Pizza",
+    "restaurantCheesePizza":[
+  {
+    "restaurant": "Pizza Planet",
+    "location": "Vijay Nagar, Indore",
+    "minPrice": 120,
     "rating": 4,
-    "isFavorite": true
+    "distance": "2.5 km"
+  },
+  {
+    "restaurant": "Cream Corner",
+    "location": "Palasia Square, Indore",
+    "minPrice": 100,
+    "rating": 3,
+    "distance": "3.2 km"
+  },
+  {
+    "restaurant": "La Pino'z Pizza",
+    "location": "RNT Marg, Indore",
+    "minPrice": 110,
+    "rating": 5,
+    "distance": "2.0 km"
+  },
+  {
+    "restaurant": "Chicken Express",
+    "location": "Bhawarkuan, Indore",
+    "minPrice": 130,
+    "rating": 4,
+    "distance": "3.8 km"
+  },
+  {
+    "restaurant": "Paneer Point",
+    "location": "Rajendra Nagar, Indore",
+    "minPrice": 95,
+    "rating": 3,
+    "distance": "4.1 km"
+  },
+  {
+    "restaurant": "Domino's",
+    "location": "Chhoti Gwaltoli, Indore",
+    "minPrice": 140,
+    "rating": 5,
+    "distance": "1.8 km"
+  },
+  {
+    "restaurant": "Oven Story",
+    "location": "MG Road, Indore",
+    "minPrice": 100,
+    "rating": 4,
+    "distance": "2.3 km"
+  }
+]
+
   },
   {
     "id": 3,
-    "title": "Veggie Delight",
+    "title": "Ice Cream",
     "image": "https://i.pinimg.com/736x/a6/29/b8/a629b86868872827d1d5c34a247598b7.jpg",
-    "price": 10.00,
-    "oldPrice": 11.50,
-    "discount": "-13%",
-    "rating": 3,
-    "isFavorite": false
+    "price": 130,
+    "oldPrice": 140,
+    "discount": "-7%",
+    "rating": 4,
+    "isFavorite": true,
+    "restaurant": "Cream Corner",
+    "address": "Palasia Square, Indore",
+    "city": "Indore",
+    "category": "Dessert"
   },
   {
     "id": 4,
     "title": "Mushroom Pizza",
     "image": "https://i.pinimg.com/736x/fd/29/9f/fd299f461ae988923aa178e4c4d943cf.jpg",
-    "price": 11.00,
-    "oldPrice": 13.00,
-    "discount": "-15%",
+    "price": 150,
+    "oldPrice": 170,
+    "discount": "-12%",
     "rating": 5,
-    "isFavorite": true
+    "isFavorite": true,
+    "restaurant": "La Pino'z Pizza",
+    "address": "RNT Marg, Indore",
+    "city": "Indore",
+    "category": "Pizza"
   },
   {
     "id": 5,
     "title": "Chicken Supreme",
     "image": "https://i.pinimg.com/736x/bc/f2/79/bcf279d388f4f6c62740996fc6cf7d69.jpg",
-    "price": 13.00,
-    "oldPrice": 15.00,
-    "discount": "-13%",
+    "price": 180,
+    "oldPrice": 200,
+    "discount": "-10%",
     "rating": 4,
-    "isFavorite": false
+    "isFavorite": false,
+    "restaurant": "Chicken Express",
+    "address": "Bhawarkuan, Indore",
+    "city": "Indore",
+    "category": "Non-Veg"
   },
   {
     "id": 6,
     "title": "Spicy Paneer",
-    "image": " https://i.pinimg.com/1200x/e4/e6/7b/e4e67b4da284d98559bbfbfc2392d99c.jpg",
-    "price": 9.50,
-    "oldPrice": 11.00,
-    "discount": "-14%",
-    "rating": 3,
-    "isFavorite": false
+    "image": "https://i.pinimg.com/1200x/e4/e6/7b/e4e67b4da284d98559bbfbfc2392d99c.jpg",
+    "price": 120,
+    "oldPrice": 135,
+    "discount": "-11%",
+    "rating": 4,
+    "isFavorite": true,
+    "restaurant": "Paneer Point",
+    "address": "Rajendra Nagar, Indore",
+    "city": "Indore",
+    "category": "Veg"
   },
   {
     "id": 7,
     "title": "Pepperoni Pizza",
     "image": "https://i.pinimg.com/736x/d1/cd/01/d1cd0192d3f4fcc20f454a4143f157d7.jpg",
-    "price": 14.00,
-    "oldPrice": 16.50,
-    "discount": "-15%",
+    "price": 190,
+    "oldPrice": 220,
+    "discount": "-13%",
     "rating": 5,
-    "isFavorite": true
+    "isFavorite": true,
+    "restaurant": "Domino's",
+    "address": "Chhoti Gwaltoli, Indore",
+    "city": "Indore",
+    "category": "Pizza"
   },
   {
     "id": 8,
     "title": "Classic Margherita",
     "image": "https://i.pinimg.com/736x/3e/f2/9e/3ef29e05443681462a2f697eb9e19e1f.jpg",
-    "price": 10.00,
-    "oldPrice": 12.00,
-    "discount": "-17%",
+    "price": 140,
+    "oldPrice": 160,
+    "discount": "-12%",
     "rating": 4,
-    "isFavorite": false
+    "isFavorite": false,
+    "restaurant": "Oven Story",
+    "address": "MG Road, Indore",
+    "city": "Indore",
+    "category": "Pizza"
   }
 ]

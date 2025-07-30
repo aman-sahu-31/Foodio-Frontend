@@ -1,0 +1,214 @@
+{
+  "burgerRestaurants": [
+    {
+      "id": "1",
+      "restaurantName": "Burger Nation",
+      "image": "https://example.com/images/burger-nation.jpg",
+      "cuisine": ["Burgers", "Fast Food", "American"],
+      "location": "Indore",
+      "deliveryTime": "30 mins",
+      "startingBurger": {
+        "name": "Classic Veg Burger",
+        "description": "Fresh bun with crispy patty and veggies",
+        "price": 99,
+        "rating": 4.2
+      }
+    },
+    {
+      "id": "2",
+      "restaurantName": "McDonald's",
+      "image": "https://example.com/images/mcdonalds.jpg",
+      "cuisine": ["Burgers", "Wraps"],
+      "location": "Indore",
+      "deliveryTime": "25 mins",
+      "startingBurger": {
+        "name": "McAloo Tikki",
+        "description": "Aloo tikki with signature sauce",
+        "price": 89,
+        "rating": 4.4
+      }
+    },
+    {
+      "id": "3",
+      "restaurantName": "Burger King",
+      "image": "https://example.com/images/burgerking.jpg",
+      "cuisine": ["Burgers", "Combo Meals"],
+      "location": "Indore",
+      "deliveryTime": "27 mins",
+      "startingBurger": {
+        "name": "Whopper Veg",
+        "description": "Grilled patty with rich sauces",
+        "price": 159,
+        "rating": 4.3
+      }
+    },
+    {
+      "id": "4",
+      "restaurantName": "Biggies Burger",
+      "image": "https://example.com/images/biggies.jpg",
+      "cuisine": ["Burgers", "BBQ"],
+      "location": "Indore",
+      "deliveryTime": "30 mins",
+      "startingBurger": {
+        "name": "Smoky BBQ Burger",
+        "description": "BBQ sauce with grilled patty",
+        "price": 179,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": "5",
+      "restaurantName": "Wat-a-Burger!",
+      "image": "https://example.com/images/wataburger.jpg",
+      "cuisine": ["Burgers", "Fusion"],
+      "location": "Indore",
+      "deliveryTime": "28 mins",
+      "startingBurger": {
+        "name": "Paneer Makhani Burger",
+        "description": "Indian fusion with rich makhani gravy",
+        "price": 149,
+        "rating": 4.2
+      }
+    },
+    {
+      "id": "6",
+      "restaurantName": "Grill'd",
+      "image": "https://example.com/images/grilld.jpg",
+      "cuisine": ["Burgers", "Healthy"],
+      "location": "Indore",
+      "deliveryTime": "32 mins",
+      "startingBurger": {
+        "name": "Beetroot Veggie Burger",
+        "description": "Healthy beetroot & quinoa patty",
+        "price": 169,
+        "rating": 4.3
+      }
+    },
+    {
+      "id": "7",
+      "restaurantName": "The Burger Club",
+      "image": "https://example.com/images/burgerclub.jpg",
+      "cuisine": ["Burgers", "Snacks"],
+      "location": "Indore",
+      "deliveryTime": "26 mins",
+      "startingBurger": {
+        "name": "Cheese Burst Burger",
+        "description": "Loaded with molten cheese",
+        "price": 139,
+        "rating": 4.4
+      }
+    },
+    {
+      "id": "8",
+      "restaurantName": "Burger Singh",
+      "image": "https://example.com/images/burgersingh.jpg",
+      "cuisine": ["Burgers", "Indian Style"],
+      "location": "Indore",
+      "deliveryTime": "29 mins",
+      "startingBurger": {
+        "name": "Rajma Masala Burger",
+        "description": "Spicy rajma patty with desi chutneys",
+        "price": 119,
+        "rating": 4.1
+      }
+    },
+    {
+      "id": "9",
+      "restaurantName": "Urban Bun",
+      "image": "https://example.com/images/urbanbun.jpg",
+      "cuisine": ["Burgers", "Gourmet"],
+      "location": "Indore",
+      "deliveryTime": "35 mins",
+      "startingBurger": {
+        "name": "Truffle Cheese Burger",
+        "description": "Truffle oil infused cheesy burger",
+        "price": 199,
+        "rating": 4.6
+      }
+    },
+    {
+      "id": "10",
+      "restaurantName": "KFC",
+      "image": "https://example.com/images/kfc.jpg",
+      "cuisine": ["Burgers", "Chicken"],
+      "location": "Indore",
+      "deliveryTime": "22 mins",
+      "startingBurger": {
+        "name": "Zinger Burger",
+        "description": "Crispy chicken fillet with mayo",
+        "price": 179,
+        "rating": 4.5
+      }
+    },
+    {
+      "id": "11",
+      "restaurantName": "Veggie Buns",
+      "image": "https://example.com/images/veggiebuns.jpg",
+      "cuisine": ["Burgers", "Veg Only"],
+      "location": "Indore",
+      "deliveryTime": "30 mins",
+      "startingBurger": {
+        "name": "Crispy Corn Burger",
+        "description": "Sweet corn & cheese filled delight",
+        "price": 129,
+        "rating": 4.3
+      }
+    },
+    {
+      "id": "12",
+      "restaurantName": "Bun & Patty",
+      "image": "https://example.com/images/bunandpatty.jpg",
+      "cuisine": ["Burgers", "Artisan"],
+      "location": "Indore",
+      "deliveryTime": "34 mins",
+      "startingBurger": {
+        "name": "Veg Mexicana",
+        "description": "Mexican beans, salsa & jalapeños",
+        "price": 149,
+        "rating": 4.4
+      }
+    },
+    {
+      "id": "13",
+      "restaurantName": "Fat Burgers",
+      "image": "https://example.com/images/fatburgers.jpg",
+      "cuisine": ["Burgers", "Loaded"],
+      "location": "Indore",
+      "deliveryTime": "31 mins",
+      "startingBurger": {
+        "name": "Double Cheese Veggie",
+        "description": "Double patty, double cheese!",
+        "price": 179,
+        "rating": 4.2
+      }
+    },
+    {
+      "id": "14",
+      "restaurantName": "SnackShack",
+      "image": "https://example.com/images/snackshack.jpg",
+      "cuisine": ["Burgers", "Quick Bites"],
+      "location": "Indore",
+      "deliveryTime": "24 mins",
+      "startingBurger": {
+        "name": "Potato Crunch Burger",
+        "description": "Crunchy fried aloo patty",
+        "price": 99,
+        "rating": 4.0
+      }
+    },
+    {
+      "id": "15",
+      "restaurantName": "Desi Burger House",
+      "image": "https://example.com/images/desiburgerhouse.jpg",
+      "cuisine": ["Burgers", "Indian Fusion"],
+      "location": "Indore",
+      "deliveryTime": "33 mins",
+      "startingBurger": {
+        "name": "Spicy Aloo Paneer Burger",
+        "description": "Desi style patty with paneer chunks",
+        "price": 139,
+        "rating": 4.1
+      }
+    }
+  ]
+}

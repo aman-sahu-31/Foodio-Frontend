@@ -7,11 +7,11 @@ function Testimonial() {
   return (
     <>
       <section className="py-12 px-4 md:px-20 mb-10 flex flex-col md:flex-row items-center justify-between gap-8">
-        <div className="md:w-1/2 w-full h-80 bg-gray-200 transform -skew-x-12 px-6 pt-2 rounded-md shadow-md">
+        <div className="md:w-1/2 sm:w-60 sm:h-60  lg:h-80 bg-gray-200 transform -skew-x-12 px-6 pt-2 rounded-md shadow-md ml-6 ">
           <img
             src={testimonialImg}
             alt="Happy Customer"
-            className="w-full h-full skew-x-12 object-center rounded"
+            className="w-full  h-full skew-x-12 object-center rounded"
           />
         </div>
         <div className="md:w-1/2 w-full text-center md:text-left flex flex-col items-center md:items-start">

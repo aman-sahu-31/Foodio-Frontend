@@ -8,14 +8,15 @@ function Partner() {
   return (
     <>
       <div className="bg-gray-100 shadow-xl p-4 sm:p-8 mt-5 sm:mt-10 rounded-2xl">
-        <h1 className="font-Arbic text-3xl sm:text-4xl mb-6  font-bold text-gray-800">
+        <h1 className="font-Arbic text-3xl sm:text-4xl mb-6 font-bold text-gray-800 text-center">
           Grow with Us
         </h1>
-
-        <div className="grid grid-cols-1 h-90 md:grid-cols-2 gap-6">
-          {/* Partner Card */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="relative rounded-2xl overflow-hidden shadow-lg">
-            <img src={logo1} alt="Partner with us" className="w-full h-full object-cover" />
+            <img
+              src={logo1}
+              alt="Partner with us"
+              className="w-full h-full object-cover"/>
             <div className="absolute top-0 left-4 md:left-6 bg-white text-black font-semibold rounded-b-md px-4 py-1 text-sm sm:text-base">
               Earn more with lower fees
             </div>
@@ -30,7 +31,11 @@ function Partner() {
 
           {/* Rider Card */}
           <div className="relative rounded-2xl overflow-hidden shadow-lg">
-            <img src={bg1} alt="Ride with us" className="w-full h-full object-cover" />
+            <img
+              src={bg1}
+              alt="Ride with us"
+              className="w-full h-full object-cover"
+            />
             <div className="absolute top-0 left-4 md:left-6 bg-white text-black font-semibold rounded-b-md px-4 py-1 text-sm sm:text-base">
               Avail exclusive perks
             </div>
@@ -42,10 +47,18 @@ function Partner() {
               </button>
             </div>
           </div>
+
         </div>
       </div>
-<Restaurent />
-      <ReviewCard />
+
+      {/* Other Sections */}
+      <div className="mt-10">
+        <Restaurent />
+      </div>
+
+      <div className="mt-10">
+        <ReviewCard />
+      </div>
     </>
   );
 }
