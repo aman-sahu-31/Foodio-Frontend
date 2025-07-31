@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Data from '../Pages/Json-File/BestCard.json';
+// import { useNavigate } from 'react-router-dom';
 
 function BestRestorantList() {
   const { id } = useParams();
@@ -24,7 +25,8 @@ function BestRestorantList() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {selectedItem.restaurantCheesePizza.map((rest, index) => (
           
-          <div key={index} className=" rounded-2xl p-4 bg-white shadow-md border border-gray-100">
+          <div key={index} className=" rounded-2xl p-4 bg-white shadow-md border border-gray-100"  
+          onClick={() => navigate(`/carddata/${rest.id}`)}>
                <div>
             <img src={rest.img} alt="" className='w-full h-40 rounded-[5px]' />
             </div>
