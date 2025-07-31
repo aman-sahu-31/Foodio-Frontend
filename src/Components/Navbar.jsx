@@ -55,7 +55,9 @@ function Navbar() {
       <div className=" bg-white  mt-5 mb-5">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
+            <NavLink to="/">
             <img src={logo} alt="Logo" className="h-8 ml-5" />
+            </NavLink>
           </div>
           <div className="hidden md:flex space-x-6 font-semibold text-sm">
             <NavLink to="/">
