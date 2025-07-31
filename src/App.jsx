@@ -7,7 +7,6 @@ import MenuRestaurent from './Pages/MenuRestaurent';
 import Login from './Pages/Login';
 import Signup from './Pages/Signup';
 import RestaurantExtraInfo from './Components/RestaurantExtraInfo'; 
-import MenuBarBurger from './Components/MenuBarBurger';
 import BestRestorantList from './Components/BestRestaurantList';
 function App() {
   return (
@@ -22,8 +21,6 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
           <Route path="restaurant/:id" element={<RestaurantExtraInfo/>} />
-          {/* <Route path="menu/:id" element={<MenuBar/>} /> */}
-          <Route path="menu/:id/Burger" element={<MenuBarBurger />} />
           <Route path="*" element={<h1>404 Not Found</h1>} />
         </Route>
       </Routes>
