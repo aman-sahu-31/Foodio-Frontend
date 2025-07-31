@@ -19,7 +19,7 @@ const RestaurantExtraInfo = () => {
         </span>
       </div>
       <div className="relative h-52 rounded overflow-hidden">
-        <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
+        <img src={item.image} alt={item.name} className="w-full h-full object-center" />
         <div className="absolute bottom-2 left-2 bg-gray-500/50 bg-opacity-50 text-white p-2 rounded">
           <p className="text-sm">{item.location}</p>
           <p className="text-xs">{item.type} • {item.price}</p>
@@ -58,7 +58,7 @@ const RestaurantExtraInfo = () => {
           <h3 className="text-xl font-bold text-gray-800 mt-6 mb-2">🍲 Recommended Dishes</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-3">
             {item.menu.recommended.map((dish, index) => (
-              <div key={index} className="border border-gray-400 overflow-hidden p-2 rounded-lg  flex  shadow-sm hover:shadow-md transition">
+              <div key={index} className="border border-gray-300 overflow-hidden p-2 rounded-lg  flex  shadow-sm hover:shadow-md transition">
                 <div className='w-30 flex items-center overflow-hidden  justify-center'>
                   <img src={dish.img} className='w-20 h-20 flex rounded-[5px]' />
                 </div>
@@ -106,17 +106,18 @@ const RestaurantExtraInfo = () => {
           <h3 className="text-xl font-bold text-gray-800 mt-6 mb-2">🍜 Maggi Items</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {item.menu.maggiItems.map((maggi, index) => (
-              <div key={index} className="border p-2 flex items-center justify-around rounded-lg shadow-sm bg-yellow-50">
-                <div>
+              <div key={index} className="border bg-white border-gray-300 p-2 flex items-center justify-around rounded-lg shadow-sm ">
+                 <div className=' w-1/3 h-15 '>
+                  <img src={maggi.img} className='w-full h-full flex rounded-[5px]' alt="" />
+                </div>
+                <div className=' w-42'>
                   <h4 className="font-semibold text-gray-700">{maggi.name}</h4>
                   <p className="text-yellow-600 text-sm">
                     ⭐ {maggi.rating} ({maggi.reviews || 0} reviews)
                   </p>
                   <p className="text-sm text-gray-600 px-1">₹{maggi.price}</p>
                 </div>
-                <div>
-                  <img src={maggi.img} className='w-20 h-20 flex rounded-[5px]' alt="" />
-                </div>
+               
               </div>
             ))}
           </div>
@@ -129,8 +130,8 @@ const RestaurantExtraInfo = () => {
           <h3 className="text-xl font-bold text-gray-800 mt-6 mb-2">📋 Menu Categories</h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 text-sm text-gray-700">
             {Object.keys(item.menu.categories).map((cat, index) => (
-              <div key={index} className="bg-gray-100 p-2 rounded-lg shadow-sm">
-                <h4 className="font-semibold">{cat}</h4>
+              <div key={index} className="bg-white p-2 rounded-lg shadow-sm">
+                <h4 className="font-bold text-[16px]">{cat}</h4>
                 <ul className="list-disc list-inside text-gray-600 mt-1">
                   {item.menu.categories[cat].map((sub, i) => (
                     <li key={i}>{sub}</li>

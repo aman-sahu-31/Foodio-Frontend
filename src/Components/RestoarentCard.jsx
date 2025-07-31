@@ -15,22 +15,30 @@ const RestoarentCard = () => {
         <div
           key={item.id}
           onClick={() => navigate(`/restaurant/${item.id}`)}
-          className="cursor-pointer bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
+          className="cursor-pointer bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-101"
         >
           <img
-            src={`https://source.unsplash.com/400x300/?restaurant,food,${item.name}`}
+            src={item.image}
             alt={item.name}
-            className="w-full h-52 object-cover"
+            className="w-full h-52 object-cover "
           />
           <div className="p-4">
-            <div className="flex justify-between items-center mb-2">
+            <div className="flex justify-between items-center mb-1">
               <h2 className="text-lg font-semibold text-gray-800">{item.name}</h2>
               <span className="bg-green-500 text-white text-xs font-semibold px-2 py-1 rounded-lg">
                 ★ {item.rating}
               </span>
             </div>
+            <div className='flex justify-between'>
             <p className="text-gray-600 text-sm">{item.cuisine?.join(', ')}</p>
-            <p className="text-gray-500 text-sm">{item.location}</p>
+            <p className="text-gray-600 text-sm">{item.price}</p>
+
+            </div>
+            <p className="text-gray-500  text-sm">{item.location}</p>
+            <div className='flex justify-between'>
+            <p className='text-red-500 text-sm'>{item.Time}</p>
+            <p className='text-red-500 text-sm'>{item.Distance}</p>
+            </div>
           </div>
         </div>
       ))}

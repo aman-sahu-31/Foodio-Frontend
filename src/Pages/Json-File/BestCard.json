@@ -14,7 +14,7 @@
     "category": "Pizza",
     "restaurantCheesePizza": [
       {
-        "img": "https://i.pinimg.com/564x/3e/e5/70/3ee5707f0b8bc20667a5a0bbf9a16007.jpg",
+        "img": "https://b.zmtcdn.com/data/pictures/3/50313/8ce2870b5b7220ca5bb574ccc7f14508.jpg",
         "restaurant": "Cream Corner",
         "location": "Palasia Square, Indore",
         "minPrice": 100,
@@ -22,7 +22,7 @@
         "distance": "3.2 km"
       },
       {
-        "img": "https://i.pinimg.com/564x/9c/5d/90/9c5d905a2175b4b03be4032c6831f49b.jpg",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ1Jymoe4KTr0jhUD8_cBKoMAsvTldNtC2Mg&s",
         "restaurant": "La Pino'z Pizza",
         "location": "RNT Marg, Indore",
         "minPrice": 110,
@@ -30,7 +30,7 @@
         "distance": "2.0 km"
       },
       {
-        "img": "https://i.pinimg.com/564x/63/aa/b4/63aab4326cbcd7a12fa5c8e1b27c77e7.jpg",
+        "img": "https://content3.jdmagicbox.com/comp/thiruvananthapuram/f4/0471px471.x471.120629222619.y7f4/catalogue/chicken-express-kesavadasapuram-pattom-p-o-thiruvananthapuram-moderate-restaurants-rs-500-to-rs-1000-rk0cwi.jpg",
         "restaurant": "Chicken Express",
         "location": "Bhawarkuan, Indore",
         "minPrice": 130,
@@ -38,7 +38,7 @@
         "distance": "3.8 km"
       },
       {
-        "img": "https://i.pinimg.com/564x/5a/3e/2d/5a3e2d8bdb37b18d0e4f2bb3b26b5b99.jpg",
+        "img": "https://wallpapers.com/images/high/dominos-pizza-restaurant-yqqoqa6elrx5ivnk.webp",
         "restaurant": "Domino's",
         "location": "TI Mall, Indore",
         "minPrice": 140,
@@ -46,7 +46,7 @@
         "distance": "1.5 km"
       },
       {
-        "img": "https://i.pinimg.com/564x/f4/12/3b/f4123b26cc9276163f8cb1949eb87713.jpg",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhTWVv9MwP7JEAsnnYrxMrF5X6VT-n0kRPLQ&s",
         "restaurant": "Roll Nation",
         "location": "MG Road, Indore",
         "minPrice": 115,
@@ -54,7 +54,7 @@
         "distance": "2.9 km"
       },
       {
-        "img": "https://i.pinimg.com/564x/34/58/78/345878eec42f8e42e4237386ab1d876e.jpg",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Burger_King_logo_%281999%E2%80%932020%29.svg",
         "restaurant": "Burger King",
         "location": "Vijay Nagar, Indore",
         "minPrice": 125,
@@ -62,7 +62,7 @@
         "distance": "2.5 km"
       },
       {
-        "img": "https://i.pinimg.com/564x/6c/1a/2f/6c1a2f3dbb2a6e54109dfac275a0fd35.jpg",
+        "img": "https://content.jdmagicbox.com/comp/jalgaon/s4/9999px257.x257.220407210556.k2s4/catalogue/pizza-hub-jalgaon-city-jalgaon-pizza-outlets-eonwg8k58i.jpg",
         "restaurant": "Pizza Hub",
         "location": "Treasure Island, Indore",
         "minPrice": 135,
@@ -70,7 +70,7 @@
         "distance": "2.7 km"
       },
       {
-        "img": "https://i.pinimg.com/564x/aa/22/98/aa2298c80b2e3e7a9118b7b351cf0f8b.jpg",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqfsOMWAW6wBJCyufzSAOPqmZKs2Pxbx1bgg&s",
         "restaurant": "The Pizza Box",
         "location": "Geeta Bhawan, Indore",
         "minPrice": 150,
@@ -82,7 +82,7 @@
   {
     "id": 2,
     "title": "Veg Burger",
-    "image": "https://i.pinimg.com/564x/34/58/78/345878eec42f8e42e4237386ab1d876e.jpg",
+    "image": "https://i.pinimg.com/736x/91/af/93/91af9363bf0dc5a730125e7bbb5d1f69.jpg",
     "price": 120,
     "oldPrice": 140,
     "discount": "-14%",
@@ -94,39 +94,39 @@
     "category": "Burger",
    "restaurantCheesePizza": [
       {
-        "img": "https://i.pinimg.com/564x/3e/e5/70/3ee5707f0b8bc20667a5a0bbf9a16007.jpg",
-        "restaurant": "Cream Corner",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFfb-Zm4WocpQDFfTE4-QFUA0uE9_dY5nfTA&s",
+        "restaurant": "The Burger Company",
         "location": "Palasia Square, Indore",
         "minPrice": 100,
         "rating": 3,
         "distance": "3.2 km"
       },
       {
-        "img": "https://i.pinimg.com/564x/9c/5d/90/9c5d905a2175b4b03be4032c6831f49b.jpg",
-        "restaurant": "La Pino'z Pizza",
+        "img": "https://restaurantindia.s3.ap-south-1.amazonaws.com/s3fs-public/2022-04/Burger%20Co.jpg",
+        "restaurant": "Burger Form",
         "location": "RNT Marg, Indore",
         "minPrice": 110,
         "rating": 5,
         "distance": "2.0 km"
       },
       {
-        "img": "https://i.pinimg.com/564x/63/aa/b4/63aab4326cbcd7a12fa5c8e1b27c77e7.jpg",
-        "restaurant": "Chicken Express",
+        "img": "https://restaurantindia.s3.ap-south-1.amazonaws.com/s3fs-public/2022-04/Burger%20Co.jpg",
+        "restaurant": "The Burger",
         "location": "Bhawarkuan, Indore",
         "minPrice": 130,
         "rating": 4,
         "distance": "3.8 km"
       },
       {
-        "img": "https://i.pinimg.com/564x/5a/3e/2d/5a3e2d8bdb37b18d0e4f2bb3b26b5b99.jpg",
-        "restaurant": "Domino's",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/McDonald%27s_logo.svg/250px-McDonald%27s_logo.svg.png",
+        "restaurant": "Mc Donaldos",
         "location": "TI Mall, Indore",
         "minPrice": 140,
         "rating": 4,
         "distance": "1.5 km"
       },
       {
-        "img": "https://i.pinimg.com/564x/f4/12/3b/f4123b26cc9276163f8cb1949eb87713.jpg",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhTWVv9MwP7JEAsnnYrxMrF5X6VT-n0kRPLQ&s",
         "restaurant": "Roll Nation",
         "location": "MG Road, Indore",
         "minPrice": 115,
@@ -134,7 +134,7 @@
         "distance": "2.9 km"
       },
       {
-        "img": "https://i.pinimg.com/564x/34/58/78/345878eec42f8e42e4237386ab1d876e.jpg",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Burger_King_logo_%281999%E2%80%932020%29.svg",
         "restaurant": "Burger King",
         "location": "Vijay Nagar, Indore",
         "minPrice": 125,
@@ -142,16 +142,16 @@
         "distance": "2.5 km"
       },
       {
-        "img": "https://i.pinimg.com/564x/6c/1a/2f/6c1a2f3dbb2a6e54109dfac275a0fd35.jpg",
-        "restaurant": "Pizza Hub",
+        "img": "https://content.jdmagicbox.com/comp/indore/t6/0731px731.x731.180315193620.i7t6/catalogue/food-for-foodie-shree-nagar-main-indore-indore-home-delivery-restaurants-cEeOLEFQ5yg9MlX.jpg",
+        "restaurant": "Foodes",
         "location": "Treasure Island, Indore",
         "minPrice": 135,
         "rating": 5,
         "distance": "2.7 km"
       },
       {
-        "img": "https://i.pinimg.com/564x/aa/22/98/aa2298c80b2e3e7a9118b7b351cf0f8b.jpg",
-        "restaurant": "The Pizza Box",
+        "img": "https://content.jdmagicbox.com/comp/erode/z8/9999px424.x424.230209183045.q1z8/catalogue/al-taza-restaurant-erode-hotels-ova29ako03.jpg",
+        "restaurant": "AlTazza Restaurant",
         "location": "Geeta Bhawan, Indore",
         "minPrice": 150,
         "rating": 4,
@@ -159,10 +159,11 @@
       }
     ]
   },
+
   {
     "id": 3,
     "title": "Paneer Roll",
-    "image": "https://i.pinimg.com/564x/aa/22/98/aa2298c80b2e3e7a9118b7b351cf0f8b.jpg",
+    "image": "https://i.pinimg.com/736x/44/3e/3e/443e3eb28ee9315ab961787df489e30d.jpg",
     "price": 90,
     "oldPrice": 110,
     "discount": "-18%",
@@ -174,39 +175,39 @@
     "category": "Rolls",
   "restaurantCheesePizza": [
       {
-        "img": "https://i.pinimg.com/564x/3e/e5/70/3ee5707f0b8bc20667a5a0bbf9a16007.jpg",
-        "restaurant": "Cream Corner",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFfb-Zm4WocpQDFfTE4-QFUA0uE9_dY5nfTA&s",
+        "restaurant": "The Burger Company",
         "location": "Palasia Square, Indore",
         "minPrice": 100,
         "rating": 3,
         "distance": "3.2 km"
       },
       {
-        "img": "https://i.pinimg.com/564x/9c/5d/90/9c5d905a2175b4b03be4032c6831f49b.jpg",
-        "restaurant": "La Pino'z Pizza",
+        "img": "https://restaurantindia.s3.ap-south-1.amazonaws.com/s3fs-public/2022-04/Burger%20Co.jpg",
+        "restaurant": "Restuarent Form",
         "location": "RNT Marg, Indore",
         "minPrice": 110,
         "rating": 5,
         "distance": "2.0 km"
       },
       {
-        "img": "https://i.pinimg.com/564x/63/aa/b4/63aab4326cbcd7a12fa5c8e1b27c77e7.jpg",
-        "restaurant": "Chicken Express",
+        "img": "https://restaurantindia.s3.ap-south-1.amazonaws.com/s3fs-public/2022-04/Burger%20Co.jpg",
+        "restaurant": "The Burger From",
         "location": "Bhawarkuan, Indore",
         "minPrice": 130,
         "rating": 4,
         "distance": "3.8 km"
       },
       {
-        "img": "https://i.pinimg.com/564x/5a/3e/2d/5a3e2d8bdb37b18d0e4f2bb3b26b5b99.jpg",
-        "restaurant": "Domino's",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/McDonald%27s_logo.svg/250px-McDonald%27s_logo.svg.png",
+        "restaurant": "Mc Donaldos",
         "location": "TI Mall, Indore",
         "minPrice": 140,
         "rating": 4,
         "distance": "1.5 km"
       },
       {
-        "img": "https://i.pinimg.com/564x/f4/12/3b/f4123b26cc9276163f8cb1949eb87713.jpg",
+        "img": "https://d2vm5hb3gd54wq.cloudfront.net/user/664f2f3f6d8dcf207cc69a72/branddetails/brandinfo/logo/ab125a5b-28a6-4ed5-a350-76ef9c5e93fb.jpg",
         "restaurant": "Roll Nation",
         "location": "MG Road, Indore",
         "minPrice": 115,
@@ -214,24 +215,24 @@
         "distance": "2.9 km"
       },
       {
-        "img": "https://i.pinimg.com/564x/34/58/78/345878eec42f8e42e4237386ab1d876e.jpg",
-        "restaurant": "Burger King",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNnjHFQtQJhQbgy6NTa-gYHSLyX5ae3oGYLw&s",
+        "restaurant": "The Hub",
         "location": "Vijay Nagar, Indore",
         "minPrice": 125,
         "rating": 4,
         "distance": "2.5 km"
       },
       {
-        "img": "https://i.pinimg.com/564x/6c/1a/2f/6c1a2f3dbb2a6e54109dfac275a0fd35.jpg",
-        "restaurant": "Pizza Hub",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNnjHFQtQJhQbgy6NTa-gYHSLyX5ae3oGYLw&s",
+        "restaurant": "Roll Point",
         "location": "Treasure Island, Indore",
         "minPrice": 135,
         "rating": 5,
         "distance": "2.7 km"
       },
       {
-        "img": "https://i.pinimg.com/564x/aa/22/98/aa2298c80b2e3e7a9118b7b351cf0f8b.jpg",
-        "restaurant": "The Pizza Box",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNnjHFQtQJhQbgy6NTa-gYHSLyX5ae3oGYLw&s",
+        "restaurant": "Indore Roll",
         "location": "Geeta Bhawan, Indore",
         "minPrice": 150,
         "rating": 4,
@@ -239,10 +240,11 @@
       }
     ] 
   },
+  
   {
     "id": 4,
     "title": "Chole Bhature",
-    "image": "https://i.pinimg.com/564x/4c/34/13/4c34134fdf82631456c1b1cb4e5948cd.jpg",
+    "image": "https://i.pinimg.com/736x/29/14/1f/29141f708009d075b7eef0036a698795.jpg",
     "price": 140,
     "oldPrice": 160,
     "discount": "-13%",
@@ -253,48 +255,49 @@
     "city": "Indore",
     "category": "North Indian",
    "restaurantCheesePizza": [
-      {
-        "img": "https://i.pinimg.com/564x/3e/e5/70/3ee5707f0b8bc20667a5a0bbf9a16007.jpg",
-        "restaurant": "Cream Corner",
-        "location": "Palasia Square, Indore",
-        "minPrice": 100,
-        "rating": 3,
-        "distance": "3.2 km"
-      },
-      {
-        "img": "https://i.pinimg.com/564x/9c/5d/90/9c5d905a2175b4b03be4032c6831f49b.jpg",
-        "restaurant": "La Pino'z Pizza",
+       {
+        "img": "https://restaurantindia.s3.ap-south-1.amazonaws.com/s3fs-public/2022-04/Burger%20Co.jpg",
+        "restaurant": "Restuarent Form",
         "location": "RNT Marg, Indore",
         "minPrice": 110,
         "rating": 5,
         "distance": "2.0 km"
       },
-      {
-        "img": "https://i.pinimg.com/564x/63/aa/b4/63aab4326cbcd7a12fa5c8e1b27c77e7.jpg",
-        "restaurant": "Chicken Express",
+   {
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNnjHFQtQJhQbgy6NTa-gYHSLyX5ae3oGYLw&s",
+        "restaurant": "The Hub",
+        "location": "Vijay Nagar, Indore",
+        "minPrice": 125,
+        "rating": 4,
+        "distance": "2.5 km"
+      },
+     {
+        "img": "https://i.pinimg.com/736x/6f/79/8d/6f798d99ef4b1e488532d63969d7a51f.jpg",
+        "restaurant": "The Burger",
         "location": "Bhawarkuan, Indore",
         "minPrice": 130,
         "rating": 4,
         "distance": "3.8 km"
       },
       {
-        "img": "https://i.pinimg.com/564x/5a/3e/2d/5a3e2d8bdb37b18d0e4f2bb3b26b5b99.jpg",
-        "restaurant": "Domino's",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/McDonald%27s_logo.svg/250px-McDonald%27s_logo.svg.png",
+        "restaurant": "Mc Donaldos",
         "location": "TI Mall, Indore",
         "minPrice": 140,
         "rating": 4,
         "distance": "1.5 km"
       },
       {
-        "img": "https://i.pinimg.com/564x/f4/12/3b/f4123b26cc9276163f8cb1949eb87713.jpg",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhTWVv9MwP7JEAsnnYrxMrF5X6VT-n0kRPLQ&s",
         "restaurant": "Roll Nation",
         "location": "MG Road, Indore",
         "minPrice": 115,
         "rating": 3,
         "distance": "2.9 km"
       },
+   
       {
-        "img": "https://i.pinimg.com/564x/34/58/78/345878eec42f8e42e4237386ab1d876e.jpg",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Burger_King_logo_%281999%E2%80%932020%29.svg",
         "restaurant": "Burger King",
         "location": "Vijay Nagar, Indore",
         "minPrice": 125,
@@ -302,256 +305,16 @@
         "distance": "2.5 km"
       },
       {
-        "img": "https://i.pinimg.com/564x/6c/1a/2f/6c1a2f3dbb2a6e54109dfac275a0fd35.jpg",
-        "restaurant": "Pizza Hub",
+        "img": "https://content.jdmagicbox.com/comp/indore/t6/0731px731.x731.180315193620.i7t6/catalogue/food-for-foodie-shree-nagar-main-indore-indore-home-delivery-restaurants-cEeOLEFQ5yg9MlX.jpg",
+        "restaurant": "Foodes",
         "location": "Treasure Island, Indore",
         "minPrice": 135,
         "rating": 5,
         "distance": "2.7 km"
       },
       {
-        "img": "https://i.pinimg.com/564x/aa/22/98/aa2298c80b2e3e7a9118b7b351cf0f8b.jpg",
-        "restaurant": "The Pizza Box",
-        "location": "Geeta Bhawan, Indore",
-        "minPrice": 150,
-        "rating": 4,
-        "distance": "3.0 km"
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "title": "Masala Dosa",
-    "image": "https://i.pinimg.com/564x/90/fe/13/90fe13c52b5b239c6eaa8801806f1320.jpg",
-    "price": 115,
-    "oldPrice": 130,
-    "discount": "-12%",
-    "rating": 4,
-    "isFavorite": true,
-    "restaurant": "Dosa Plaza",
-    "address": "MG Road, Indore",
-    "city": "Indore",
-    "category": "South Indian",
-    "restaurantCheesePizza": [
-      {
-        "img": "https://i.pinimg.com/564x/3e/e5/70/3ee5707f0b8bc20667a5a0bbf9a16007.jpg",
-        "restaurant": "Cream Corner",
-        "location": "Palasia Square, Indore",
-        "minPrice": 100,
-        "rating": 3,
-        "distance": "3.2 km"
-      },
-      {
-        "img": "https://i.pinimg.com/564x/9c/5d/90/9c5d905a2175b4b03be4032c6831f49b.jpg",
-        "restaurant": "La Pino'z Pizza",
-        "location": "RNT Marg, Indore",
-        "minPrice": 110,
-        "rating": 5,
-        "distance": "2.0 km"
-      },
-      {
-        "img": "https://i.pinimg.com/564x/63/aa/b4/63aab4326cbcd7a12fa5c8e1b27c77e7.jpg",
-        "restaurant": "Chicken Express",
-        "location": "Bhawarkuan, Indore",
-        "minPrice": 130,
-        "rating": 4,
-        "distance": "3.8 km"
-      },
-      {
-        "img": "https://i.pinimg.com/564x/5a/3e/2d/5a3e2d8bdb37b18d0e4f2bb3b26b5b99.jpg",
-        "restaurant": "Domino's",
-        "location": "TI Mall, Indore",
-        "minPrice": 140,
-        "rating": 4,
-        "distance": "1.5 km"
-      },
-      {
-        "img": "https://i.pinimg.com/564x/f4/12/3b/f4123b26cc9276163f8cb1949eb87713.jpg",
-        "restaurant": "Roll Nation",
-        "location": "MG Road, Indore",
-        "minPrice": 115,
-        "rating": 3,
-        "distance": "2.9 km"
-      },
-      {
-        "img": "https://i.pinimg.com/564x/34/58/78/345878eec42f8e42e4237386ab1d876e.jpg",
-        "restaurant": "Burger King",
-        "location": "Vijay Nagar, Indore",
-        "minPrice": 125,
-        "rating": 4,
-        "distance": "2.5 km"
-      },
-      {
-        "img": "https://i.pinimg.com/564x/6c/1a/2f/6c1a2f3dbb2a6e54109dfac275a0fd35.jpg",
-        "restaurant": "Pizza Hub",
-        "location": "Treasure Island, Indore",
-        "minPrice": 135,
-        "rating": 5,
-        "distance": "2.7 km"
-      },
-      {
-        "img": "https://i.pinimg.com/564x/aa/22/98/aa2298c80b2e3e7a9118b7b351cf0f8b.jpg",
-        "restaurant": "The Pizza Box",
-        "location": "Geeta Bhawan, Indore",
-        "minPrice": 150,
-        "rating": 4,
-        "distance": "3.0 km"
-      }
-    ]
-  },
-  {
-    "id": 6,
-    "title": "Chicken Tikka",
-    "image": "https://i.pinimg.com/564x/1d/6d/3b/1d6d3b56ffdbfcd11ec18c8a21b0ee30.jpg",
-    "price": 190,
-    "oldPrice": 210,
-    "discount": "-10%",
-    "rating": 5,
-    "isFavorite": false,
-    "restaurant": "Chicken Express",
-    "address": "Bhawarkuan, Indore",
-    "city": "Indore",
-    "category": "Non-Veg",
- "restaurantCheesePizza": [
-      {
-        "img": "https://i.pinimg.com/564x/3e/e5/70/3ee5707f0b8bc20667a5a0bbf9a16007.jpg",
-        "restaurant": "Cream Corner",
-        "location": "Palasia Square, Indore",
-        "minPrice": 100,
-        "rating": 3,
-        "distance": "3.2 km"
-      },
-      {
-        "img": "https://i.pinimg.com/564x/9c/5d/90/9c5d905a2175b4b03be4032c6831f49b.jpg",
-        "restaurant": "La Pino'z Pizza",
-        "location": "RNT Marg, Indore",
-        "minPrice": 110,
-        "rating": 5,
-        "distance": "2.0 km"
-      },
-      {
-        "img": "https://i.pinimg.com/564x/63/aa/b4/63aab4326cbcd7a12fa5c8e1b27c77e7.jpg",
-        "restaurant": "Chicken Express",
-        "location": "Bhawarkuan, Indore",
-        "minPrice": 130,
-        "rating": 4,
-        "distance": "3.8 km"
-      },
-      {
-        "img": "https://i.pinimg.com/564x/5a/3e/2d/5a3e2d8bdb37b18d0e4f2bb3b26b5b99.jpg",
-        "restaurant": "Domino's",
-        "location": "TI Mall, Indore",
-        "minPrice": 140,
-        "rating": 4,
-        "distance": "1.5 km"
-      },
-      {
-        "img": "https://i.pinimg.com/564x/f4/12/3b/f4123b26cc9276163f8cb1949eb87713.jpg",
-        "restaurant": "Roll Nation",
-        "location": "MG Road, Indore",
-        "minPrice": 115,
-        "rating": 3,
-        "distance": "2.9 km"
-      },
-      {
-        "img": "https://i.pinimg.com/564x/34/58/78/345878eec42f8e42e4237386ab1d876e.jpg",
-        "restaurant": "Burger King",
-        "location": "Vijay Nagar, Indore",
-        "minPrice": 125,
-        "rating": 4,
-        "distance": "2.5 km"
-      },
-      {
-        "img": "https://i.pinimg.com/564x/6c/1a/2f/6c1a2f3dbb2a6e54109dfac275a0fd35.jpg",
-        "restaurant": "Pizza Hub",
-        "location": "Treasure Island, Indore",
-        "minPrice": 135,
-        "rating": 5,
-        "distance": "2.7 km"
-      },
-      {
-        "img": "https://i.pinimg.com/564x/aa/22/98/aa2298c80b2e3e7a9118b7b351cf0f8b.jpg",
-        "restaurant": "The Pizza Box",
-        "location": "Geeta Bhawan, Indore",
-        "minPrice": 150,
-        "rating": 4,
-        "distance": "3.0 km"
-      }
-    ]
-  },
-  {
-    "id": 7,
-    "title": "Double Cheese Burger",
-    "image": "https://i.pinimg.com/564x/f1/ba/95/f1ba95b7b2f2951665d4ce00cf101c4b.jpg",
-    "price": 150,
-    "oldPrice": 170,
-    "discount": "-12%",
-    "rating": 4,
-    "isFavorite": true,
-    "restaurant": "Burger House",
-    "address": "Palasia Square, Indore",
-    "city": "Indore",
-    "category": "Burger",
-   "restaurantCheesePizza": [
-      {
-        "img": "https://i.pinimg.com/564x/3e/e5/70/3ee5707f0b8bc20667a5a0bbf9a16007.jpg",
-        "restaurant": "Cream Corner",
-        "location": "Palasia Square, Indore",
-        "minPrice": 100,
-        "rating": 3,
-        "distance": "3.2 km"
-      },
-      {
-        "img": "https://i.pinimg.com/564x/9c/5d/90/9c5d905a2175b4b03be4032c6831f49b.jpg",
-        "restaurant": "La Pino'z Pizza",
-        "location": "RNT Marg, Indore",
-        "minPrice": 110,
-        "rating": 5,
-        "distance": "2.0 km"
-      },
-      {
-        "img": "https://i.pinimg.com/564x/63/aa/b4/63aab4326cbcd7a12fa5c8e1b27c77e7.jpg",
-        "restaurant": "Chicken Express",
-        "location": "Bhawarkuan, Indore",
-        "minPrice": 130,
-        "rating": 4,
-        "distance": "3.8 km"
-      },
-      {
-        "img": "https://i.pinimg.com/564x/5a/3e/2d/5a3e2d8bdb37b18d0e4f2bb3b26b5b99.jpg",
-        "restaurant": "Domino's",
-        "location": "TI Mall, Indore",
-        "minPrice": 140,
-        "rating": 4,
-        "distance": "1.5 km"
-      },
-      {
-        "img": "https://i.pinimg.com/564x/f4/12/3b/f4123b26cc9276163f8cb1949eb87713.jpg",
-        "restaurant": "Roll Nation",
-        "location": "MG Road, Indore",
-        "minPrice": 115,
-        "rating": 3,
-        "distance": "2.9 km"
-      },
-      {
-        "img": "https://i.pinimg.com/564x/34/58/78/345878eec42f8e42e4237386ab1d876e.jpg",
-        "restaurant": "Burger King",
-        "location": "Vijay Nagar, Indore",
-        "minPrice": 125,
-        "rating": 4,
-        "distance": "2.5 km"
-      },
-      {
-        "img": "https://i.pinimg.com/564x/6c/1a/2f/6c1a2f3dbb2a6e54109dfac275a0fd35.jpg",
-        "restaurant": "Pizza Hub",
-        "location": "Treasure Island, Indore",
-        "minPrice": 135,
-        "rating": 5,
-        "distance": "2.7 km"
-      },
-      {
-        "img": "https://i.pinimg.com/564x/aa/22/98/aa2298c80b2e3e7a9118b7b351cf0f8b.jpg",
-        "restaurant": "The Pizza Box",
+        "img": "https://content.jdmagicbox.com/comp/erode/z8/9999px424.x424.230209183045.q1z8/catalogue/al-taza-restaurant-erode-hotels-ova29ako03.jpg",
+        "restaurant": "AlTazza Restaurant",
         "location": "Geeta Bhawan, Indore",
         "minPrice": 150,
         "rating": 4,
