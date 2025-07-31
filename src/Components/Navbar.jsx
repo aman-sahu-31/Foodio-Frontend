@@ -61,7 +61,7 @@ function Navbar() {
             <NavLink to="/">
             <p className="px-4 py-2 hover:bg-orange-200  rounded-full cursor-pointer">Home</p>
              </NavLink>
-            <NavLink to="/menu">
+            <NavLink to="/menubar">
             <p className="px-4 py-2 hover:bg-orange-200 rounded-full cursor-pointer">Browse Menu</p>
             </NavLink>
             <NavLink to="/Offers">
@@ -88,7 +88,7 @@ function Navbar() {
               <NavLink to="/">
             <p className="block hover:bg-orange-200  px-4 py-2 rounded-full">Home</p>
             </NavLink>
-             <NavLink to="/menu">       
+             <NavLink to="/menubar">       
              <p className="block hover:bg-orange-200 px-4 py-2 rounded-full">Browse Menu</p>
              </NavLink>
   <NavLink to="/Offers">
