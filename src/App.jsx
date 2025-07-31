@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Card from './Components/Card';
-import MenuBar from './Components/MenuBar';
 import SpecialOffers from './Components/SpecialOffers';
 import MenuRestaurent from './Pages/MenuRestaurent';
 import Login from './Pages/Login';
@@ -14,7 +13,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Navbar />}>
           <Route index element={<Card />} />
-          <Route path="menu" element={<MenuBar/>} />
           <Route path="offers" element={<SpecialOffers />} />
           <Route path="restaurent" element={<MenuRestaurent />} />
           <Route path="/details/:id" element={<BestRestorantList/>} />
