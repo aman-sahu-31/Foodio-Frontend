@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Navbar />}>
           <Route index element={<Card />} />
-          <Route path="offers" element={<SpecialOffers />} />
+          <Route path="offers" element={<SpecialOffers/>} />
           <Route path="Menubar" element={<Menubar />} />
           <Route path="restaurent" element={<MenuRestaurent />} />
           <Route path="/details/:id" element={<BestRestorantList/>} />
