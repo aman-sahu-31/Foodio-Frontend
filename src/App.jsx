@@ -22,7 +22,7 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
           <Route path="restaurant/:id" element={<RestaurantExtraInfo/>} />
-          <Route path="menu/:id" element={<MenuBar/>} />
+          {/* <Route path="menu/:id" element={<MenuBar/>} /> */}
           <Route path="menu/:id/Burger" element={<MenuBarBurger />} />
           <Route path="*" element={<h1>404 Not Found</h1>} />
         </Route>
