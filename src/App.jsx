@@ -7,7 +7,6 @@ import MenuRestaurent from './Pages/MenuRestaurent';
 import Login from './Pages/Login';
 import Signup from './Pages/Signup';
 import RestaurantExtraInfo from './Components/RestaurantExtraInfo'; 
-// import MenuBarPizza from './Components/MenubarPizza';
 import MenuBarBurger from './Components/MenuBarBurger';
 import BestRestorantList from './Components/BestRestaurantList';
 function App() {
