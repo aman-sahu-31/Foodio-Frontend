@@ -14,7 +14,7 @@ export default function Menubar() {
         <div
           key={item.name}
           className="text-center bg-white rounded-lg shadow hover:shadow-md p-4 cursor-pointer transition-all"
-          onClick={() => navigate(`/menu/${item.name}`)}
+          onClick={() => navigate(`/menubar/${item.name}`)}
         >
           <img
             src={item.image}
