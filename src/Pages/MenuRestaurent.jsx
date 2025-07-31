@@ -1,7 +1,9 @@
 import React from 'react';
 import restaurants from '../Pages/Json-File/MenuRestaurent.json';
+import { useNavigate } from 'react-router-dom'; 
 
 function MenuRestaurent() {
+  const navigate = useNavigate();
   return (
     <div className="p-6 bg-gradient-to-b from-indigo-50 to-white min-h-screen">
       <h1 className="text-4xl font-bold mb-10 text-center text-indigo-700 tracking-wide">
@@ -12,6 +14,7 @@ function MenuRestaurent() {
         {restaurants.map((res) => (
           <div
             key={res.id}
+            onClick={() => navigate(`/restaurantCard/${res.id}`)}
             className="bg-white shadow-md rounded-xl overflow-hidden hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y-1"
           >
             <img

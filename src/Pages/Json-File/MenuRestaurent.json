@@ -4,69 +4,401 @@
     "name": "56 Dukan",
     "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/95/79/1f/caption.jpg?w=1400&h=800&s=1",
     "rating": "⭐⭐⭐⭐⭐",
-    "location": "Plasia, Indore, India"
+    "location": "Plasia, Indore, India",
+    "Data": {
+      "recommended": [
+        { "name": "Paneer Tikka", "price": 320, "rating": 4.4, "reviews": 22, "img": "https://i.pinimg.com/736x/59/81/85/5981859da80c1d8580654daf371d0ffe.jpg" },
+        { "name": "Veg Manchurian", "price": 250, "rating": 4.3, "reviews": 15, "img": "https://i.pinimg.com/736x/d2/26/09/d22609efc42984ac31068cafc8f9427b.jpg" },
+        { "name": "Dal Makhani", "price": 280, "rating": 4.5, "reviews": 19, "img": "https://i.pinimg.com/736x/6a/66/b0/6a66b06d6a41670ab021a73eeaf72196.jpg" },
+        { "name": "Stuffed Naan", "price": 120, "rating": 4.2, "reviews": 11, "img": "https://i.pinimg.com/736x/3e/d6/cf/3ed6cf001967b21e3e2f69df942003ef.jpg" },
+        { "name": "Chilli Paneer", "price": 270, "rating": 4.3, "reviews": 16, "img": "https://i.pinimg.com/1200x/9a/d4/e8/9ad4e8b371d1bf2b6fe347750fd036f3.jpg" },
+        { "name": "Butter Roti", "price": 30, "rating": 4.0, "reviews": 20, "img": "https://i.pinimg.com/736x/3e/d6/cf/3ed6cf001967b21e3e2f69df942003ef.jpg" },
+        { "name": "Mix Veg", "price": 230, "rating": 4.1, "reviews": 14, "img": "https://i.pinimg.com/1200x/3e/59/39/3e59398cbd1555b64cd67691c0bf6624.jpg" },
+        { "name": "Malai Kofta", "price": 260, "rating": 4.5, "reviews": 18, "img": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/malai-kofta-recipe.jpg" },
+        { "name": "Gulab Jamun", "price": 80, "rating": 4.6, "reviews": 27, "img": "https://theartisticcook.com/wp-content/uploads/2024/10/Gulab-Jamun-with-Milk-Powder.jpg" },
+        { "name": "Jeera Rice", "price": 140, "rating": 4.2, "reviews": 12, "img": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/12/jeera-rice-recipe.webp" }
+      ],
+      "maggiItems": [
+        { "name": "Cheese Maggi", "price": 120, "rating": 4.2, "reviews": 8, "img": "https://i.pinimg.com/736x/85/e0/2b/85e02b0006259e257ef7b37ce2880cfd.jpg" },
+        { "name": "Masala Maggi", "price": 100, "rating": 4.0, "reviews": 10, "img": "https://i.pinimg.com/736x/ef/90/df/ef90dfe4ec5ee1c47471e97fd2fc1cc2.jpg" },
+        { "name": "Butter Maggi", "price": 130, "rating": 4.3, "reviews": 7, "img": "https://i.pinimg.com/1200x/76/91/44/769144c45c8ce22156ed39b371b45a92.jpg" },
+        { "name": "Corn Maggi", "price": 110, "rating": 4.1, "reviews": 6, "img": "https://i.pinimg.com/1200x/a8/5d/52/a85d52cc345d3f2931abc2a284dc300d.jpg" },
+        { "name": "Paneer Maggi", "price": 150, "rating": 4.4, "reviews": 9, "img": "https://i.pinimg.com/736x/85/e0/2b/85e02b0006259e257ef7b37ce2880cfd.jpg" }
+      ],
+      "categories": {
+        "Main Course": ["Paneer Dishes", "Veg Curries", "Dal Varieties"],
+        "Breads": ["Tandoori Roti", "Butter Naan", "Missi Roti"],
+        "Starters": ["Veg Cutlet", "Manchurian", "Spring Rolls"],
+        "Salads": ["Green Salad", "Russian Salad", "Fruit Salad"],
+        "Soups": ["Tomato", "Hot & Sour", "Manchow"],
+        "Rice": ["Jeera Rice", "Fried Rice", "Veg Pulao"],
+        "Desserts": ["Gulab Jamun", "Rasgulla", "Ice Cream"],
+        "Beverages": ["Lassi", "Masala Soda", "Buttermilk"],
+        "Snacks": ["Samosa", "Kachori", "Pattice"],
+        "Combos": ["Dal Roti Combo", "Rice Curry Combo", "Mini Thali"]
+      }
+    }
+
   },
   {
     "id": 2,
     "name": "Sardar Ji Dhaba",
     "image": "https://b.zmtcdn.com/data/pictures/6/19692086/100fa1d83dc58385dc56a1b1ac7560d3.jpg",
     "rating": "⭐⭐⭐⭐",
-    "location": "Bhawarkuan, Indore, India"
+    "location": "Bhawarkuan, Indore, India",
+     "Data": {
+      "recommended": [
+        { "name": "Paneer Tikka", "price": 320, "rating": 4.4, "reviews": 22, "img": "https://i.pinimg.com/736x/59/81/85/5981859da80c1d8580654daf371d0ffe.jpg" },
+        { "name": "Veg Manchurian", "price": 250, "rating": 4.3, "reviews": 15, "img": "https://i.pinimg.com/736x/d2/26/09/d22609efc42984ac31068cafc8f9427b.jpg" },
+        { "name": "Dal Makhani", "price": 280, "rating": 4.5, "reviews": 19, "img": "https://i.pinimg.com/736x/6a/66/b0/6a66b06d6a41670ab021a73eeaf72196.jpg" },
+        { "name": "Stuffed Naan", "price": 120, "rating": 4.2, "reviews": 11, "img": "https://i.pinimg.com/736x/3e/d6/cf/3ed6cf001967b21e3e2f69df942003ef.jpg" },
+        { "name": "Chilli Paneer", "price": 270, "rating": 4.3, "reviews": 16, "img": "https://i.pinimg.com/1200x/9a/d4/e8/9ad4e8b371d1bf2b6fe347750fd036f3.jpg" },
+        { "name": "Butter Roti", "price": 30, "rating": 4.0, "reviews": 20, "img": "https://i.pinimg.com/736x/3e/d6/cf/3ed6cf001967b21e3e2f69df942003ef.jpg" },
+        { "name": "Mix Veg", "price": 230, "rating": 4.1, "reviews": 14, "img": "https://i.pinimg.com/1200x/3e/59/39/3e59398cbd1555b64cd67691c0bf6624.jpg" },
+        { "name": "Malai Kofta", "price": 260, "rating": 4.5, "reviews": 18, "img": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/malai-kofta-recipe.jpg" },
+        { "name": "Gulab Jamun", "price": 80, "rating": 4.6, "reviews": 27, "img": "https://theartisticcook.com/wp-content/uploads/2024/10/Gulab-Jamun-with-Milk-Powder.jpg" },
+        { "name": "Jeera Rice", "price": 140, "rating": 4.2, "reviews": 12, "img": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/12/jeera-rice-recipe.webp" }
+      ],
+      "maggiItems": [
+        { "name": "Cheese Maggi", "price": 120, "rating": 4.2, "reviews": 8, "img": "https://i.pinimg.com/736x/85/e0/2b/85e02b0006259e257ef7b37ce2880cfd.jpg" },
+        { "name": "Masala Maggi", "price": 100, "rating": 4.0, "reviews": 10, "img": "https://i.pinimg.com/736x/ef/90/df/ef90dfe4ec5ee1c47471e97fd2fc1cc2.jpg" },
+        { "name": "Butter Maggi", "price": 130, "rating": 4.3, "reviews": 7, "img": "https://i.pinimg.com/1200x/76/91/44/769144c45c8ce22156ed39b371b45a92.jpg" },
+        { "name": "Corn Maggi", "price": 110, "rating": 4.1, "reviews": 6, "img": "https://i.pinimg.com/1200x/a8/5d/52/a85d52cc345d3f2931abc2a284dc300d.jpg" },
+        { "name": "Paneer Maggi", "price": 150, "rating": 4.4, "reviews": 9, "img": "https://i.pinimg.com/736x/85/e0/2b/85e02b0006259e257ef7b37ce2880cfd.jpg" }
+      ],
+      "categories": {
+        "Main Course": ["Paneer Dishes", "Veg Curries", "Dal Varieties"],
+        "Breads": ["Tandoori Roti", "Butter Naan", "Missi Roti"],
+        "Starters": ["Veg Cutlet", "Manchurian", "Spring Rolls"],
+        "Salads": ["Green Salad", "Russian Salad", "Fruit Salad"],
+        "Soups": ["Tomato", "Hot & Sour", "Manchow"],
+        "Rice": ["Jeera Rice", "Fried Rice", "Veg Pulao"],
+        "Desserts": ["Gulab Jamun", "Rasgulla", "Ice Cream"],
+        "Beverages": ["Lassi", "Masala Soda", "Buttermilk"],
+        "Snacks": ["Samosa", "Kachori", "Pattice"],
+        "Combos": ["Dal Roti Combo", "Rice Curry Combo", "Mini Thali"]
+      }
+    }
   },
   {
     "id": 3,
     "name": "Nafees Restaurant",
     "image": "https://b.zmtcdn.com/data/pictures/6/1400056/3bf28b37cc619d6d6da2aba0e2ae89c0.jpg",
     "rating": "⭐⭐⭐⭐",
-    "location": "Palasia, Indore, India"
+    "location": "Palasia, Indore, India",
+     "Data": {
+      "recommended": [
+        { "name": "Paneer Tikka", "price": 320, "rating": 4.4, "reviews": 22, "img": "https://i.pinimg.com/736x/59/81/85/5981859da80c1d8580654daf371d0ffe.jpg" },
+        { "name": "Veg Manchurian", "price": 250, "rating": 4.3, "reviews": 15, "img": "https://i.pinimg.com/736x/d2/26/09/d22609efc42984ac31068cafc8f9427b.jpg" },
+        { "name": "Dal Makhani", "price": 280, "rating": 4.5, "reviews": 19, "img": "https://i.pinimg.com/736x/6a/66/b0/6a66b06d6a41670ab021a73eeaf72196.jpg" },
+        { "name": "Stuffed Naan", "price": 120, "rating": 4.2, "reviews": 11, "img": "https://i.pinimg.com/736x/3e/d6/cf/3ed6cf001967b21e3e2f69df942003ef.jpg" },
+        { "name": "Chilli Paneer", "price": 270, "rating": 4.3, "reviews": 16, "img": "https://i.pinimg.com/1200x/9a/d4/e8/9ad4e8b371d1bf2b6fe347750fd036f3.jpg" },
+        { "name": "Butter Roti", "price": 30, "rating": 4.0, "reviews": 20, "img": "https://i.pinimg.com/736x/3e/d6/cf/3ed6cf001967b21e3e2f69df942003ef.jpg" },
+        { "name": "Mix Veg", "price": 230, "rating": 4.1, "reviews": 14, "img": "https://i.pinimg.com/1200x/3e/59/39/3e59398cbd1555b64cd67691c0bf6624.jpg" },
+        { "name": "Malai Kofta", "price": 260, "rating": 4.5, "reviews": 18, "img": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/malai-kofta-recipe.jpg" },
+        { "name": "Gulab Jamun", "price": 80, "rating": 4.6, "reviews": 27, "img": "https://theartisticcook.com/wp-content/uploads/2024/10/Gulab-Jamun-with-Milk-Powder.jpg" },
+        { "name": "Jeera Rice", "price": 140, "rating": 4.2, "reviews": 12, "img": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/12/jeera-rice-recipe.webp" }
+      ],
+      "maggiItems": [
+        { "name": "Cheese Maggi", "price": 120, "rating": 4.2, "reviews": 8, "img": "https://i.pinimg.com/736x/85/e0/2b/85e02b0006259e257ef7b37ce2880cfd.jpg" },
+        { "name": "Masala Maggi", "price": 100, "rating": 4.0, "reviews": 10, "img": "https://i.pinimg.com/736x/ef/90/df/ef90dfe4ec5ee1c47471e97fd2fc1cc2.jpg" },
+        { "name": "Butter Maggi", "price": 130, "rating": 4.3, "reviews": 7, "img": "https://i.pinimg.com/1200x/76/91/44/769144c45c8ce22156ed39b371b45a92.jpg" },
+        { "name": "Corn Maggi", "price": 110, "rating": 4.1, "reviews": 6, "img": "https://i.pinimg.com/1200x/a8/5d/52/a85d52cc345d3f2931abc2a284dc300d.jpg" },
+        { "name": "Paneer Maggi", "price": 150, "rating": 4.4, "reviews": 9, "img": "https://i.pinimg.com/736x/85/e0/2b/85e02b0006259e257ef7b37ce2880cfd.jpg" }
+      ],
+      "categories": {
+        "Main Course": ["Paneer Dishes", "Veg Curries", "Dal Varieties"],
+        "Breads": ["Tandoori Roti", "Butter Naan", "Missi Roti"],
+        "Starters": ["Veg Cutlet", "Manchurian", "Spring Rolls"],
+        "Salads": ["Green Salad", "Russian Salad", "Fruit Salad"],
+        "Soups": ["Tomato", "Hot & Sour", "Manchow"],
+        "Rice": ["Jeera Rice", "Fried Rice", "Veg Pulao"],
+        "Desserts": ["Gulab Jamun", "Rasgulla", "Ice Cream"],
+        "Beverages": ["Lassi", "Masala Soda", "Buttermilk"],
+        "Snacks": ["Samosa", "Kachori", "Pattice"],
+        "Combos": ["Dal Roti Combo", "Rice Curry Combo", "Mini Thali"]
+      }
+    }
   },
   {
     "id": 4,
     "name": "Little Italy",
     "image": "https://image.wedmegood.com/resized/720X/uploads/member/999639/1579698685_e2.png",
     "rating": "⭐⭐⭐⭐⭐",
-    "location": "Vijay Nagar, Indore, India"
+    "location": "Vijay Nagar, Indore, India",
+     "Data": {
+      "recommended": [
+        { "name": "Paneer Tikka", "price": 320, "rating": 4.4, "reviews": 22, "img": "https://i.pinimg.com/736x/59/81/85/5981859da80c1d8580654daf371d0ffe.jpg" },
+        { "name": "Veg Manchurian", "price": 250, "rating": 4.3, "reviews": 15, "img": "https://i.pinimg.com/736x/d2/26/09/d22609efc42984ac31068cafc8f9427b.jpg" },
+        { "name": "Dal Makhani", "price": 280, "rating": 4.5, "reviews": 19, "img": "https://i.pinimg.com/736x/6a/66/b0/6a66b06d6a41670ab021a73eeaf72196.jpg" },
+        { "name": "Stuffed Naan", "price": 120, "rating": 4.2, "reviews": 11, "img": "https://i.pinimg.com/736x/3e/d6/cf/3ed6cf001967b21e3e2f69df942003ef.jpg" },
+        { "name": "Chilli Paneer", "price": 270, "rating": 4.3, "reviews": 16, "img": "https://i.pinimg.com/1200x/9a/d4/e8/9ad4e8b371d1bf2b6fe347750fd036f3.jpg" },
+        { "name": "Butter Roti", "price": 30, "rating": 4.0, "reviews": 20, "img": "https://i.pinimg.com/736x/3e/d6/cf/3ed6cf001967b21e3e2f69df942003ef.jpg" },
+        { "name": "Mix Veg", "price": 230, "rating": 4.1, "reviews": 14, "img": "https://i.pinimg.com/1200x/3e/59/39/3e59398cbd1555b64cd67691c0bf6624.jpg" },
+        { "name": "Malai Kofta", "price": 260, "rating": 4.5, "reviews": 18, "img": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/malai-kofta-recipe.jpg" },
+        { "name": "Gulab Jamun", "price": 80, "rating": 4.6, "reviews": 27, "img": "https://theartisticcook.com/wp-content/uploads/2024/10/Gulab-Jamun-with-Milk-Powder.jpg" },
+        { "name": "Jeera Rice", "price": 140, "rating": 4.2, "reviews": 12, "img": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/12/jeera-rice-recipe.webp" }
+      ],
+      "maggiItems": [
+        { "name": "Cheese Maggi", "price": 120, "rating": 4.2, "reviews": 8, "img": "https://i.pinimg.com/736x/85/e0/2b/85e02b0006259e257ef7b37ce2880cfd.jpg" },
+        { "name": "Masala Maggi", "price": 100, "rating": 4.0, "reviews": 10, "img": "https://i.pinimg.com/736x/ef/90/df/ef90dfe4ec5ee1c47471e97fd2fc1cc2.jpg" },
+        { "name": "Butter Maggi", "price": 130, "rating": 4.3, "reviews": 7, "img": "https://i.pinimg.com/1200x/76/91/44/769144c45c8ce22156ed39b371b45a92.jpg" },
+        { "name": "Corn Maggi", "price": 110, "rating": 4.1, "reviews": 6, "img": "https://i.pinimg.com/1200x/a8/5d/52/a85d52cc345d3f2931abc2a284dc300d.jpg" },
+        { "name": "Paneer Maggi", "price": 150, "rating": 4.4, "reviews": 9, "img": "https://i.pinimg.com/736x/85/e0/2b/85e02b0006259e257ef7b37ce2880cfd.jpg" }
+      ],
+      "categories": {
+        "Main Course": ["Paneer Dishes", "Veg Curries", "Dal Varieties"],
+        "Breads": ["Tandoori Roti", "Butter Naan", "Missi Roti"],
+        "Starters": ["Veg Cutlet", "Manchurian", "Spring Rolls"],
+        "Salads": ["Green Salad", "Russian Salad", "Fruit Salad"],
+        "Soups": ["Tomato", "Hot & Sour", "Manchow"],
+        "Rice": ["Jeera Rice", "Fried Rice", "Veg Pulao"],
+        "Desserts": ["Gulab Jamun", "Rasgulla", "Ice Cream"],
+        "Beverages": ["Lassi", "Masala Soda", "Buttermilk"],
+        "Snacks": ["Samosa", "Kachori", "Pattice"],
+        "Combos": ["Dal Roti Combo", "Rice Curry Combo", "Mini Thali"]
+      }
+    }
   },
   {
     "id": 5,
     "name": "Mediterra",
     "image": "https://b.zmtcdn.com/data/pictures/2/1400172/9f966fe9d38a84b90a1afdb81d386881.jpg",
     "rating": "⭐⭐⭐⭐",
-    "location": "South Tukoganj, Indore, India"
+    "location": "South Tukoganj, Indore, India",
+     "Data": {
+      "recommended": [
+        { "name": "Paneer Tikka", "price": 320, "rating": 4.4, "reviews": 22, "img": "https://i.pinimg.com/736x/59/81/85/5981859da80c1d8580654daf371d0ffe.jpg" },
+        { "name": "Veg Manchurian", "price": 250, "rating": 4.3, "reviews": 15, "img": "https://i.pinimg.com/736x/d2/26/09/d22609efc42984ac31068cafc8f9427b.jpg" },
+        { "name": "Dal Makhani", "price": 280, "rating": 4.5, "reviews": 19, "img": "https://i.pinimg.com/736x/6a/66/b0/6a66b06d6a41670ab021a73eeaf72196.jpg" },
+        { "name": "Stuffed Naan", "price": 120, "rating": 4.2, "reviews": 11, "img": "https://i.pinimg.com/736x/3e/d6/cf/3ed6cf001967b21e3e2f69df942003ef.jpg" },
+        { "name": "Chilli Paneer", "price": 270, "rating": 4.3, "reviews": 16, "img": "https://i.pinimg.com/1200x/9a/d4/e8/9ad4e8b371d1bf2b6fe347750fd036f3.jpg" },
+        { "name": "Butter Roti", "price": 30, "rating": 4.0, "reviews": 20, "img": "https://i.pinimg.com/736x/3e/d6/cf/3ed6cf001967b21e3e2f69df942003ef.jpg" },
+        { "name": "Mix Veg", "price": 230, "rating": 4.1, "reviews": 14, "img": "https://i.pinimg.com/1200x/3e/59/39/3e59398cbd1555b64cd67691c0bf6624.jpg" },
+        { "name": "Malai Kofta", "price": 260, "rating": 4.5, "reviews": 18, "img": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/malai-kofta-recipe.jpg" },
+        { "name": "Gulab Jamun", "price": 80, "rating": 4.6, "reviews": 27, "img": "https://theartisticcook.com/wp-content/uploads/2024/10/Gulab-Jamun-with-Milk-Powder.jpg" },
+        { "name": "Jeera Rice", "price": 140, "rating": 4.2, "reviews": 12, "img": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/12/jeera-rice-recipe.webp" }
+      ],
+      "maggiItems": [
+        { "name": "Cheese Maggi", "price": 120, "rating": 4.2, "reviews": 8, "img": "https://i.pinimg.com/736x/85/e0/2b/85e02b0006259e257ef7b37ce2880cfd.jpg" },
+        { "name": "Masala Maggi", "price": 100, "rating": 4.0, "reviews": 10, "img": "https://i.pinimg.com/736x/ef/90/df/ef90dfe4ec5ee1c47471e97fd2fc1cc2.jpg" },
+        { "name": "Butter Maggi", "price": 130, "rating": 4.3, "reviews": 7, "img": "https://i.pinimg.com/1200x/76/91/44/769144c45c8ce22156ed39b371b45a92.jpg" },
+        { "name": "Corn Maggi", "price": 110, "rating": 4.1, "reviews": 6, "img": "https://i.pinimg.com/1200x/a8/5d/52/a85d52cc345d3f2931abc2a284dc300d.jpg" },
+        { "name": "Paneer Maggi", "price": 150, "rating": 4.4, "reviews": 9, "img": "https://i.pinimg.com/736x/85/e0/2b/85e02b0006259e257ef7b37ce2880cfd.jpg" }
+      ],
+      "categories": {
+        "Main Course": ["Paneer Dishes", "Veg Curries", "Dal Varieties"],
+        "Breads": ["Tandoori Roti", "Butter Naan", "Missi Roti"],
+        "Starters": ["Veg Cutlet", "Manchurian", "Spring Rolls"],
+        "Salads": ["Green Salad", "Russian Salad", "Fruit Salad"],
+        "Soups": ["Tomato", "Hot & Sour", "Manchow"],
+        "Rice": ["Jeera Rice", "Fried Rice", "Veg Pulao"],
+        "Desserts": ["Gulab Jamun", "Rasgulla", "Ice Cream"],
+        "Beverages": ["Lassi", "Masala Soda", "Buttermilk"],
+        "Snacks": ["Samosa", "Kachori", "Pattice"],
+        "Combos": ["Dal Roti Combo", "Rice Curry Combo", "Mini Thali"]
+      }
+    }
   },
   {
     "id": 6,
     "name": "O2 Café De La Ville",
     "image": "https://pbs.twimg.com/media/ChHRNamUkAAnaS5.jpg",
     "rating": "⭐⭐⭐⭐✨",
-    "location": "RNT Marg, Indore, India"
+    "location": "RNT Marg, Indore, India",
+     "Data": {
+      "recommended": [
+        { "name": "Paneer Tikka", "price": 320, "rating": 4.4, "reviews": 22, "img": "https://i.pinimg.com/736x/59/81/85/5981859da80c1d8580654daf371d0ffe.jpg" },
+        { "name": "Veg Manchurian", "price": 250, "rating": 4.3, "reviews": 15, "img": "https://i.pinimg.com/736x/d2/26/09/d22609efc42984ac31068cafc8f9427b.jpg" },
+        { "name": "Dal Makhani", "price": 280, "rating": 4.5, "reviews": 19, "img": "https://i.pinimg.com/736x/6a/66/b0/6a66b06d6a41670ab021a73eeaf72196.jpg" },
+        { "name": "Stuffed Naan", "price": 120, "rating": 4.2, "reviews": 11, "img": "https://i.pinimg.com/736x/3e/d6/cf/3ed6cf001967b21e3e2f69df942003ef.jpg" },
+        { "name": "Chilli Paneer", "price": 270, "rating": 4.3, "reviews": 16, "img": "https://i.pinimg.com/1200x/9a/d4/e8/9ad4e8b371d1bf2b6fe347750fd036f3.jpg" },
+        { "name": "Butter Roti", "price": 30, "rating": 4.0, "reviews": 20, "img": "https://i.pinimg.com/736x/3e/d6/cf/3ed6cf001967b21e3e2f69df942003ef.jpg" },
+        { "name": "Mix Veg", "price": 230, "rating": 4.1, "reviews": 14, "img": "https://i.pinimg.com/1200x/3e/59/39/3e59398cbd1555b64cd67691c0bf6624.jpg" },
+        { "name": "Malai Kofta", "price": 260, "rating": 4.5, "reviews": 18, "img": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/malai-kofta-recipe.jpg" },
+        { "name": "Gulab Jamun", "price": 80, "rating": 4.6, "reviews": 27, "img": "https://theartisticcook.com/wp-content/uploads/2024/10/Gulab-Jamun-with-Milk-Powder.jpg" },
+        { "name": "Jeera Rice", "price": 140, "rating": 4.2, "reviews": 12, "img": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/12/jeera-rice-recipe.webp" }
+      ],
+      "maggiItems": [
+        { "name": "Cheese Maggi", "price": 120, "rating": 4.2, "reviews": 8, "img": "https://i.pinimg.com/736x/85/e0/2b/85e02b0006259e257ef7b37ce2880cfd.jpg" },
+        { "name": "Masala Maggi", "price": 100, "rating": 4.0, "reviews": 10, "img": "https://i.pinimg.com/736x/ef/90/df/ef90dfe4ec5ee1c47471e97fd2fc1cc2.jpg" },
+        { "name": "Butter Maggi", "price": 130, "rating": 4.3, "reviews": 7, "img": "https://i.pinimg.com/1200x/76/91/44/769144c45c8ce22156ed39b371b45a92.jpg" },
+        { "name": "Corn Maggi", "price": 110, "rating": 4.1, "reviews": 6, "img": "https://i.pinimg.com/1200x/a8/5d/52/a85d52cc345d3f2931abc2a284dc300d.jpg" },
+        { "name": "Paneer Maggi", "price": 150, "rating": 4.4, "reviews": 9, "img": "https://i.pinimg.com/736x/85/e0/2b/85e02b0006259e257ef7b37ce2880cfd.jpg" }
+      ],
+      "categories": {
+        "Main Course": ["Paneer Dishes", "Veg Curries", "Dal Varieties"],
+        "Breads": ["Tandoori Roti", "Butter Naan", "Missi Roti"],
+        "Starters": ["Veg Cutlet", "Manchurian", "Spring Rolls"],
+        "Salads": ["Green Salad", "Russian Salad", "Fruit Salad"],
+        "Soups": ["Tomato", "Hot & Sour", "Manchow"],
+        "Rice": ["Jeera Rice", "Fried Rice", "Veg Pulao"],
+        "Desserts": ["Gulab Jamun", "Rasgulla", "Ice Cream"],
+        "Beverages": ["Lassi", "Masala Soda", "Buttermilk"],
+        "Snacks": ["Samosa", "Kachori", "Pattice"],
+        "Combos": ["Dal Roti Combo", "Rice Curry Combo", "Mini Thali"]
+      }
+    }
   },
   {
     "id": 7,
     "name": "Chappan Bhog",
     "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/da/53/92/view-from-the-road-in.jpg?w=900&h=-1&s=1",
     "rating": "⭐⭐⭐⭐⭐",
-    "location": "56 Dukan, Indore, India"
+    "location": "56 Dukan, Indore, India",
+     "Data": {
+      "recommended": [
+        { "name": "Paneer Tikka", "price": 320, "rating": 4.4, "reviews": 22, "img": "https://i.pinimg.com/736x/59/81/85/5981859da80c1d8580654daf371d0ffe.jpg" },
+        { "name": "Veg Manchurian", "price": 250, "rating": 4.3, "reviews": 15, "img": "https://i.pinimg.com/736x/d2/26/09/d22609efc42984ac31068cafc8f9427b.jpg" },
+        { "name": "Dal Makhani", "price": 280, "rating": 4.5, "reviews": 19, "img": "https://i.pinimg.com/736x/6a/66/b0/6a66b06d6a41670ab021a73eeaf72196.jpg" },
+        { "name": "Stuffed Naan", "price": 120, "rating": 4.2, "reviews": 11, "img": "https://i.pinimg.com/736x/3e/d6/cf/3ed6cf001967b21e3e2f69df942003ef.jpg" },
+        { "name": "Chilli Paneer", "price": 270, "rating": 4.3, "reviews": 16, "img": "https://i.pinimg.com/1200x/9a/d4/e8/9ad4e8b371d1bf2b6fe347750fd036f3.jpg" },
+        { "name": "Butter Roti", "price": 30, "rating": 4.0, "reviews": 20, "img": "https://i.pinimg.com/736x/3e/d6/cf/3ed6cf001967b21e3e2f69df942003ef.jpg" },
+        { "name": "Mix Veg", "price": 230, "rating": 4.1, "reviews": 14, "img": "https://i.pinimg.com/1200x/3e/59/39/3e59398cbd1555b64cd67691c0bf6624.jpg" },
+        { "name": "Malai Kofta", "price": 260, "rating": 4.5, "reviews": 18, "img": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/malai-kofta-recipe.jpg" },
+        { "name": "Gulab Jamun", "price": 80, "rating": 4.6, "reviews": 27, "img": "https://theartisticcook.com/wp-content/uploads/2024/10/Gulab-Jamun-with-Milk-Powder.jpg" },
+        { "name": "Jeera Rice", "price": 140, "rating": 4.2, "reviews": 12, "img": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/12/jeera-rice-recipe.webp" }
+      ],
+      "maggiItems": [
+        { "name": "Cheese Maggi", "price": 120, "rating": 4.2, "reviews": 8, "img": "https://i.pinimg.com/736x/85/e0/2b/85e02b0006259e257ef7b37ce2880cfd.jpg" },
+        { "name": "Masala Maggi", "price": 100, "rating": 4.0, "reviews": 10, "img": "https://i.pinimg.com/736x/ef/90/df/ef90dfe4ec5ee1c47471e97fd2fc1cc2.jpg" },
+        { "name": "Butter Maggi", "price": 130, "rating": 4.3, "reviews": 7, "img": "https://i.pinimg.com/1200x/76/91/44/769144c45c8ce22156ed39b371b45a92.jpg" },
+        { "name": "Corn Maggi", "price": 110, "rating": 4.1, "reviews": 6, "img": "https://i.pinimg.com/1200x/a8/5d/52/a85d52cc345d3f2931abc2a284dc300d.jpg" },
+        { "name": "Paneer Maggi", "price": 150, "rating": 4.4, "reviews": 9, "img": "https://i.pinimg.com/736x/85/e0/2b/85e02b0006259e257ef7b37ce2880cfd.jpg" }
+      ],
+      "categories": {
+        "Main Course": ["Paneer Dishes", "Veg Curries", "Dal Varieties"],
+        "Breads": ["Tandoori Roti", "Butter Naan", "Missi Roti"],
+        "Starters": ["Veg Cutlet", "Manchurian", "Spring Rolls"],
+        "Salads": ["Green Salad", "Russian Salad", "Fruit Salad"],
+        "Soups": ["Tomato", "Hot & Sour", "Manchow"],
+        "Rice": ["Jeera Rice", "Fried Rice", "Veg Pulao"],
+        "Desserts": ["Gulab Jamun", "Rasgulla", "Ice Cream"],
+        "Beverages": ["Lassi", "Masala Soda", "Buttermilk"],
+        "Snacks": ["Samosa", "Kachori", "Pattice"],
+        "Combos": ["Dal Roti Combo", "Rice Curry Combo", "Mini Thali"]
+      }
+    }
   },
   {
     "id": 8,
     "name": "Apna Sweets",
     "image": "https://indorerocks.com/uploadimages/restaurant/croppedimage/sapnaapna_20140219030521.jpg",
     "rating": "⭐⭐⭐",
-    "location": "Rajwada, Indore, India"
+    "location": "Rajwada, Indore, India",
+     "Data": {
+      "recommended": [
+        { "name": "Paneer Tikka", "price": 320, "rating": 4.4, "reviews": 22, "img": "https://i.pinimg.com/736x/59/81/85/5981859da80c1d8580654daf371d0ffe.jpg" },
+        { "name": "Veg Manchurian", "price": 250, "rating": 4.3, "reviews": 15, "img": "https://i.pinimg.com/736x/d2/26/09/d22609efc42984ac31068cafc8f9427b.jpg" },
+        { "name": "Dal Makhani", "price": 280, "rating": 4.5, "reviews": 19, "img": "https://i.pinimg.com/736x/6a/66/b0/6a66b06d6a41670ab021a73eeaf72196.jpg" },
+        { "name": "Stuffed Naan", "price": 120, "rating": 4.2, "reviews": 11, "img": "https://i.pinimg.com/736x/3e/d6/cf/3ed6cf001967b21e3e2f69df942003ef.jpg" },
+        { "name": "Chilli Paneer", "price": 270, "rating": 4.3, "reviews": 16, "img": "https://i.pinimg.com/1200x/9a/d4/e8/9ad4e8b371d1bf2b6fe347750fd036f3.jpg" },
+        { "name": "Butter Roti", "price": 30, "rating": 4.0, "reviews": 20, "img": "https://i.pinimg.com/736x/3e/d6/cf/3ed6cf001967b21e3e2f69df942003ef.jpg" },
+        { "name": "Mix Veg", "price": 230, "rating": 4.1, "reviews": 14, "img": "https://i.pinimg.com/1200x/3e/59/39/3e59398cbd1555b64cd67691c0bf6624.jpg" },
+        { "name": "Malai Kofta", "price": 260, "rating": 4.5, "reviews": 18, "img": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/malai-kofta-recipe.jpg" },
+        { "name": "Gulab Jamun", "price": 80, "rating": 4.6, "reviews": 27, "img": "https://theartisticcook.com/wp-content/uploads/2024/10/Gulab-Jamun-with-Milk-Powder.jpg" },
+        { "name": "Jeera Rice", "price": 140, "rating": 4.2, "reviews": 12, "img": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/12/jeera-rice-recipe.webp" }
+      ],
+      "maggiItems": [
+        { "name": "Cheese Maggi", "price": 120, "rating": 4.2, "reviews": 8, "img": "https://i.pinimg.com/736x/85/e0/2b/85e02b0006259e257ef7b37ce2880cfd.jpg" },
+        { "name": "Masala Maggi", "price": 100, "rating": 4.0, "reviews": 10, "img": "https://i.pinimg.com/736x/ef/90/df/ef90dfe4ec5ee1c47471e97fd2fc1cc2.jpg" },
+        { "name": "Butter Maggi", "price": 130, "rating": 4.3, "reviews": 7, "img": "https://i.pinimg.com/1200x/76/91/44/769144c45c8ce22156ed39b371b45a92.jpg" },
+        { "name": "Corn Maggi", "price": 110, "rating": 4.1, "reviews": 6, "img": "https://i.pinimg.com/1200x/a8/5d/52/a85d52cc345d3f2931abc2a284dc300d.jpg" },
+        { "name": "Paneer Maggi", "price": 150, "rating": 4.4, "reviews": 9, "img": "https://i.pinimg.com/736x/85/e0/2b/85e02b0006259e257ef7b37ce2880cfd.jpg" }
+      ],
+      "categories": {
+        "Main Course": ["Paneer Dishes", "Veg Curries", "Dal Varieties"],
+        "Breads": ["Tandoori Roti", "Butter Naan", "Missi Roti"],
+        "Starters": ["Veg Cutlet", "Manchurian", "Spring Rolls"],
+        "Salads": ["Green Salad", "Russian Salad", "Fruit Salad"],
+        "Soups": ["Tomato", "Hot & Sour", "Manchow"],
+        "Rice": ["Jeera Rice", "Fried Rice", "Veg Pulao"],
+        "Desserts": ["Gulab Jamun", "Rasgulla", "Ice Cream"],
+        "Beverages": ["Lassi", "Masala Soda", "Buttermilk"],
+        "Snacks": ["Samosa", "Kachori", "Pattice"],
+        "Combos": ["Dal Roti Combo", "Rice Curry Combo", "Mini Thali"]
+      }
+    }
   },
   {
     "id": 9,
     "name": "Mama Loca",
     "image": "https://indorerocks.com/uploadimages/restaurant/croppedimage/sapnaapna_20140219030521.jpg",
     "rating": "⭐⭐⭐⭐✨",
-    "location": "New Palasia, Indore, India"
+    "location": "New Palasia, Indore, India",
+     "Data": {
+      "recommended": [
+        { "name": "Paneer Tikka", "price": 320, "rating": 4.4, "reviews": 22, "img": "https://i.pinimg.com/736x/59/81/85/5981859da80c1d8580654daf371d0ffe.jpg" },
+        { "name": "Veg Manchurian", "price": 250, "rating": 4.3, "reviews": 15, "img": "https://i.pinimg.com/736x/d2/26/09/d22609efc42984ac31068cafc8f9427b.jpg" },
+        { "name": "Dal Makhani", "price": 280, "rating": 4.5, "reviews": 19, "img": "https://i.pinimg.com/736x/6a/66/b0/6a66b06d6a41670ab021a73eeaf72196.jpg" },
+        { "name": "Stuffed Naan", "price": 120, "rating": 4.2, "reviews": 11, "img": "https://i.pinimg.com/736x/3e/d6/cf/3ed6cf001967b21e3e2f69df942003ef.jpg" },
+        { "name": "Chilli Paneer", "price": 270, "rating": 4.3, "reviews": 16, "img": "https://i.pinimg.com/1200x/9a/d4/e8/9ad4e8b371d1bf2b6fe347750fd036f3.jpg" },
+        { "name": "Butter Roti", "price": 30, "rating": 4.0, "reviews": 20, "img": "https://i.pinimg.com/736x/3e/d6/cf/3ed6cf001967b21e3e2f69df942003ef.jpg" },
+        { "name": "Mix Veg", "price": 230, "rating": 4.1, "reviews": 14, "img": "https://i.pinimg.com/1200x/3e/59/39/3e59398cbd1555b64cd67691c0bf6624.jpg" },
+        { "name": "Malai Kofta", "price": 260, "rating": 4.5, "reviews": 18, "img": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/malai-kofta-recipe.jpg" },
+        { "name": "Gulab Jamun", "price": 80, "rating": 4.6, "reviews": 27, "img": "https://theartisticcook.com/wp-content/uploads/2024/10/Gulab-Jamun-with-Milk-Powder.jpg" },
+        { "name": "Jeera Rice", "price": 140, "rating": 4.2, "reviews": 12, "img": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/12/jeera-rice-recipe.webp" }
+      ],
+      "maggiItems": [
+        { "name": "Cheese Maggi", "price": 120, "rating": 4.2, "reviews": 8, "img": "https://i.pinimg.com/736x/85/e0/2b/85e02b0006259e257ef7b37ce2880cfd.jpg" },
+        { "name": "Masala Maggi", "price": 100, "rating": 4.0, "reviews": 10, "img": "https://i.pinimg.com/736x/ef/90/df/ef90dfe4ec5ee1c47471e97fd2fc1cc2.jpg" },
+        { "name": "Butter Maggi", "price": 130, "rating": 4.3, "reviews": 7, "img": "https://i.pinimg.com/1200x/76/91/44/769144c45c8ce22156ed39b371b45a92.jpg" },
+        { "name": "Corn Maggi", "price": 110, "rating": 4.1, "reviews": 6, "img": "https://i.pinimg.com/1200x/a8/5d/52/a85d52cc345d3f2931abc2a284dc300d.jpg" },
+        { "name": "Paneer Maggi", "price": 150, "rating": 4.4, "reviews": 9, "img": "https://i.pinimg.com/736x/85/e0/2b/85e02b0006259e257ef7b37ce2880cfd.jpg" }
+      ],
+      "categories": {
+        "Main Course": ["Paneer Dishes", "Veg Curries", "Dal Varieties"],
+        "Breads": ["Tandoori Roti", "Butter Naan", "Missi Roti"],
+        "Starters": ["Veg Cutlet", "Manchurian", "Spring Rolls"],
+        "Salads": ["Green Salad", "Russian Salad", "Fruit Salad"],
+        "Soups": ["Tomato", "Hot & Sour", "Manchow"],
+        "Rice": ["Jeera Rice", "Fried Rice", "Veg Pulao"],
+        "Desserts": ["Gulab Jamun", "Rasgulla", "Ice Cream"],
+        "Beverages": ["Lassi", "Masala Soda", "Buttermilk"],
+        "Snacks": ["Samosa", "Kachori", "Pattice"],
+        "Combos": ["Dal Roti Combo", "Rice Curry Combo", "Mini Thali"]
+      }
+    }
   },
   {
     "id": 10,
     "name": "The Monroe Café",
     "image": "https://b.zmtcdn.com/data/pictures/8/18715348/ecb8dd1473a04bb219d782019115528b.jpg?fit=around|960:500&crop=960:500;*,*",
     "rating": "⭐⭐⭐⭐⭐",
-    "location": "Geeta Bhawan, Indore, India"
+    "location": "Geeta Bhawan, Indore, India",
+     "Data": {
+      "recommended": [
+        { "name": "Paneer Tikka", "price": 320, "rating": 4.4, "reviews": 22, "img": "https://i.pinimg.com/736x/59/81/85/5981859da80c1d8580654daf371d0ffe.jpg" },
+        { "name": "Veg Manchurian", "price": 250, "rating": 4.3, "reviews": 15, "img": "https://i.pinimg.com/736x/d2/26/09/d22609efc42984ac31068cafc8f9427b.jpg" },
+        { "name": "Dal Makhani", "price": 280, "rating": 4.5, "reviews": 19, "img": "https://i.pinimg.com/736x/6a/66/b0/6a66b06d6a41670ab021a73eeaf72196.jpg" },
+        { "name": "Stuffed Naan", "price": 120, "rating": 4.2, "reviews": 11, "img": "https://i.pinimg.com/736x/3e/d6/cf/3ed6cf001967b21e3e2f69df942003ef.jpg" },
+        { "name": "Chilli Paneer", "price": 270, "rating": 4.3, "reviews": 16, "img": "https://i.pinimg.com/1200x/9a/d4/e8/9ad4e8b371d1bf2b6fe347750fd036f3.jpg" },
+        { "name": "Butter Roti", "price": 30, "rating": 4.0, "reviews": 20, "img": "https://i.pinimg.com/736x/3e/d6/cf/3ed6cf001967b21e3e2f69df942003ef.jpg" },
+        { "name": "Mix Veg", "price": 230, "rating": 4.1, "reviews": 14, "img": "https://i.pinimg.com/1200x/3e/59/39/3e59398cbd1555b64cd67691c0bf6624.jpg" },
+        { "name": "Malai Kofta", "price": 260, "rating": 4.5, "reviews": 18, "img": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/malai-kofta-recipe.jpg" },
+        { "name": "Gulab Jamun", "price": 80, "rating": 4.6, "reviews": 27, "img": "https://theartisticcook.com/wp-content/uploads/2024/10/Gulab-Jamun-with-Milk-Powder.jpg" },
+        { "name": "Jeera Rice", "price": 140, "rating": 4.2, "reviews": 12, "img": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/12/jeera-rice-recipe.webp" }
+      ],
+      "maggiItems": [
+        { "name": "Cheese Maggi", "price": 120, "rating": 4.2, "reviews": 8, "img": "https://i.pinimg.com/736x/85/e0/2b/85e02b0006259e257ef7b37ce2880cfd.jpg" },
+        { "name": "Masala Maggi", "price": 100, "rating": 4.0, "reviews": 10, "img": "https://i.pinimg.com/736x/ef/90/df/ef90dfe4ec5ee1c47471e97fd2fc1cc2.jpg" },
+        { "name": "Butter Maggi", "price": 130, "rating": 4.3, "reviews": 7, "img": "https://i.pinimg.com/1200x/76/91/44/769144c45c8ce22156ed39b371b45a92.jpg" },
+        { "name": "Corn Maggi", "price": 110, "rating": 4.1, "reviews": 6, "img": "https://i.pinimg.com/1200x/a8/5d/52/a85d52cc345d3f2931abc2a284dc300d.jpg" },
+        { "name": "Paneer Maggi", "price": 150, "rating": 4.4, "reviews": 9, "img": "https://i.pinimg.com/736x/85/e0/2b/85e02b0006259e257ef7b37ce2880cfd.jpg" }
+      ],
+      "categories": {
+        "Main Course": ["Paneer Dishes", "Veg Curries", "Dal Varieties"],
+        "Breads": ["Tandoori Roti", "Butter Naan", "Missi Roti"],
+        "Starters": ["Veg Cutlet", "Manchurian", "Spring Rolls"],
+        "Salads": ["Green Salad", "Russian Salad", "Fruit Salad"],
+        "Soups": ["Tomato", "Hot & Sour", "Manchow"],
+        "Rice": ["Jeera Rice", "Fried Rice", "Veg Pulao"],
+        "Desserts": ["Gulab Jamun", "Rasgulla", "Ice Cream"],
+        "Beverages": ["Lassi", "Masala Soda", "Buttermilk"],
+        "Snacks": ["Samosa", "Kachori", "Pattice"],
+        "Combos": ["Dal Roti Combo", "Rice Curry Combo", "Mini Thali"]
+      }
+    }
+
   }
 ]
