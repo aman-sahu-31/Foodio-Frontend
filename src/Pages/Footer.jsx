@@ -8,7 +8,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-green-900 text-white pt-12 pb-8 px-6">
+    <footer className="bg-green-900 shadow-sm text-white pt-12 pb-8 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
         <div>
           <h4 className="text-2xl font-bold mb-4">Grocery.</h4>

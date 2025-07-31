@@ -26,7 +26,7 @@ function BestRestorantList() {
         {selectedItem.restaurantCheesePizza.map((rest, index) => (
           
           <div key={index} className=" rounded-2xl p-4 bg-white shadow-md border border-gray-100"  
-          onClick={() => navigate(`/carddata/${rest.id}`)}>
+          >
                <div>
             <img src={rest.img} alt="" className='w-full h-40 rounded-[5px]' />
             </div>

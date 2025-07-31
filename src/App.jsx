@@ -9,19 +9,16 @@ import RestaurantExtraInfo from './Components/RestaurantExtraInfo';
 import BestRestorantList from './Components/BestRestaurantList';
 import Menubar from './Components/Menubar';
 import MenuRestoData from './Pages/MenuRestoData';
-import BestdataCard from './Components/BestdataCard';
 function App() {
   return (
     <BrowserRouter>
-      <Routes>  <Route path="/restaurant/:id" element={<BestRestorantList />} />
-        <Route path="/carddata/:id" element={<BestdataCard />} />
+      <Routes>
         <Route path="/" element={<Navbar />}>
           <Route index element={<Card />} />
           <Route path="offers" element={<SpecialOffers/>} />
           <Route path="Menubar" element={<Menubar />} />
           <Route path="restaurent" element={<MenuRestaurent />} />
           <Route path="/details/:id" element={<BestRestorantList/>} />
-          <Route path="/carddata/:id" element={<BestdataCard/>} />
           <Route path="/restaurantCard/:id" element={<MenuRestoData/>} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />

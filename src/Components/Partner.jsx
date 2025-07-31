@@ -7,12 +7,12 @@ import Restaurent from '../Pages/Restaurent';
 function Partner() {
   return (
     <>
-      <div className="bg-gray-100 shadow-xl p-4 sm:p-8 mt-5 sm:mt-10 rounded-2xl">
-        <h1 className="font-Arbic text-3xl sm:text-4xl mb-6 font-bold text-gray-800 text-center">
+      <div className="bg-gray-100 shadow-sm p-4 sm:p-8 mt-5 sm:mt-10 rounded-2xl">
+        <h1 className="font-Arbic text-3xl sm:text-4xl mb-6 font-bold text-gray-800 ">
           Grow with Us
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="relative rounded-2xl overflow-hidden shadow-lg">
+          <div className="relative rounded-2xl overflow-hidden shadow-sm">
             <img
               src={logo1}
               alt="Partner with us"
