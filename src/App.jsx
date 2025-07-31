@@ -7,7 +7,7 @@ import Login from './Pages/Login';
 import Signup from './Pages/Signup';
 import RestaurantExtraInfo from './Components/RestaurantExtraInfo'; 
 import BestRestorantList from './Components/BestRestaurantList';
-import Menubar from './Components/MenuBar';
+import Menubar from './Components/Menubar';
 function App() {
   return (
     <BrowserRouter>
