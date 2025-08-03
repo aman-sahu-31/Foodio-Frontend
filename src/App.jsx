@@ -9,6 +9,8 @@ import RestaurantExtraInfo from './Components/RestaurantExtraInfo';
 import BestRestorantList from './Components/BestRestaurantList';
 import Menubar from './Components/Menubar';
 import MenuRestoData from './Pages/MenuRestoData';
+import AddCard from './Add Card/AddCard';
+import AddOnsCard from './Add Card/AddOnsData';
 function App() {
   return (
     <BrowserRouter>
@@ -23,8 +25,10 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
           <Route path="restaurant/:id" element={<RestaurantExtraInfo/>} />
-          <Route path="*" element={<h1>404 Not Found</h1>} />
+          <Route path="/AddCard/:id" element={<AddCard/>}/>
+          <Route path="/addOnscard/:id" element={<AddOnsCard />} />
         </Route>
+          <Route path="*" element={<h1>404 Not Found</h1>} />
       </Routes>
     </BrowserRouter>
   );

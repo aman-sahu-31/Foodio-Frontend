@@ -1,0 +1,101 @@
+[
+  {
+    "id": "1",
+    "name": "Paneer Tikka",
+    "price": 320,
+    "rating": 4.4,
+    "reviews": 22,
+    "img": "https://i.pinimg.com/736x/59/81/85/5981859da80c1d8580654daf371d0ffe.jpg",
+    "description": "A delectable feast in one box! Savour the rice flavours of tender chole perfectly paired with soft Parathas, creamy Dal Makhani & Gulab Jamun",
+    "badge": "Bestseller"
+  },
+  {
+    "id": 2,
+    "name": "Veg Manchurian",
+    "price": 250,
+    "rating": 4.3,
+    "reviews": 15,
+    "img": "https://i.pinimg.com/736x/d2/26/09/d22609efc42984ac31068cafc8f9427b.jpg",
+    "description": "A delectable feast in one box! Savour the rice flavours of tender chole perfectly paired with soft Parathas, creamy Dal Makhani & Gulab Jamun",
+    "badge": "Bestseller"
+  },
+  {
+    "id": 3,
+    "name": "Dal Makhani",
+    "price": 280,
+    "rating": 4.5,
+    "reviews": 19,
+    "img": "https://i.pinimg.com/736x/6a/66/b0/6a66b06d6a41670ab021a73eeaf72196.jpg",
+    "description": "A delectable feast in one box! Savour the rice flavours of tender chole perfectly paired with soft Parathas, creamy Dal Makhani & Gulab Jamun",
+    "badge": "Bestseller"
+  },
+  {
+    "id": 4,
+    "name": "Stuffed Naan",
+    "price": 120,
+    "rating": 4.2,
+    "reviews": 11,
+    "img": "https://i.pinimg.com/736x/3e/d6/cf/3ed6cf001967b21e3e2f69df942003ef.jpg",
+    "description": "A delectable feast in one box! Savour the rice flavours of tender chole perfectly paired with soft Parathas, creamy Dal Makhani & Gulab Jamun",
+    "badge": "Bestseller"
+  },
+  {
+    "id": 5,
+    "name": "Chilli Paneer",
+    "price": 270,
+    "rating": 4.3,
+    "reviews": 16,
+    "img": "https://i.pinimg.com/1200x/9a/d4/e8/9ad4e8b371d1bf2b6fe347750fd036f3.jpg",
+    "description": "A delectable feast in one box! Savour the rice flavours of tender chole perfectly paired with soft Parathas, creamy Dal Makhani & Gulab Jamun",
+    "badge": "Bestseller"
+  },
+  {
+    "id": 6,
+    "name": "Butter Roti",
+    "price": 30,
+    "rating": 4.0,
+    "reviews": 20,
+    "img": "https://i.pinimg.com/736x/3e/d6/cf/3ed6cf001967b21e3e2f69df942003ef.jpg",
+    "description": "A delectable feast in one box! Savour the rice flavours of tender chole perfectly paired with soft Parathas, creamy Dal Makhani & Gulab Jamun",
+    "badge": "Bestseller"
+  },
+  {
+    "id": 7,
+    "name": "Mix Veg",
+    "price": 230,
+    "rating": 4.1,
+    "reviews": 14,
+     "description": "A delectable feast in one box! Savour the rice flavours of tender chole perfectly paired with soft Parathas, creamy Dal Makhani & Gulab Jamun",
+    "badge": "Bestseller"
+  },
+  {
+    "id": 8,
+    "name": "Malai Kofta",
+    "price": 260,
+    "rating": 4.5,
+    "reviews": 18,
+    "img": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/malai-kofta-recipe.jpg",
+   "description": "A delectable feast in one box! Savour the rice flavours of tender chole perfectly paired with soft Parathas, creamy Dal Makhani & Gulab Jamun",
+    "badge": "Bestseller"
+  },
+  {
+    "id": 9,
+    "name": "Gulab Jamun",
+    "price": 80,
+    "rating": 4.6,
+    "reviews": 27,
+    "img": "https://theartisticcook.com/wp-content/uploads/2024/10/Gulab-Jamun-with-Milk-Powder.jpg",
+    "description": "A delectable feast in one box! Savour the rice flavours of tender chole perfectly paired with soft Parathas, creamy Dal Makhani & Gulab Jamun",
+    "badge": "Bestseller"
+  },
+  {
+    "id": 10,
+    "name": "Jeera Rice",
+    "price": 140,
+    "rating": 4.2,
+    "reviews": 12,
+    "img": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/12/jeera-rice-recipe.webp",
+    "description": "A delectable feast in one box! Savour the rice flavours of tender chole perfectly paired with soft Parathas, creamy Dal Makhani & Gulab Jamun",
+    "badge": "Bestseller"
+  }
+]

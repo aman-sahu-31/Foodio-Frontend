@@ -1,0 +1,359 @@
+[
+  {
+    "id": 1,
+    "basePrice": 259,
+    "addOns": {
+      "Add On Sides": {
+        "limit": 2,
+        "items": [
+          { "name": "Kulcha Tub (2 pcs)", "price": 60 },
+          { "name": "Extra Aloo Paratha (1 piece)", "price": 60 },
+          { "name": "Mini Dal Makhani Portion 80 gm", "price": 40 }
+        ]
+      },
+      "Add a Beverage": {
+        "limit": 11,
+        "items": [
+          { "name": "Lemon Soda (250 ml)", "price": 49 },
+          { "name": "Masala Lemonade (200 ml)", "price": 46 },
+          { "name": "Mint Chaas", "price": 49 },
+          { "name": "Coca-Cola Bottle (475 ml)", "price": 57 },
+          { "name": "Lemon Ice Tea", "price": 59 },
+          { "name": "Jeera Masala Soda", "price": 59 },
+          { "name": "Thums Up Can (330 ml)", "price": 67 },
+          { "name": "Coke Zero Can (330 ml)", "price": 67 }
+        ]
+      },
+      "Add On Starter": {
+        "limit": 4,
+        "items": [
+          { "name": "Sabudana Vada (2 pcs)", "price": 59 },
+          { "name": "Upvas Aloo Pattice (2pcs)", "price": 59 },
+          { "name": "Falafel Shots (6 pieces)", "price": 55 },
+          { "name": "Hara Bhara Kebab (2 pcs)", "price": 59 }
+        ]
+      },
+      "Add a Dessert": {
+        "limit": 9,
+        "items": [
+          { "name": "Gulab Jamun (1 Pc)", "price": 29 },
+          { "name": "Choco Lava Cake", "price": 99 },
+          { "name": "Belgian Chocolate Ice Cream", "price": 99 },
+          { "name": "Alphonso Mango Ice Cream", "price": 99 }
+        ]
+      }
+    }
+  },
+  {
+    "id": 2,
+    "basePrice": 320,
+    "addOns": {
+      "Add On Sides": {
+        "limit": 2,
+        "items": [
+          { "name": "Paneer Kulcha (2 pcs)", "price": 70 },
+          { "name": "Stuffed Aloo Paratha", "price": 65 },
+          { "name": "Mini Chole Portion", "price": 45 }
+        ]
+      },
+      "Add a Beverage": {
+        "limit": 11,
+        "items": [
+          { "name": "Mango Lassi", "price": 60 },
+          { "name": "Masala Lemonade", "price": 46 },
+          { "name": "Mint Chaas", "price": 49 },
+          { "name": "Pepsi Bottle", "price": 57 },
+          { "name": "Lemon Ice Tea", "price": 59 },
+          { "name": "Thums Up", "price": 67 }
+        ]
+      },
+      "Add On Starter": {
+        "limit": 4,
+        "items": [
+          { "name": "Veg Spring Roll", "price": 65 },
+          { "name": "Paneer Tikka (4 pcs)", "price": 99 },
+          { "name": "Hara Bhara Kebab", "price": 59 }
+        ]
+      },
+      "Add a Dessert": {
+        "limit": 9,
+        "items": [
+          { "name": "Rasmalai (2 pcs)", "price": 49 },
+          { "name": "Choco Lava Cake", "price": 99 }
+        ]
+      }
+    }
+  },
+  {
+    "id": 3,
+    "basePrice": 280,
+    "addOns": {
+      "Add On Sides": {
+        "limit": 2,
+        "items": [
+          { "name": "Garlic Naan", "price": 40 },
+          { "name": "Butter Roti (2 pcs)", "price": 35 }
+        ]
+      },
+      "Add a Beverage": {
+        "limit": 11,
+        "items": [
+          { "name": "Sweet Lassi", "price": 55 },
+          { "name": "Jeera Soda", "price": 50 }
+        ]
+      },
+      "Add On Starter": {
+        "limit": 4,
+        "items": [
+          { "name": "Aloo Tikki (2 pcs)", "price": 59 },
+          { "name": "Sabudana Vada", "price": 59 }
+        ]
+      },
+      "Add a Dessert": {
+        "limit": 9,
+        "items": [
+          { "name": "Ice Cream Cup", "price": 79 },
+          { "name": "Gulab Jamun", "price": 29 }
+        ]
+      }
+    }
+  },
+  {
+    "id": 4,
+    "basePrice": 300,
+    "addOns": {
+      "Add On Sides": {
+        "limit": 2,
+        "items": [
+          { "name": "Stuffed Naan", "price": 60 },
+          { "name": "Extra Roti", "price": 25 }
+        ]
+      },
+      "Add a Beverage": {
+        "limit": 11,
+        "items": [
+          { "name": "Cold Coffee", "price": 65 },
+          { "name": "Masala Soda", "price": 55 }
+        ]
+      },
+      "Add On Starter": {
+        "limit": 4,
+        "items": [
+          { "name": "Cheese Corn Balls", "price": 70 },
+          { "name": "Hara Bhara Kebab", "price": 59 }
+        ]
+      },
+      "Add a Dessert": {
+        "limit": 9,
+        "items": [
+          { "name": "Rasgulla (2 pcs)", "price": 40 },
+          { "name": "Ice Cream Cone", "price": 85 }
+        ]
+      }
+    }
+  },
+  {
+    "id": 5,
+    "basePrice": 350,
+    "addOns": {
+      "Add On Sides": {
+        "limit": 2,
+        "items": [
+          { "name": "Tandoori Roti (2 pcs)", "price": 50 },
+          { "name": "Butter Kulcha", "price": 60 }
+        ]
+      },
+      "Add a Beverage": {
+        "limit": 11,
+        "items": [
+          { "name": "Mango Shake", "price": 65 },
+          { "name": "Jeera Masala Soda", "price": 59 }
+        ]
+      },
+      "Add On Starter": {
+        "limit": 4,
+        "items": [
+          { "name": "Paneer Tikka", "price": 99 },
+          { "name": "Corn Cutlet", "price": 55 }
+        ]
+      },
+      "Add a Dessert": {
+        "limit": 9,
+        "items": [
+          { "name": "Kesar Kulfi", "price": 55 },
+          { "name": "Chocolate Sundae", "price": 99 }
+        ]
+      }
+    }
+  },
+  {
+    "id": 6,
+    "basePrice": 265,
+    "addOns": {
+      "Add On Sides": {
+        "limit": 2,
+        "items": [
+          { "name": "Roti Basket", "price": 70 },
+          { "name": "Mini Dal Fry", "price": 50 }
+        ]
+      },
+      "Add a Beverage": {
+        "limit": 11,
+        "items": [
+          { "name": "Cold Coffee", "price": 60 },
+          { "name": "Mint Mojito", "price": 65 }
+        ]
+      },
+      "Add On Starter": {
+        "limit": 4,
+        "items": [
+          { "name": "Cheese Balls", "price": 65 },
+          { "name": "Soya Chaap Tikka", "price": 99 }
+        ]
+      },
+      "Add a Dessert": {
+        "limit": 9,
+        "items": [
+          { "name": "Chocolate Brownie", "price": 89 },
+          { "name": "Gulab Jamun", "price": 29 }
+        ]
+      }
+    }
+  },
+  {
+    "id": 7,
+    "basePrice": 240,
+    "addOns": {
+      "Add On Sides": {
+        "limit": 2,
+        "items": [
+          { "name": "Masala Papad", "price": 20 },
+          { "name": "Cheese Garlic Naan", "price": 65 }
+        ]
+      },
+      "Add a Beverage": {
+        "limit": 11,
+        "items": [
+          { "name": "Buttermilk", "price": 25 },
+          { "name": "Sweet Lassi", "price": 55 }
+        ]
+      },
+      "Add On Starter": {
+        "limit": 4,
+        "items": [
+          { "name": "Crispy Corn", "price": 60 },
+          { "name": "Veg Spring Roll", "price": 65 }
+        ]
+      },
+      "Add a Dessert": {
+        "limit": 9,
+        "items": [
+          { "name": "Rasmalai", "price": 49 },
+          { "name": "Choco Ice Cream", "price": 89 }
+        ]
+      }
+    }
+  },
+  {
+    "id": 8,
+    "basePrice": 285,
+    "addOns": {
+      "Add On Sides": {
+        "limit": 2,
+        "items": [
+          { "name": "Paneer Kulcha", "price": 70 },
+          { "name": "Extra Naan", "price": 40 }
+        ]
+      },
+      "Add a Beverage": {
+        "limit": 11,
+        "items": [
+          { "name": "Jeera Masala Soda", "price": 59 },
+          { "name": "Cold Coffee", "price": 60 }
+        ]
+      },
+      "Add On Starter": {
+        "limit": 4,
+        "items": [
+          { "name": "Sabudana Vada", "price": 59 },
+          { "name": "Corn Cutlet", "price": 55 }
+        ]
+      },
+      "Add a Dessert": {
+        "limit": 9,
+        "items": [
+          { "name": "Belgian Chocolate Ice Cream", "price": 99 },
+          { "name": "Choco Lava Cake", "price": 99 }
+        ]
+      }
+    }
+  },
+  {
+    "id": 9,
+    "basePrice": 295,
+    "addOns": {
+      "Add On Sides": {
+        "limit": 2,
+        "items": [
+          { "name": "Cheese Garlic Naan", "price": 65 },
+          { "name": "Stuffed Kulcha", "price": 60 }
+        ]
+      },
+      "Add a Beverage": {
+        "limit": 11,
+        "items": [
+          { "name": "Masala Lemonade", "price": 46 },
+          { "name": "Mint Chaas", "price": 49 }
+        ]
+      },
+      "Add On Starter": {
+        "limit": 4,
+        "items": [
+          { "name": "Hara Bhara Kebab", "price": 59 },
+          { "name": "Soya Chaap Tikka", "price": 99 }
+        ]
+      },
+      "Add a Dessert": {
+        "limit": 9,
+        "items": [
+          { "name": "Rasmalai", "price": 49 },
+          { "name": "Kesar Kulfi", "price": 55 }
+        ]
+      }
+    }
+  },
+  {
+    "id": 10,
+    "basePrice": 310,
+    "addOns": {
+      "Add On Sides": {
+        "limit": 2,
+        "items": [
+          { "name": "Tandoori Roti", "price": 25 },
+          { "name": "Butter Naan", "price": 40 }
+        ]
+      },
+      "Add a Beverage": {
+        "limit": 11,
+        "items": [
+          { "name": "Lemon Soda", "price": 49 },
+          { "name": "Pepsi", "price": 57 }
+        ]
+      },
+      "Add On Starter": {
+        "limit": 4,
+        "items": [
+          { "name": "Cheese Corn Balls", "price": 70 },
+          { "name": "Crispy Corn", "price": 60 }
+        ]
+      },
+      "Add a Dessert": {
+        "limit": 9,
+        "items": [
+          { "name": "Chocolate Brownie", "price": 89 },
+          { "name": "Choco Lava Cake", "price": 99 }
+        ]
+      }
+    }
+  }
+]

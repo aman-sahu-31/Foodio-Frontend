@@ -18,7 +18,7 @@
     ],
     "menu": {
       "recommended": [
-        { "name": "Paneer Tikka", "price": 320, "rating": 4.4, "reviews": 22, "img": "https://i.pinimg.com/736x/59/81/85/5981859da80c1d8580654daf371d0ffe.jpg" },
+        { "name": "Paneer Tikka", "price": 320,  "rating": 4.4, "reviews": 22, "img": "https://i.pinimg.com/736x/59/81/85/5981859da80c1d8580654daf371d0ffe.jpg" },
         { "name": "Veg Manchurian", "price": 250, "rating": 4.3, "reviews": 15, "img": "https://i.pinimg.com/736x/d2/26/09/d22609efc42984ac31068cafc8f9427b.jpg" },
         { "name": "Dal Makhani", "price": 280, "rating": 4.5, "reviews": 19, "img": "https://i.pinimg.com/736x/6a/66/b0/6a66b06d6a41670ab021a73eeaf72196.jpg" },
         { "name": "Stuffed Naan", "price": 120, "rating": 4.2, "reviews": 11, "img": "https://i.pinimg.com/736x/3e/d6/cf/3ed6cf001967b21e3e2f69df942003ef.jpg" },
