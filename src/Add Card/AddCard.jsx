@@ -22,7 +22,6 @@ function AddCard() {
                         />
                     </div>
 
-                    {/* Center: Content */}
                     <div className="flex-1 px-4 py-3">
                         <div className="flex items-center justify-center space-x-2">
                             <img
@@ -63,8 +62,6 @@ function AddCard() {
                         </button>
                             </div>
                     </div>
-
-                    {/* Right: Add button */}
                    
                 </div>
             ))}

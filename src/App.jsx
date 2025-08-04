@@ -11,6 +11,8 @@ import Menubar from './Components/Menubar';
 import MenuRestoData from './Pages/MenuRestoData';
 import AddCard from './Add Card/AddCard';
 import AddOnsCard from './Add Card/AddOnsData';
+import AddBill from './Add Card/AddBill';
+
 function App() {
   return (
     <BrowserRouter>
@@ -20,15 +22,16 @@ function App() {
           <Route path="offers" element={<SpecialOffers/>} />
           <Route path="Menubar" element={<Menubar />} />
           <Route path="restaurent" element={<MenuRestaurent />} />
-          <Route path="/details/:id" element={<BestRestorantList/>} />
-          <Route path="/restaurantCard/:id" element={<MenuRestoData/>} />
+          <Route path="details/:id" element={<BestRestorantList/>} />
+          <Route path="restaurantCard/:id" element={<MenuRestoData/>} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
           <Route path="restaurant/:id" element={<RestaurantExtraInfo/>} />
-          <Route path="/AddCard/:id" element={<AddCard/>}/>
-          <Route path="/addOnscard/:id" element={<AddOnsCard />} />
+          <Route path="AddCard/:id" element={<AddCard/>}/>
+          <Route path="addOnscard/:id" element={<AddOnsCard />} />
+         <Route path="Bill/:id" element={<AddBill />} />
         </Route>
-          <Route path="*" element={<h1>404 Not Found</h1>} />
+        <Route path="*" element={<h1>404 Not Found</h1>} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import data from '../Add Card/AddOnsData.json';
+import { NavLink } from 'react-router-dom';
 
 function AddOnsCard() {
   const item = data.find((d) => d.id === 1); // Change to dynamic ID if needed
@@ -39,6 +40,9 @@ function AddOnsCard() {
         }, 0)
       );
     }, 0);
+
+  // You can also pass the selected items here if needed
+  const selectedAddOns = selected;
 
   return (
     <div className="fixed inset-0 bg-black/50 flex justify-center items-center z-50">
@@ -89,9 +93,15 @@ function AddOnsCard() {
           <span className="text-sm font-semibold">
             {totalAddOn} Add-on | ₹ {totalPrice}
           </span>
-          <button className="bg-white text-indigo-700 px-4 py-1 rounded font-bold">
-            Add Item
-          </button>
+          {/* Pass data as state to the NavLink */}
+          <NavLink
+            to={`/Bill/${item.id}`}
+            state={{ totalPrice, totalAddOn, title, selectedAddOns }}
+          >
+            <button className="bg-white text-indigo-700 px-4 py-1 rounded font-bold">
+              Add Item
+            </button>
+          </NavLink>
         </div>
       </div>
     </div>

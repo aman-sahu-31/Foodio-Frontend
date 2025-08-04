@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import data from '../Pages/Json-File/RestaurantCard.json';
+import AddOnsCard from '../Add Card/AddOnsData';
 
 const RestaurantExtraInfo = () => {
   const { id } = useParams();

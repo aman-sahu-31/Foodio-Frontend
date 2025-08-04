@@ -2,6 +2,7 @@
   {
     "id": 1,
     "basePrice": 259,
+    "title": "Paneer Tikka",
     "addOns": {
       "Add On Sides": {
         "limit": 2,
@@ -357,3 +358,4 @@
     }
   }
 ]
+  
