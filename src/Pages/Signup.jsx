@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaUser, FaEnvelope, FaLock } from 'react-icons/fa';
-import food from '../assets/Photos/Foodi.png'
+import food from '../assets/Photos/Foodi.png';
 
 function Signup() {
   const handleSignup = (e) => {
@@ -36,7 +36,7 @@ function Signup() {
 
           <div className="text-sm text-gray-500">
             <input type="checkbox" required className="mr-2" />
-            I Read and agree to <span className="text-orange-500 underline">Terms & Conditions</span>
+            I agree to <span className="text-orange-500 underline">Terms & Conditions</span>
           </div>
 
           <button
@@ -49,8 +49,8 @@ function Signup() {
           <div className="text-center text-sm text-gray-500 mt-4">Or Register using social Media</div>
 
           <div className="flex justify-center space-x-4 mt-2">
-            <a href="#" className="text-blue-600"><i className="fab fa-facebook-f">Google</i></a>
-            <a href="#" className="text-sky-500"><i className="fab fa-twitter">FaceBook</i></a>
+            <a href="#" className="text-blue-600"><i className="fab fa-google">Google</i></a>
+            <a href="#" className="text-sky-500"><i className="fab fa-facebook-f">Facebook</i></a>
           </div>
         </form>
 

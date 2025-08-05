@@ -1,11 +1,11 @@
 import React from 'react';
 import { NavLink, useParams } from 'react-router-dom';
 import data from '../Pages/Json-File/MenuRestaurent.json';
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const MenuRestoData = () => {
   const { id } = useParams();
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const item = data.find(r => String(r.id) === String(id));
 
   if (!item) {
@@ -40,7 +40,7 @@ const MenuRestoData = () => {
 
         {/* ========== Main Content ========== */}
         <main className="flex-1 space-y-8"
-        //  onClick={() => navigate(`/AddCard/${item.id}`)}
+         onClick={() => navigate(`/AddCard/${item.id}`)}
         >
 
           {/* Header */}
@@ -95,11 +95,10 @@ const MenuRestoData = () => {
                       <div className="flex items-center mt-2">{dish.rating && <div className="bg-green-100 text-green-800 text-xs font-bold px-2 py-0.5 rounded">★ {dish.rating}</div>}</div>
                       <div className="flex justify-between items-center mt-3">
                         <p className="text-lg font-bold text-gray-800">₹{dish.price}</p>
-                        <NavLink to={`/addOnscard/${item.id}`}>
+                    
                           <button className="bg-purple-100 text-purple-700 text-sm font-semibold px-4 py-1 rounded hover:bg-purple-200">
                             Add
                           </button>
-                        </NavLink>
                       </div>
                     </div>
                   </div>
@@ -145,11 +144,11 @@ const MenuRestoData = () => {
                       <div className="flex items-center mt-2">{maggi.rating && <div className="bg-green-100 text-green-800 text-xs font-bold px-2 py-0.5 rounded">★ {maggi.rating}</div>}</div>
                       <div className="flex justify-between items-center mt-3">
                         <p className="text-lg font-bold text-gray-800">₹{maggi.price}</p>
-                        <NavLink to={`/addOnscard/${item.id}`}>
+                    
                           <button className="bg-purple-100 text-purple-700 text-sm font-semibold px-4 py-1 rounded hover:bg-purple-200">
                             Add
                           </button>
-                        </NavLink>
+                     `x`
 
                       </div>
                     </div>

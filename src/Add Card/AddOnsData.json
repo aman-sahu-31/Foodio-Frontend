@@ -48,6 +48,7 @@
   {
     "id": 2,
     "basePrice": 320,
+    "title": "Veg Manchurian",
     "addOns": {
       "Add On Sides": {
         "limit": 2,
@@ -88,6 +89,7 @@
   {
     "id": 3,
     "basePrice": 280,
+    "title": "Paneer Butter Masala",
     "addOns": {
       "Add On Sides": {
         "limit": 2,
@@ -122,6 +124,7 @@
   {
     "id": 4,
     "basePrice": 300,
+    "title": "Paneer Tikka",
     "addOns": {
       "Add On Sides": {
         "limit": 2,
@@ -156,6 +159,7 @@
   {
     "id": 5,
     "basePrice": 350,
+    "title": "Chilli Paneer",
     "addOns": {
       "Add On Sides": {
         "limit": 2,
@@ -190,6 +194,7 @@
   {
     "id": 6,
     "basePrice": 265,
+    "title": "Butter Roti",
     "addOns": {
       "Add On Sides": {
         "limit": 2,
@@ -223,6 +228,7 @@
   },
   {
     "id": 7,
+    "title": "Paneer Butter Masala",
     "basePrice": 240,
     "addOns": {
       "Add On Sides": {
@@ -257,6 +263,7 @@
   },
   {
     "id": 8,
+    "title": "Paneer Tikka",
     "basePrice": 285,
     "addOns": {
       "Add On Sides": {
@@ -291,6 +298,7 @@
   },
   {
     "id": 9,
+    "title": "Veg Manchurian",
     "basePrice": 295,
     "addOns": {
       "Add On Sides": {
@@ -325,6 +333,7 @@
   },
   {
     "id": 10,
+    "title": "Paneer Makhani",
     "basePrice": 310,
     "addOns": {
       "Add On Sides": {

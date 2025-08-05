@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from '../Pages/Json-File/AddCard.json'; // your JSON file
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,NavLink } from 'react-router-dom';
+// import data from '../Pages/Json-File/MenuRestaurent.json';
 
 function AddCard() {
     const navigate = useNavigate();
@@ -51,15 +52,18 @@ function AddCard() {
 
                         <div className="flex items-center justify-between mt-4">
                             <p className="text-xl font-bold">₹{item.price}</p>
+                                <NavLink to={`/addOnscard/${item.id}`}>
                         <button
                             className="bg-indigo-600 w-30 mr-10 hover:bg-indigo-700 text-white text-sm font-bold px-6 py-3 rounded-lg shadow"
                             onClick={(e) => {
                                 e.stopPropagation();
-                                alert(`Added: ${item.name}`);
+                                
                             }}
                             >
                             Add
                         </button>
+                        </NavLink>
+
                             </div>
                     </div>
                    
