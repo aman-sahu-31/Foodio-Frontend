@@ -4,9 +4,13 @@ import { FaUser, FaBars, FaTimes } from 'react-icons/fa'
 import { TiLocation } from 'react-icons/ti'
 import { FaShoppingBasket, FaCheckCircle, FaArrowDown } from 'react-icons/fa'
 import { NavLink, Outlet } from 'react-router-dom'
+import Login from "../Pages/Login";
+import Signup from "../Pages/Signup";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+    const [showLogin, setShowLogin] = useState(false);
+  const [showSignup, setShowSignup] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen)
@@ -73,10 +77,37 @@ function Navbar() {
             <p className="px-4 py-2 hover:bg-orange-200 rounded-full cursor-pointer">Restaurants</p>
             </NavLink>
             <p className="px-4 py-2 hover:bg-orange-200 rounded-full cursor-pointer">Track Order</p>
-            <div className="hidden md:flex items-center bg-[#060b27] text-white rounded-full px-5 py-2 text-sm">
-              <FaUser className="mr-2 text-orange-400" />
-              <NavLink to="/Login">
-              <button className="mr-1">Login</button></NavLink>/<NavLink to="/Signup"><button className="ml-1">Signup</button> </NavLink>
+            <div className="hidden md:flex items-center text-black  border rounded-full  text-sm">
+              <FaUser className="mx-2 text-orange-400" />
+        
+
+  <div className="flex gap-3 px-2  ">
+          <button
+            onClick={() => {
+              setShowLogin(true);
+              setShowSignup(false);
+            }}
+            className=" py-2 rounded-lg  "
+          >
+            Login
+          </button>
+          <h1 className="flex items-center justify-center">/</h1>
+          <button
+            onClick={() => {
+              setShowSignup(true);
+              setShowLogin(false);
+            }}
+            className=" py-2 rounded-lg  "
+          >
+            Signup
+          </button>
+        </div>
+          {showLogin && <Login onClose={() => setShowLogin(false)} />}
+      {showSignup && <Signup onClose={() => setShowSignup(false)} />}
+
+
+
+              
             </div>
           </div>
           <div className="md:hidden flex items-center">
@@ -100,8 +131,35 @@ function Navbar() {
             <p className="block hover:bg-orange-200 px-4 py-2 rounded-full">Track Order</p>
             <div className="flex items-center bg-[#060b27] text-white rounded-full px-5 py-2 text-sm w-fit">
               <FaUser className="mr-2 text-orange-400" />
-                <NavLink to="/Login">
-              <button className="mr-1">Login</button></NavLink>/<NavLink to="/Signup"><button className="ml-1">Signup</button></NavLink>
+                {/* <NavLink to="/login">
+              <button className="mr-1">Login</button></NavLink>/<NavLink to="/signup"><button className="ml-1">Signup</button></NavLink> */}
+
+<div className="flex gap-3">
+          <button
+            onClick={() => {
+              setShowLogin(true);
+              setShowSignup(false);
+            }}
+            className="px-4 py-2 rounded-lg bg-orange-500 text-white"
+          >
+            Login
+          </button>
+
+          <button
+            onClick={() => {
+              setShowSignup(true);
+              setShowLogin(false);
+            }}
+            className="px-4 py-2 rounded-lg bg-gray-200 text-black"
+          >
+            Signup
+          </button>
+        </div>
+          {showLogin && <Login onClose={() => setShowLogin(false)} />}
+      {showSignup && <Signup onClose={() => setShowSignup(false)} />}
+
+
+
             </div>
           </div>
         )}
