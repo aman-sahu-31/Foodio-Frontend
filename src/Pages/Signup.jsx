@@ -1,83 +1,122 @@
 import React, { useState } from "react";
+import axios from "axios";
 import { Mail, Lock, User } from "lucide-react";
 import logo from "../assets/Photos/Foodi.png";
-import { FaGoogle, FaFacebook } from "react-icons/fa";
-import axios from "axios";
 
 function Signup({ onClose, onLoginClick }) {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+
   const [otp, setOtp] = useState("");
+  const [otpSent, setOtpSent] = useState(false);
   const [showOtpModal, setShowOtpModal] = useState(false);
 
-  // Step 1: Register User
-  // const trySubmit = async (e) => {
-  //   e.preventDefault();
+  const [statusMessage, setStatusMessage] = useState(""); // ✅ for inline messages
 
-  //   if (!fullName || !email || !password || !confirmPassword) {
-  //     alert("All fields are required.");
-  //     return;
-  //   }
+  // ========================
+  // Register User
+  // ========================
+  const trySubmit = async (e) => {
+    e.preventDefault();
 
-  //   if (password !== confirmPassword) {
-  //     alert("Passwords do not match.");
-  //     return;
-  //   }
+    if (!fullName || !email || !password || !confirmPassword) {
+      setStatusMessage("⚠️ All fields are required");
+      return;
+    }
+    if (password !== confirmPassword) {
+      setStatusMessage("⚠️ Passwords do not match.");
+      return;
+    }
 
-  //   try {
-  //     const response = await axios.post("http://localhost:8000/user/register", {
-  //       first_name: fullName.split(" ")[0],
-  //       last_name: fullName.split(" ")[1] || "",
-  //       email: email,
-  //       password: password,
-  //       confirm_password: confirmPassword,
-  //     });
+    try {
+      const response = await axios.post("http://localhost:8000/user/SignUp", {
+        Full_Name: fullName,
+        Email: email,
+        Password: password,
+        Confirm_Password: confirmPassword,
+      });
 
-  //     if (response.data.message === "Registration successful") {
-  //       alert("Account created. OTP will be sent to your email.");
+      if (response.data.message === "Registration Successful") {
+        setStatusMessage("✅ Registration successful! Now send OTP to verify your email.");
+        setOtpSent(false);
+      } else {
+        setStatusMessage(response.data.message);
+      }
+    } catch (err) {
+      console.log(err);
+      setStatusMessage(err.response?.data?.message || "Registration failed. Try again.");
+    }
+  };
 
-  //       // Step 2: Call OTP API
-  //       await axios.post("http://localhost:8000/user/sendOtp", {
-  //         email,
-  //         otp_type: "verification",
-  //       });
+// ========================
+// Send OTP
+// ========================
+const handleSendOtp = async () => {
+  try {
+    const res = await axios.post("http://localhost:8000/user/SendOtp", {
+      Email: email,
+      Otp_Type: "verification", // ✅ spelling fixed
+    });
 
-  //       // Show OTP input popup
-  //       setShowOtpModal(true);
-  //     } else {
-  //       alert(response.data.message);
-  //     }
-  //   } catch (err) {
-  //     alert(err.response?.data?.detail || "Registration failed. Try again.");
-  //   }
-  // };
+    if (res.data.message === "OTP sent successfully") {
+      setStatusMessage("📩 OTP sent to your email!");
+      setOtpSent(true);
+      setShowOtpModal(true);
+    } else {
+      setStatusMessage(res.data.message);
+    }
+  } catch (err) {
+    console.log(err);
+    setStatusMessage("Failed to send OTP");
+  }
+};
 
-  // // Step 3: Verify OTP
-  // const handleOtpVerify = async () => {
-  //   try {
-  //     const res = await axios.post("http://localhost:8000/user/verifyOTP", {
-  //       email,
-  //       otp,
-  //       otp_type: "verification",
-  //     });
+// ========================
+// Verify OTP
+// ========================
+const handleOtpVerify = async () => {
+  if (!otp) {
+    setStatusMessage("⚠️ Please enter OTP");
+    return;
+  }
 
-  //     if (res.data.message === "Email verified successfully") {
-  //       alert("🎉 Registration complete! You can now login.");
-  //       setShowOtpModal(false);
-  //       setFull_Name("");
-  //       setEmail("");
-  //       setPassword("");
-  //       setConfirmPassword("");
-  //       onLoginClick(); // switch to login
-  //     } else {
-  //       alert(res.data.message);
-  //     }
-  //   } catch (error) {
-  //     alert("OTP verification failed");
-  //   }
-  // };
+  try {
+    const res = await axios.post("http://localhost:8000/user/verifyOTP", {
+      Email: email,
+      Otp: Number(otp),
+      Otp_Type: "verification", // ✅ spelling fixed
+    });
+
+    if (res.data.message === "verification done") {
+      setStatusMessage("🎉 Verification done! You can now login.");
+
+      // ✅ close OTP modal & reset state
+      setShowOtpModal(false);
+      setOtpSent(false);
+
+      // reset form
+      setFullName("");
+      setEmail("");
+      setPassword("");
+      setConfirmPassword("");
+      setOtp("");
+
+      // auto close signup after 2s
+      setTimeout(() => {
+        onLoginClick();
+        onClose();
+      }, 2000);
+    } else {
+      setStatusMessage(res.data.message);
+    }
+  } catch (error) {
+    console.log(error);
+    setStatusMessage("OTP verification failed");
+  }
+};
+
 
   return (
     <div className="fixed inset-0 bg-black/50 flex justify-end z-50">
@@ -95,14 +134,12 @@ function Signup({ onClose, onLoginClick }) {
           <img src={logo} alt="Logo" className="h-12" />
         </div>
 
-        {/* Title */}
         <h2 className="text-2xl font-bold text-center mb-6 text-gray-800">
           Create Account
         </h2>
 
         {/* Signup Form */}
         <form onSubmit={trySubmit}>
-          {/* Full Name */}
           <div className="mb-4 flex items-center rounded-lg px-3 border">
             <User className="text-orange-500 mr-2" size={18} />
             <input
@@ -114,7 +151,6 @@ function Signup({ onClose, onLoginClick }) {
             />
           </div>
 
-          {/* Email */}
           <div className="mb-4 flex items-center rounded-lg px-3 border">
             <Mail className="text-orange-500 mr-2" size={18} />
             <input
@@ -126,7 +162,6 @@ function Signup({ onClose, onLoginClick }) {
             />
           </div>
 
-          {/* Password */}
           <div className="mb-4 flex items-center rounded-lg px-3 border">
             <Lock className="text-orange-500 mr-2" size={18} />
             <input
@@ -138,7 +173,6 @@ function Signup({ onClose, onLoginClick }) {
             />
           </div>
 
-          {/* Confirm Password */}
           <div className="mb-6 flex items-center rounded-lg px-3 border">
             <Lock className="text-orange-500 mr-2" size={18} />
             <input
@@ -150,7 +184,6 @@ function Signup({ onClose, onLoginClick }) {
             />
           </div>
 
-          {/* Signup Button */}
           <button
             type="submit"
             className="w-full bg-orange-500 text-white py-2 rounded-full font-semibold hover:bg-orange-600 transition"
@@ -159,13 +192,32 @@ function Signup({ onClose, onLoginClick }) {
           </button>
         </form>
 
+        {/* Inline status message */}
+        {statusMessage && (
+          <p className="mt-4 text-center text-sm font-medium text-green-600">
+            {statusMessage}
+          </p>
+        )}
+
+        {/* Show Send OTP Button After Registration */}
+        {email && !otpSent && (
+          <button
+            onClick={handleSendOtp}
+            className="w-full mt-4 bg-blue-500 text-white py-2 rounded-full hover:bg-blue-600 transition"
+          >
+            Send OTP
+          </button>
+        )}
+
         {/* OTP Modal */}
         {showOtpModal && (
           <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
             <div className="bg-white rounded-xl shadow-lg p-6 w-80">
               <h3 className="text-lg font-semibold mb-4 text-center">
-                Enter OTP sent to your email
+                Verify Your Email
               </h3>
+
+              {/* Enter OTP */}
               <input
                 type="text"
                 placeholder="Enter OTP"
@@ -173,6 +225,8 @@ function Signup({ onClose, onLoginClick }) {
                 onChange={(e) => setOtp(e.target.value)}
                 className="w-full border px-3 py-2 rounded mb-4"
               />
+
+              {/* Verify OTP button */}
               <button
                 onClick={handleOtpVerify}
                 className="w-full bg-green-500 text-white py-2 rounded hover:bg-green-600"

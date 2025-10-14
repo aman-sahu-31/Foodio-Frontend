@@ -4,8 +4,8 @@ import { FaUser, FaBars, FaTimes } from 'react-icons/fa'
 import { TiLocation } from 'react-icons/ti'
 import { FaShoppingBasket, FaCheckCircle, FaArrowDown } from 'react-icons/fa'
 import { NavLink, Outlet } from 'react-router-dom'
-import Login from "../Pages/Login";
-import Signup from "../Pages/Signup";
+// import Login from "../Pages/Login";
+// import Signup from "../Pages/Signup";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -31,7 +31,7 @@ function Navbar() {
           <div className="flex flex-col md:flex-row md:items-center md:space-x-4 space-y-2 md:space-y-0">
             <div className="flex items-center space-x-2">
               <TiLocation className="text-black text-lg" />
-              <span className="text-sm">Regent Street, A6, AB200, London</span>
+              <span className="text-sm">Ab Road, Indore</span>
               <span className="text-orange-600 underline cursor-pointer hover:text-orange-400 text-sm">
                 Change Location
               </span>
@@ -82,6 +82,7 @@ function Navbar() {
         
 
   <div className="flex gap-3 px-2  ">
+    <NavLink to="/Login">
           <button
             onClick={() => {
               setShowLogin(true);
@@ -91,6 +92,7 @@ function Navbar() {
           >
             Login
           </button>
+          </NavLink>
           <h1 className="flex items-center justify-center">/</h1>
           <button
             onClick={() => {

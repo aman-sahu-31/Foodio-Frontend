@@ -4,6 +4,8 @@ import logo from '../assets/Photos/Foodi.png'
 import { FaGoogle,FaFacebook } from "react-icons/fa";
 
 function Login({ onClose, onLoginClick }) {
+
+  
   return (
     <div className="fixed inset-0 bg-black/50 bg-opacity-50 flex justify-end z-50">
       <div className="w-full max-w-md bg-white h-full p-8 relative shadow-lg overflow-y-auto">
