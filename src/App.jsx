@@ -45,6 +45,7 @@ import UserPaymentHistory from "./Components/User/UserPaymentHistory";
 import USerProfileSettings from "./Components/User/USerProfileSettings";
 import UserSavedRestaurants from "./Components/User/UserSavedRestaurants";
 import UserTrackOrder from "./Components/User/UserTrackOrder";
+import SignUp from "./Components/Login/Signup";
 
 function App() {
   return (
@@ -65,13 +66,14 @@ function App() {
           <Route path="Bill/:id" element={<AddBill />} />
           <Route path="data" element={<BestdataCard />} />
           <Route path="Login" element={<Login />} />
+          <Route path="SignUp" element={<SignUp />} />
         </Route>
 
-        {/* ---------- OWNER DASHBOARD (Protected) ---------- */}
+        {/* ---------- OWNER SIDE ---------- */}
         <Route
           path="/owner/*"
           element={
-            <ProtectedRoute allowedRole="Owner">
+            <ProtectedRoute allowedRoles="Owner">
               <OwnerSidebar />
             </ProtectedRoute>
           }
@@ -81,17 +83,18 @@ function App() {
           <Route path="orders" element={<OwnerOrder />} />
           <Route path="payments" element={<OwnerPayment />} />
           <Route path="profile" element={<OwnerProfile />} />
-          <Route path="menu" element={<OwnerMenuManagement />} />
+          {/* ✅ Corrected Menu Management Route */}
+          <Route path="menu/:restaurantId" element={<OwnerMenuManagement />} />
           <Route path="analytics" element={<OwnerRestaurantAnalytics />} />
           <Route path="reviews" element={<OwnerReviewsRatings />} />
           <Route path="offers" element={<OwnerManageOffers />} />
         </Route>
 
-    {/* ---------- ADMIN DASHBOARD (Protected) ---------- */} 
-     <Route
-          path="/Admin/*"
+        {/* ---------- ADMIN SIDE ---------- */}
+        <Route
+          path="/admin/*"
           element={
-            <ProtectedRoute allowedRole="Admin">
+            <ProtectedRoute allowedRoles="Admin">
               <AdminLayout />
             </ProtectedRoute>
           }
@@ -100,36 +103,34 @@ function App() {
           <Route path="feedbacks" element={<AdminComplaintsFeedbacks />} />
           <Route path="owners" element={<AdminManageOwners />} />
           <Route path="restaurants" element={<AdminManageRestaurants />} />
-          <Route path="users" element={<AdminManageUsers/>} />
+          <Route path="users" element={<AdminManageUsers />} />
           <Route path="offers" element={<AdminOffersPromotions />} />
-          <Route path="orders" element={<AdminOrdersManagement/>} />
+          <Route path="orders" element={<AdminOrdersManagement />} />
           <Route path="payments" element={<AdminPaymentsTransactions />} />
           <Route path="profile" element={<AdminProfile />} />
           <Route path="settings" element={<AdminSettings />} />
-          <Route path="analytics" element={<AdminReportsAnalytics />} /> 
+          <Route path="analytics" element={<AdminReportsAnalytics />} />
         </Route>
 
-      {/* ---------- USER DASHBOARD (Protected) ---------- */} 
-       <Route
-          path="/User/*"
+        {/* ---------- USER DASHBOARD ---------- */}
+        <Route
+          path="/user/*"
           element={
-            <ProtectedRoute allowedRole="User">
+            <ProtectedRoute allowedRoles="User">
               <UserLayout />
             </ProtectedRoute>
           }
         >
-          <Route path="dashboard" element={<UserHomeBrowseRestaurants/>} />
-          <Route path="help" element={<UserHelpCenter/>} />
-          <Route path="cart" element={<UserMyCart/>} />
+          <Route path="dashboard" element={<UserHomeBrowseRestaurants />} />
+          <Route path="help" element={<UserHelpCenter />} />
+          <Route path="cart" element={<UserMyCart />} />
           <Route path="offers" element={<UserOffersDiscounts />} />
-          <Route path="orders" element={<UserOrderHistory/>} />
-          <Route path="payments" element={<UserPaymentHistory/>} />
-          <Route path="profile" element={<USerProfileSettings/>} />
-          <Route path="restaurants" element={<UserSavedRestaurants/>} />
-          <Route path="track" element={<UserTrackOrder/>} />
-         
+          <Route path="orders" element={<UserOrderHistory />} />
+          <Route path="payments" element={<UserPaymentHistory />} />
+          <Route path="profile" element={<USerProfileSettings />} />
+          <Route path="restaurants" element={<UserSavedRestaurants />} />
+          <Route path="track" element={<UserTrackOrder />} />
         </Route>
-
 
         {/* ---------- 404 ---------- */}
         <Route

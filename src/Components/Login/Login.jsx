@@ -17,7 +17,7 @@ function Login() {
       const res = await axios.post("http://localhost:8000/user/login", {
         email,
         password,
-      });
+      }, { withCredentials: true });
 
       console.log(res.data);
 
@@ -39,19 +39,19 @@ function Login() {
           else if (user.role === "User") navigate("/user");
           else navigate("/");
         }, 1000);
-      } 
+      }
       else if (res.data.message === "User not found") {
         setMessage("Invalid email. Please try again.");
         setMessageType("error");
-      } 
+      }
       else if (res.data.message === "Password Mismatch") {
         setMessage("Incorrect password. Please try again.");
         setMessageType("error");
-      } 
+      }
       else if (res.data.message === "User not verified") {
         setMessage("Your account is not verified. Please verify your email.");
         setMessageType("error");
-      } 
+      }
       else {
         setMessage(res.data.message || "Login failed. Please try again.");
         setMessageType("error");
@@ -61,6 +61,12 @@ function Login() {
       setMessage("Server error. Please try again later.");
       setMessageType("error");
     }
+  };
+
+  // 🌟 NEW FUNCTION: Handles navigation to the sign-up page
+  const handleSignUpClick = () => {
+    // Assuming your sign-up route is '/signup'
+    navigate("/SignUp"); 
   };
 
   return (
@@ -124,7 +130,11 @@ function Login() {
 
         <p className="text-center text-sm text-gray-500 mt-4">
           Don’t have an account?{" "}
-          <span className="text-orange-500 font-medium cursor-pointer hover:underline">
+          {/* 🌟 CHANGE IS HERE: Added onClick handler */}
+          <span 
+            className="text-orange-500 font-medium cursor-pointer hover:underline"
+            onClick={handleSignUpClick} // <--- This triggers the redirect
+          >
             Register
           </span>
         </p>

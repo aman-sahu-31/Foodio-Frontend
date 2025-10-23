@@ -16,22 +16,30 @@ import logo from "../../assets/Photos/Foodi.png";
 
 function OwnerSidebar() {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const [isOpen, setIsOpen] = useState(false);
 
   // 🧠 Get user data from Redux store
   const user = useSelector((state) => state.owner);
-  const dispatch = useDispatch();
+
+  // First restaurant ID
+  const restaurantId = user?.restaurants?.[0]?._id || null;
 
   const handleLogout = () => {
-    dispatch(logoutUser()); // clear Redux user
-    localStorage.removeItem("user"); // clear localStorage token
-    navigate("/login");
+    dispatch?.({ type: "OWNER_LOGOUT" }); 
+    localStorage.removeItem("user");
+    localStorage.removeItem("token");
+    navigate("/login", { replace: true });
   };
 
   const menuItems = [
     { name: "Dashboard", icon: <Store className="inline mr-2" />, path: "/owner/dashboard" },
     { name: "Restaurants", icon: <Store className="inline mr-2" />, path: "/owner/restaurants" },
-    { name: "Menu Management", icon: <Store className="inline mr-2" />, path: "/owner/menu" },
+    { 
+      name: "Menu Management", 
+      icon: <Store className="inline mr-2" />, 
+      path: restaurantId ? `/owner/menu/${restaurantId}` : "#"
+    },
     { name: "Manage Offers", icon: <Gift className="inline mr-2" />, path: "/owner/offers" },
     { name: "Reviews & Ratings", icon: <Star className="inline mr-2" />, path: "/owner/reviews" },
     { name: "Orders", icon: <CreditCard className="inline mr-2" />, path: "/owner/orders" },
@@ -58,7 +66,6 @@ function OwnerSidebar() {
         transform ${isOpen ? "translate-x-0" : "-translate-x-full"} md:translate-x-0
         transition-transform duration-300 ease-in-out z-50`}
       >
-        {/* Scrollable Section */}
         <div className="p-4 overflow-y-auto flex-1 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
           <img src={logo} alt="logo" className="w-24 mx-auto mb-5" />
           <hr className="mb-3" />
@@ -70,10 +77,9 @@ function OwnerSidebar() {
                 to={item.path}
                 className={({ isActive }) =>
                   `flex items-center px-3 py-2 rounded-lg font-medium transition-colors
-                  ${
-                    isActive
-                      ? "bg-orange-100 text-orange-600"
-                      : "text-gray-700 hover:bg-orange-50 hover:text-orange-500"
+                  ${isActive
+                    ? "bg-orange-100 text-orange-600"
+                    : "text-gray-700 hover:bg-orange-50 hover:text-orange-500"
                   }`
                 }
                 onClick={() => setIsOpen(false)}
@@ -84,7 +90,6 @@ function OwnerSidebar() {
           </nav>
         </div>
 
-        {/* Logout Button */}
         <div className="p-4 border-t bg-white">
           <button
             onClick={handleLogout}
@@ -100,7 +105,7 @@ function OwnerSidebar() {
         <div className="bg-white shadow rounded-lg p-4 mb-6 flex items-center justify-between">
           <div>
             <h1 className="text-2xl font-semibold text-gray-800">
-              Welcome back, {user.name} 👋
+              Welcome back, {user?.name || "Owner"} 👋
             </h1>
             <p className="text-gray-500 text-sm mt-1">
               Hope you're having a great day managing your restaurant!
@@ -108,22 +113,20 @@ function OwnerSidebar() {
           </div>
           <div className="flex items-center gap-3">
             <img
-              src={user.profilePic}
+              src={user?.profilePic || "https://via.placeholder.com/150"}
               alt="User"
               className="w-12 h-12 rounded-full border-2 border-orange-500 object-cover"
             />
             <div>
               <h2 className="text-lg font-semibold text-gray-800">
-                {user.name}
+                {user?.name || "Owner"}
               </h2>
-              <p className="text-gray-500 text-sm">{user.role}</p>
+              <p className="text-gray-500 text-sm">{user?.role || "Owner"}</p>
             </div>
           </div>
         </div>
 
-        <div>
-          <Outlet />
-        </div>
+        <Outlet context={{ restaurantId }} />
       </div>
     </div>
   );

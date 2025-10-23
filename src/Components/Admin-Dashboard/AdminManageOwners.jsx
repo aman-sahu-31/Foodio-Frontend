@@ -1,38 +1,26 @@
 import React, { useState } from "react";
-import { UserCheck, UserX, UserPlus } from "lucide-react";
+import { UserCheck, UserX } from "lucide-react";
 
 function AdminManageOwners() {
   const [owners, setOwners] = useState([
-    {
-      id: 1,
-      name: "Rahul Sharma",
-      email: "rahul@example.com",
-      restaurant: "Spice Villa",
-      status: "Pending",
-    },
-    {
-      id: 2,
-      name: "Anjali Mehta",
-      email: "anjali@example.com",
-      restaurant: "Taste Hub",
-      status: "Verified",
-    },
-    {
-      id: 3,
-      name: "Rohan Verma",
-      email: "rohan@example.com",
-      restaurant: "Foodies Delight",
-      status: "Blocked",
-    },
+    { id: 1, name: "Rahul Sharma", email: "rahul@example.com", restaurant: "Spice Villa", status: "Pending" },
+    { id: 2, name: "Anjali Mehta", email: "anjali@example.com", restaurant: "Taste Hub", status: "Verified" },
+    { id: 3, name: "Rohan Verma", email: "rohan@example.com", restaurant: "Foodies Delight", status: "Blocked" },
   ]);
 
+  // Ensure no duplicates in owners
+  const uniqueOwners = Array.from(new Map(owners.map(o => [o.id, o])).values());
+
+  // Toggle status: Pending -> Verified -> Blocked -> Verified...
   const toggleStatus = (id) => {
-    setOwners((prev) =>
-      prev.map((owner) => {
+    setOwners(prev =>
+      prev.map(owner => {
         if (owner.id === id) {
-          if (owner.status === "Verified") return { ...owner, status: "Blocked" };
-          if (owner.status === "Blocked") return { ...owner, status: "Verified" };
-          if (owner.status === "Pending") return { ...owner, status: "Verified" };
+          let nextStatus;
+          if (owner.status === "Pending") nextStatus = "Verified";
+          else if (owner.status === "Verified") nextStatus = "Blocked";
+          else nextStatus = "Verified"; // Blocked -> Verified
+          return { ...owner, status: nextStatus };
         }
         return owner;
       })
@@ -46,12 +34,11 @@ function AdminManageOwners() {
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {owners.length > 0 ? (
-          owners.map((owner) => (
+        {uniqueOwners.length > 0 ? (
+          uniqueOwners.map(owner => (
             <div
               key={owner.id}
-              className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition flex flex-col justify-between border-l-4 
-                border-orange-500"
+              className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition flex flex-col justify-between border-l-4 border-orange-500"
             >
               <div className="mb-4">
                 <h2 className="text-xl font-semibold text-gray-800">{owner.name}</h2>
@@ -74,12 +61,11 @@ function AdminManageOwners() {
 
                 <button
                   onClick={() => toggleStatus(owner.id)}
-                  className={`flex items-center gap-1 px-3 py-1 rounded text-sm transition
-                    ${
-                      owner.status === "Verified"
-                        ? "bg-red-500 text-white hover:bg-red-600"
-                        : "bg-green-500 text-white hover:bg-green-600"
-                    }`}
+                  className={`flex items-center gap-1 px-3 py-1 rounded text-sm transition ${
+                    owner.status === "Verified"
+                      ? "bg-red-500 text-white hover:bg-red-600"
+                      : "bg-green-500 text-white hover:bg-green-600"
+                  }`}
                 >
                   {owner.status === "Verified" ? <UserX className="w-4 h-4" /> : <UserCheck className="w-4 h-4" />}
                   {owner.status === "Verified" ? "Block" : "Verify"}

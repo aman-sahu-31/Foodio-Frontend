@@ -130,7 +130,6 @@ function AdminLayout() {
                </div>
        
                <div>
-                 <Outlet />
                </div>
 
         {/* Outlet for Nested Routes */}

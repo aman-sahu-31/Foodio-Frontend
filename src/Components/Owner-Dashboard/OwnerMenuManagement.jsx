@@ -1,165 +1,136 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import axiosInstance from "../Axios/axiosInstance";
 
 function OwnerMenuManagement() {
-  const [menuItems, setMenuItems] = useState([
-    {
-      id: 1,
-      name: "Cheese Pizza",
-      description: "Delicious cheesy pizza with tomato sauce",
-      price: 250,
-      image: "",
-      available: true,
-    },
-  ]);
+  const { restaurantId } = useParams();
+  const [menuItems, setMenuItems] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+  const [message, setMessage] = useState("");
 
-  const [form, setForm] = useState({
-    id: null,
-    name: "",
-    description: "",
-    price: "",
-    image: "",
-    available: true,
-  });
+  useEffect(() => {
+    const fetchMenu = async () => {
+      // 🟠 Step 1: Validate restaurantId before API call
+      if (!restaurantId || restaurantId === "undefined" || restaurantId === "null") {
+        setError("❌ Invalid restaurant ID — please check the URL.");
+        return;
+      }
 
-  const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    setForm((prev) => ({
-      ...prev,
-      [name]: type === "checkbox" ? checked : value,
-    }));
-  };
+      try {
+        setLoading(true);
+        setError("");
+        setMessage("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (form.id) {
-      setMenuItems((prev) =>
-        prev.map((item) => (item.id === form.id ? form : item))
-      );
-    } else {
-      setMenuItems((prev) => [...prev, { ...form, id: Date.now() }]);
-    }
-    setForm({ id: null, name: "", description: "", price: "", image: "", available: true });
-  };
+        const res = await axiosInstance.get(`/restaurant/${restaurantId}`);
 
-  const handleEdit = (item) => {
-    setForm(item);
-  };
+        // 🟠 Step 2: If backend returns invalid ID
+        if (res.data?.success === false && res.data?.message?.toLowerCase().includes("invalid restaurant id")) {
+          setError("❌ Invalid restaurant ID — please check the URL or contact support.");
+          return;
+        }
 
-  const handleDelete = (id) => {
-    setMenuItems((prev) => prev.filter((item) => item.id !== id));
-  };
+        // 🟠 Step 3: Handle other failures
+        if (!res.data?.success) {
+          setError(res.data?.message || "Failed to load restaurant data.");
+          return;
+        }
+
+        // 🟢 Step 4: Load menu if available
+        if (res.data?.data?.menu?.length > 0) {
+          setMenuItems(res.data.data.menu);
+          setMessage("✅ Menu loaded successfully!");
+        } else {
+          setMessage("No menu items found for this restaurant.");
+          setMenuItems([]);
+        }
+      } catch (err) {
+        console.error("Fetch menu error:", err);
+        const backendMsg =
+          err.response?.data?.message ||
+          err.response?.data?.error ||
+          "⚠️ Server error while fetching menu.";
+        if (backendMsg.toLowerCase().includes("invalid restaurant id")) {
+          setError("❌ Invalid restaurant ID — please check the URL or contact support.");
+        } else {
+          setError(backendMsg);
+        }
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchMenu();
+  }, [restaurantId]);
 
   return (
     <div className="p-6 bg-gray-50 min-h-screen">
-      <h1 className="text-3xl font-bold mb-6 text-orange-600">Menu Management</h1>
+      <h1 className="text-3xl font-bold mb-6 text-orange-600">🍴 Menu Management</h1>
 
-      {/* Form to Add/Edit */}
-      <form
-        onSubmit={handleSubmit}
-        className="mb-6 p-4 bg-white shadow rounded space-y-3"
-      >
-        <input
-          type="text"
-          name="name"
-          placeholder="Item Name"
-          value={form.name}
-          onChange={handleChange}
-          className="w-full p-2 border rounded"
-          required
-        />
-        <textarea
-          name="description"
-          placeholder="Description"
-          value={form.description}
-          onChange={handleChange}
-          className="w-full p-2 border rounded"
-          required
-        />
-        <input
-          type="number"
-          name="price"
-          placeholder="Price"
-          value={form.price}
-          onChange={handleChange}
-          className="w-full p-2 border rounded"
-          required
-        />
-        <input
-          type="text"
-          name="image"
-          placeholder="Image URL"
-          value={form.image}
-          onChange={handleChange}
-          className="w-full p-2 border rounded"
-        />
-        <label className="flex items-center space-x-2">
-          <input
-            type="checkbox"
-            name="available"
-            checked={form.available}
-            onChange={handleChange}
-          />
-          <span>Available</span>
-        </label>
-        <button
-          type="submit"
-          className="px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600 transition"
-        >
-          {form.id ? "Update Item" : "Add Item"}
-        </button>
-      </form>
+      {/* 🔹 Loading */}
+      {loading && (
+        <div className="text-blue-600 bg-blue-50 border border-blue-200 p-3 rounded mb-3">
+          Loading menu data...
+        </div>
+      )}
 
-      {/* Menu Items Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {menuItems.length > 0 ? (
-          menuItems.map((item) => (
+      {/* 🔹 Error Message */}
+      {error && (
+        <div className="text-red-700 bg-red-100 border border-red-300 p-3 rounded mb-3">
+          {error}
+        </div>
+      )}
+
+      {/* 🔹 Success Message */}
+      {message && !error && (
+        <div className="text-green-700 bg-green-100 border border-green-300 p-3 rounded mb-3">
+          {message}
+        </div>
+      )}
+
+      {/* 🔹 No restaurant ID */}
+      {!restaurantId && !loading && (
+        <p className="text-red-600 bg-red-50 border border-red-200 p-3 rounded">
+          ⚠️ No restaurant selected. Please go back and choose one.
+        </p>
+      )}
+
+      {/* 🔹 Menu Display */}
+      {!loading && !error && menuItems.length > 0 && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {menuItems.map((item) => (
             <div
-              key={item.id}
-              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition"
+              key={item._id}
+              className="bg-white shadow-md rounded-lg overflow-hidden border hover:shadow-lg transition"
             >
-              {item.image && (
-                <img
-                  src={item.image}
-                  alt={item.name}
-                  className="w-full h-48 object-cover"
-                />
-              )}
-              <div className="p-4 flex flex-col justify-between h-full">
-                <div>
-                  <h2 className="text-xl font-semibold text-gray-800">{item.name}</h2>
-                  <p className="text-gray-600 mb-2">{item.description}</p>
-                  <p className="text-orange-600 font-bold text-lg">₹{item.price}</p>
-                </div>
-                <div className="mt-4 flex items-center justify-between">
-                  <span
-                    className={`px-2 py-1 rounded-full text-sm font-semibold ${
-                      item.available ? "bg-green-100 text-green-600" : "bg-red-100 text-red-600"
-                    }`}
-                  >
-                    {item.available ? "Available" : "Unavailable"}
-                  </span>
-                  <div className="space-x-2">
-                    <button
-                      onClick={() => handleEdit(item)}
-                      className="px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition"
-                    >
-                      Edit
-                    </button>
-                    <button
-                      onClick={() => handleDelete(item.id)}
-                      className="px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600 transition"
-                    >
-                      Delete
-                    </button>
-                  </div>
-                </div>
+              <img
+                src={item.image || "https://via.placeholder.com/300x200?text=No+Image"}
+                alt={item.name}
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h2 className="text-lg font-semibold text-gray-800">{item.name}</h2>
+                <p className="text-gray-600 text-sm line-clamp-2">{item.description}</p>
+                <p className="text-orange-600 font-bold mt-2">₹{item.price}</p>
+                <p
+                  className={`mt-1 text-sm font-medium ${
+                    item.available ? "text-green-600" : "text-red-500"
+                  }`}
+                >
+                  {item.available ? "Available" : "Unavailable"}
+                </p>
               </div>
             </div>
-          ))
-        ) : (
-          <p className="text-center text-gray-500 col-span-full">No menu items added yet.</p>
-        )}
-      </div>
+          ))}
+        </div>
+      )}
+
+      {/* 🔹 Empty Menu */}
+      {!loading && !error && menuItems.length === 0 && (
+        <p className="text-gray-500 text-center mt-10">
+          No menu items available for this restaurant.
+        </p>
+      )}
     </div>
   );
 }

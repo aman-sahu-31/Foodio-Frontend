@@ -1,16 +1,31 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
 
-function ProtectedRoute({ children }) {
-  // ✅ Get token directly from localStorage (no JSON.parse)
+function ProtectedRoute({ children, allowedRoles }) {
+  // Get token & user from localStorage
   const token = localStorage.getItem("token");
+  const user = localStorage.getItem("user")
+    ? JSON.parse(localStorage.getItem("user"))
+    : null;
 
-  // ❌ If no token, redirect to login
-  if (!token) {
+  console.log("Protected Route User:", user);
+
+  // If no token or user found → redirect
+  if (!token || !user) {
     return <Navigate to="/login" replace />;
   }
 
-  // ✅ If token exists, render protected content
+  // Normalize allowedRoles to always be an array
+  const rolesArray = Array.isArray(allowedRoles)
+    ? allowedRoles
+    : [allowedRoles];
+
+  // If allowedRoles is provided and user's role is not allowed → redirect
+  if (rolesArray.length > 0 && !rolesArray.includes(user.role)) {
+    return <Navigate to="/login" replace />;
+  }
+
+  // Otherwise, allow access
   return children;
 }
 
