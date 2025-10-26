@@ -84,7 +84,7 @@ function App() {
           <Route path="payments" element={<OwnerPayment />} />
           <Route path="profile" element={<OwnerProfile />} />
           {/* ✅ Corrected Menu Management Route */}
-          <Route path="menu/:restaurantId" element={<OwnerMenuManagement />} />
+          <Route path="menu" element={<OwnerMenuManagement />} />
           <Route path="analytics" element={<OwnerRestaurantAnalytics />} />
           <Route path="reviews" element={<OwnerReviewsRatings />} />
           <Route path="offers" element={<OwnerManageOffers />} />

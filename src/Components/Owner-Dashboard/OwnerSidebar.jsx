@@ -34,12 +34,8 @@ function OwnerSidebar() {
 
   const menuItems = [
     { name: "Dashboard", icon: <Store className="inline mr-2" />, path: "/owner/dashboard" },
-    { name: "Restaurants", icon: <Store className="inline mr-2" />, path: "/owner/restaurants" },
-    { 
-      name: "Menu Management", 
-      icon: <Store className="inline mr-2" />, 
-      path: restaurantId ? `/owner/menu/${restaurantId}` : "#"
-    },
+  { name: "Restaurants", icon: <Store className="inline mr-2" />, path: "/owner/restaurants" },
+    {  name: "Menu Management", icon: <Store className="inline mr-2" />, path: "/owner/menu"},
     { name: "Manage Offers", icon: <Gift className="inline mr-2" />, path: "/owner/offers" },
     { name: "Reviews & Ratings", icon: <Star className="inline mr-2" />, path: "/owner/reviews" },
     { name: "Orders", icon: <CreditCard className="inline mr-2" />, path: "/owner/orders" },
