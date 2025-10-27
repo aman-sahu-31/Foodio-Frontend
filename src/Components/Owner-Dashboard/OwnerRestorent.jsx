@@ -118,7 +118,7 @@ function OwnerRestorent({ userId }) {
 
       // Update UI with latest backend data
       setRestaurants((prev) =>
-        prev.map((r) => (r._id === editingId ? res.data.data : r))
+        prev.map((r) => (r._id === editingId ? res.data.data : res))
       );
 
       setEditingId(null);
@@ -214,7 +214,7 @@ function OwnerRestorent({ userId }) {
             <img
               src={resto.bannerImage || resto.images?.[0]}
               alt={resto.name}
-              className="h-40 w-full object-cover"
+              className="h-40 w-full object-center"
             />
             <div className="p-4">
               {editingId === resto._id ? (

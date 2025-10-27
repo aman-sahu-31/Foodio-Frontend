@@ -1,67 +1,69 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
 import axiosInstance from "../Axios/axiosInstance";
 
 function OwnerMenuManagement() {
-  const { restaurantId } = useParams();
+  const [restaurants, setRestaurants] = useState([]);
+  const [selectedRestaurant, setSelectedRestaurant] = useState(null);
   const [menuItems, setMenuItems] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [message, setMessage] = useState("");
 
+  // 🟢 Fetch all restaurants created by the owner
   useEffect(() => {
-    const fetchMenu = async () => {
-      // 🟠 Step 1: Validate restaurantId before API call
-      if (!restaurantId || restaurantId === "undefined" || restaurantId === "null") {
-        setError("❌ Invalid restaurant ID — please check the URL.");
-        return;
-      }
-
+    const fetchRestaurants = async () => {
       try {
         setLoading(true);
-        setError("");
-        setMessage("");
-
-        const res = await axiosInstance.get(`/restaurant/${restaurantId}`);
-
-        // 🟠 Step 2: If backend returns invalid ID
-        if (res.data?.success === false && res.data?.message?.toLowerCase().includes("invalid restaurant id")) {
-          setError("❌ Invalid restaurant ID — please check the URL or contact support.");
-          return;
-        }
-
-        // 🟠 Step 3: Handle other failures
-        if (!res.data?.success) {
-          setError(res.data?.message || "Failed to load restaurant data.");
-          return;
-        }
-
-        // 🟢 Step 4: Load menu if available
-        if (res.data?.data?.menu?.length > 0) {
-          setMenuItems(res.data.data.menu);
-          setMessage("✅ Menu loaded successfully!");
+        const res = await axiosInstance.get(`/restaurant/my`);
+        if (res.data?.success && res.data?.data?.length > 0) {
+          setRestaurants(res.data.data);
         } else {
-          setMessage("No menu items found for this restaurant.");
-          setMenuItems([]);
+          setMessage("No restaurants found. Please create one first.");
         }
       } catch (err) {
-        console.error("Fetch menu error:", err);
-        const backendMsg =
-          err.response?.data?.message ||
-          err.response?.data?.error ||
-          "⚠️ Server error while fetching menu.";
-        if (backendMsg.toLowerCase().includes("invalid restaurant id")) {
-          setError("❌ Invalid restaurant ID — please check the URL or contact support.");
-        } else {
-          setError(backendMsg);
-        }
+        console.error("❌ Error fetching restaurants:", err);
+        setError("Failed to load restaurants. Please try again later.");
       } finally {
         setLoading(false);
       }
     };
+    fetchRestaurants();
+  }, []);
 
-    fetchMenu();
-  }, [restaurantId]);
+  // 🟢 Fetch menu items for selected restaurant
+  const fetchMenu = async (restaurantId) => {
+    try {
+      setLoading(true);
+      setError("");
+      setMessage("");
+
+      const res = await axiosInstance.get(`/restaurant/${restaurantId}`);
+      if (res.data?.success && res.data?.data?.menu) {
+        setMenuItems(res.data.data.menu);
+        setMessage(`✅ Menu loaded for ${res.data.data.name}`);
+      } else {
+        setMenuItems([]);
+        setMessage("No menu items found for this restaurant.");
+      }
+    } catch (err) {
+      console.error("❌ Error fetching menu:", err);
+      setError("Failed to load menu for this restaurant.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // 🟠 Handle restaurant selection
+  const handleSelectRestaurant = (restaurant) => {
+    setSelectedRestaurant(restaurant);
+    fetchMenu(restaurant._id);
+  };
+
+  // 🟢 Handle Add New Item (navigate or open modal)
+  const handleAddItem = () => {
+    alert(`🟢 Add new item for: ${selectedRestaurant?.name}`);
+    // Here you can open a modal or navigate to /add-menu/${selectedRestaurant._id}
+  };
 
   return (
     <div className="p-6 bg-gray-50 min-h-screen">
@@ -70,7 +72,7 @@ function OwnerMenuManagement() {
       {/* 🔹 Loading */}
       {loading && (
         <div className="text-blue-600 bg-blue-50 border border-blue-200 p-3 rounded mb-3">
-          Loading menu data...
+          Loading...
         </div>
       )}
 
@@ -81,55 +83,107 @@ function OwnerMenuManagement() {
         </div>
       )}
 
-      {/* 🔹 Success Message */}
+      {/* 🔹 Info/Success Message */}
       {message && !error && (
         <div className="text-green-700 bg-green-100 border border-green-300 p-3 rounded mb-3">
           {message}
         </div>
       )}
 
-      {/* 🔹 No restaurant ID */}
-      {!restaurantId && !loading && (
-        <p className="text-red-600 bg-red-50 border border-red-200 p-3 rounded">
-          ⚠️ No restaurant selected. Please go back and choose one.
-        </p>
-      )}
+      {/* 🔹 Step 1: Show all restaurants if none selected */}
+      {!selectedRestaurant && !loading && (
+        <>
+          <h2 className="text-xl font-semibold mb-4 text-gray-700">
+            Your Created Restaurants:
+          </h2>
 
-      {/* 🔹 Menu Display */}
-      {!loading && !error && menuItems.length > 0 && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {menuItems.map((item) => (
-            <div
-              key={item._id}
-              className="bg-white shadow-md rounded-lg overflow-hidden border hover:shadow-lg transition"
-            >
-              <img
-                src={item.image || "https://via.placeholder.com/300x200?text=No+Image"}
-                alt={item.name}
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h2 className="text-lg font-semibold text-gray-800">{item.name}</h2>
-                <p className="text-gray-600 text-sm line-clamp-2">{item.description}</p>
-                <p className="text-orange-600 font-bold mt-2">₹{item.price}</p>
-                <p
-                  className={`mt-1 text-sm font-medium ${
-                    item.available ? "text-green-600" : "text-red-500"
-                  }`}
+          {restaurants.length > 0 ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {restaurants.map((rest) => (
+                <div
+                  key={rest._id}
+                  onClick={() => handleSelectRestaurant(rest)}
+                  className="bg-white shadow-md rounded-lg p-4 border hover:shadow-lg hover:border-orange-400 transition cursor-pointer"
                 >
-                  {item.available ? "Available" : "Unavailable"}
-                </p>
-              </div>
+                  <img
+                    src={rest.bannerImage || "https://via.placeholder.com/400x200?text=No+Image"}
+                    alt={rest.name}
+                    className="w-full h-40 object-cover rounded-md mb-3"
+                  />
+                  <h3 className="text-lg font-semibold text-gray-800">{rest.name}</h3>
+                  <p className="text-gray-600 text-sm line-clamp-2">{rest.address.fullAddress}</p>
+                  <p className="text-sm text-gray-500 mt-1">{rest.timing.open} - {rest.timing.close}</p>
+                  <button className="mt-3 w-full bg-orange-500 text-white py-2 rounded-lg font-medium hover:bg-orange-600 transition">
+                    Manage Menu
+                  </button>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          ) : (
+            <p className="text-gray-500 text-center mt-10">
+              No restaurants found. Please create one first.
+            </p>
+          )}
+        </>
       )}
 
-      {/* 🔹 Empty Menu */}
-      {!loading && !error && menuItems.length === 0 && (
-        <p className="text-gray-500 text-center mt-10">
-          No menu items available for this restaurant.
-        </p>
+      {/* 🔹 Step 2: Show Menu Items for Selected Restaurant */}
+      {selectedRestaurant && !loading && (
+        <div className="mt-8">
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-2xl font-semibold text-gray-700">
+              🍽 Menu for {selectedRestaurant.name}
+            </h2>
+            <div className="flex gap-3">
+              <button
+                onClick={() => setSelectedRestaurant(null)}
+                className="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition"
+              >
+                ← Back
+              </button>
+              <button
+                onClick={handleAddItem}
+                className="px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition"
+              >
+                ➕ Add New Item
+              </button>
+            </div>
+          </div>
+
+          {/* Menu Cards */}
+          {menuItems.length > 0 ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {menuItems.map((item) => (
+                <div
+                  key={item._id}
+                  className="bg-white shadow-md rounded-lg overflow-hidden border hover:shadow-lg transition"
+                >
+                  <img
+                    src={item.image || "https://via.placeholder.com/300x200?text=No+Image"}
+                    alt={item.name}
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-4">
+                    <h3 className="text-lg font-semibold text-gray-800">{item.name}</h3>
+                    <p className="text-gray-600 text-sm line-clamp-2">{item.description}</p>
+                    <p className="text-orange-600 font-bold mt-2">₹{item.price}</p>
+                    <p
+                      className={`mt-1 text-sm font-medium ${
+                        item.available ? "text-green-600" : "text-red-500"
+                      }`}
+                    >
+                      {item.available ? "Available" : "Unavailable"}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <p className="text-gray-500 text-center mt-10">
+              No menu items available for this restaurant.
+            </p>
+          )}
+        </div>
       )}
     </div>
   );
