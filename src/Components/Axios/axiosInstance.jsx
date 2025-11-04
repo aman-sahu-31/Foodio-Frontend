@@ -2,8 +2,8 @@ import axios from "axios";
 
 // Create an axios instance
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:8000", // your API base URL
-  withCredentials: true, // if your backend uses cookies
+  baseURL: "http://localhost:8000", 
+  withCredentials: true, 
 });
 
 // Request interceptor: attach token to headers

@@ -1,82 +1,70 @@
-import React, { useState } from "react";
-import { UserCheck, UserX } from "lucide-react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 function AdminManageOwners() {
-  const [owners, setOwners] = useState([
-    { id: 1, name: "Rahul Sharma", email: "rahul@example.com", restaurant: "Spice Villa", status: "Pending" },
-    { id: 2, name: "Anjali Mehta", email: "anjali@example.com", restaurant: "Taste Hub", status: "Verified" },
-    { id: 3, name: "Rohan Verma", email: "rohan@example.com", restaurant: "Foodies Delight", status: "Blocked" },
-  ]);
+  const [restaurants, setRestaurants] = useState([]);
+  const [error, setError] = useState("");
 
-  // Ensure no duplicates in owners
-  const uniqueOwners = Array.from(new Map(owners.map(o => [o.id, o])).values());
+  useEffect(() => {
+    fetchRestaurants();
+  }, []);
 
-  // Toggle status: Pending -> Verified -> Blocked -> Verified...
-  const toggleStatus = (id) => {
-    setOwners(prev =>
-      prev.map(owner => {
-        if (owner.id === id) {
-          let nextStatus;
-          if (owner.status === "Pending") nextStatus = "Verified";
-          else if (owner.status === "Verified") nextStatus = "Blocked";
-          else nextStatus = "Verified"; // Blocked -> Verified
-          return { ...owner, status: nextStatus };
-        }
-        return owner;
-      })
-    );
+  const fetchRestaurants = async () => {
+    try {
+      // ✅ Send cookies automatically with the request
+      const res = await axios.get("http://localhost:8000/restaurant/my", {
+        withCredentials: true, // important for cookie-based authentication
+      });
+
+      if (res.data.success) {
+        setRestaurants(res.data.data || []);
+        setError("");
+      } else {
+        setError(res.data.message || "Failed to fetch restaurants.");
+      }
+    } catch (err) {
+      console.error("❌ Error fetching restaurants:", err);
+      if (err.response?.status === 403) {
+        setError("You do not have permission to view this data (403).");
+      } else if (err.response?.status === 401) {
+        setError("Unauthorized: Please log in again (401).");
+      } else {
+        setError("Something went wrong while fetching restaurants.");
+      }
+    }
   };
 
   return (
-    <div className="p-6 bg-gray-50 min-h-screen">
-      <h1 className="text-3xl font-bold mb-8 text-orange-600 text-center md:text-left">
-        Manage Restaurant Owners
+    <div className="p-6">
+      <h1 className="text-2xl font-bold text-violet-700 mb-4">
+        🍽️ Manage Restaurants
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {uniqueOwners.length > 0 ? (
-          uniqueOwners.map(owner => (
+      {error && (
+        <div className="bg-red-100 text-red-700 p-3 rounded-md mb-4">
+          {error}
+        </div>
+      )}
+
+      {restaurants.length > 0 ? (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {restaurants.map((r) => (
             <div
-              key={owner.id}
-              className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition flex flex-col justify-between border-l-4 border-orange-500"
+              key={r._id}
+              className="p-4 bg-violet-50 rounded-lg shadow hover:shadow-lg transition-all"
             >
-              <div className="mb-4">
-                <h2 className="text-xl font-semibold text-gray-800">{owner.name}</h2>
-                <p className="text-gray-500">{owner.email}</p>
-                <p className="text-gray-700 font-medium mt-1">{owner.restaurant}</p>
-              </div>
-
-              <div className="flex items-center justify-between mt-auto">
-                <span
-                  className={`px-3 py-1 rounded-full text-sm font-semibold ${
-                    owner.status === "Verified"
-                      ? "bg-green-100 text-green-600"
-                      : owner.status === "Blocked"
-                      ? "bg-red-100 text-red-600"
-                      : "bg-yellow-100 text-yellow-600"
-                  }`}
-                >
-                  {owner.status}
-                </span>
-
-                <button
-                  onClick={() => toggleStatus(owner.id)}
-                  className={`flex items-center gap-1 px-3 py-1 rounded text-sm transition ${
-                    owner.status === "Verified"
-                      ? "bg-red-500 text-white hover:bg-red-600"
-                      : "bg-green-500 text-white hover:bg-green-600"
-                  }`}
-                >
-                  {owner.status === "Verified" ? <UserX className="w-4 h-4" /> : <UserCheck className="w-4 h-4" />}
-                  {owner.status === "Verified" ? "Block" : "Verify"}
-                </button>
-              </div>
+              <h2 className="text-lg font-semibold text-violet-700">
+                {r.name}
+              </h2>
+              <p className="text-gray-600">📍 {r.location}</p>
+              <p className="text-gray-500">⭐ {r.rating || "No rating yet"}</p>
+              <p className="text-gray-500">Status: {r.status || "Pending"}</p>
             </div>
-          ))
-        ) : (
-          <p className="text-center text-gray-500 col-span-full">No owners found.</p>
-        )}
-      </div>
+          ))}
+        </div>
+      ) : (
+        !error && <p className="text-gray-500">No restaurants found.</p>
+      )}
     </div>
   );
 }

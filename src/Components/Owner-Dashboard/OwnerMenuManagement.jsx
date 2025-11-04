@@ -3,11 +3,11 @@ import axiosInstance from "../Axios/axiosInstance";
 
 function OwnerMenuManagement() {
   const [restaurants, setRestaurants] = useState([]);
+  const [message, setMessage] = useState("");
+  const [error, setError] = useState("");
   const [selectedRestaurant, setSelectedRestaurant] = useState(null);
   const [menuItems, setMenuItems] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
-  const [message, setMessage] = useState("");
   const [showModal, setShowModal] = useState(false);
   const [editingItem, setEditingItem] = useState(null);
 
@@ -170,7 +170,7 @@ if (res.data?.success && res.data?.data?.length > 0) {
                 <img
                   src={rest.bannerImage || "https://via.placeholder.com/400x200"}
                   alt={rest.name}
-                  className="w-full h-40 object-cover rounded"
+                  className="w-full h-40 object-center rounded"
                 />
                 <h3 className="text-lg font-semibold mt-2">{rest.name}</h3>
               </div>
