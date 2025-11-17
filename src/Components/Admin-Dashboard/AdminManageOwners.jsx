@@ -11,16 +11,17 @@ function AdminManageOwners() {
 
   const fetchRestaurants = async () => {
     try {
-      // ✅ Send cookies automatically with the request
-      const res = await axios.get("http://localhost:8000/restaurant/my", {
-        withCredentials: true, // important for cookie-based authentication
-      });
+      // ✅ Always await the request and store in a variable
+      const response = await axios.get(
+        "http://localhost:8000/api/restaurant/my",
+        { withCredentials: true } // Important for sending cookies
+      );
 
-      if (res.data.success) {
-        setRestaurants(res.data.data || []);
+      if (response.data.success) {
+        setRestaurants(response.data.data || []);
         setError("");
       } else {
-        setError(res.data.message || "Failed to fetch restaurants.");
+        setError(response.data.message || "Failed to fetch restaurants.");
       }
     } catch (err) {
       console.error("❌ Error fetching restaurants:", err);
